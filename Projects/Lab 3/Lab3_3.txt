@@ -1,0 +1,1102 @@
+Last login: Tue Feb  7 20:46:12 on ttys000
+(base) jenil@Jenils-MacBook-Pro ~ % ssh maruj@pascal.cas.mcmaster.ca
+maruj@pascal.cas.mcmaster.ca's password: 
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last login: Tue Feb  7 20:46:05 2023 from 172.18.45.64
+[maruj@pascal ~]$ ls
+CS1XC3  L03.git  public_html  rough.txt  topic2
+[maruj@pascal ~]$ cd L03.git/
+[maruj@pascal L03.git]$ ls
+1XC3_L03  branches  description  info     packed-refs
+HEAD      config    hooks        objects  refs
+[maruj@pascal L03.git]$ cd 1XC3_L03/
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ less example_output.txt 
+"example_output.txt" may be a binary file.  See it anyway? 
+[maruj@pascal 1XC3_L03]$ git log --graph --all --oneline
+* 0bec659 (HEAD, origin/main, origin/HEAD, main) Update README
+* c113499 Create example_output.txt
+* 3489e62 Update README
+* 3102677 updated Readme
+* 5fbbef0 Update README
+* a5806d3 swapped king and queen
+* a8212a9 yet more bug fixes
+* d22fda1 more bug fixes
+* 3e4391f bug fixes
+* d679b24 Updated Readme with piece values
+* bc9f51c Added Board Initialisation
+| * df7fef0 (origin/Spennys_branch) Updated Bishop, Rook, & Pawn Behaviour
+| * a05777a bug fixes
+| * b67c882 Update chess.c
+| | * cb7ebd1 (origin/movement_checks) updated queen logic
+| | * 805aa32 Various Bugfixes
+| | * b674897 You guessed it... more bug fixes
+| | * 5eecf4d yet more bug fixes
+| | * 6ed1dfa gub xif
+| | * 7842432 bug fixes
+| | * 024529c Added Queen's Behaviour
+| | * ac73c02 bug fixes
+| | * 6e0a1d5 Started Valid move logic
+| | | * 94b4809 (origin/coordinates) Fixed Piece Display
+| | | * 55f898b Added Coordinate indicators
+| | | | * 0c0063f (origin/gridlines) swapped king and queen
+| | | | * 9fd8ea9 now using stdbool
+| | | | * deb568b Corrected display somewhat
+| | | | * 0b3dd71 Added gridlines
+| | | | | * 4ac969b (origin/Game_Logic) Swapped king and queen
+| | | | | | * afb39b2 (origin/valid_move_checks) bug fixes
+| | | | | | * d6fc917 Now using stdlib
+| | | | | | * b96306e Added Knight behaviour
+| | |_|_|_|/  
+| |/| | | |   
+| * | | | | 8cad529 Added King Functionality
+| | | | | | * c84b698 (origin/Show_Board) bug fixos
+| | | | | | * aecee2f fixed squares
+| | | | | | * 8dd5b63 Added black Squares
+| | | | |_|/  
+| | | |/| |   
+| | | * | | 157d61a Changed to If Statements
+| | | | | | * e9faa8f (origin/piece_movement) bug flexes
+| | | | | | * 52897c4 bug feeexes
+| | | | | | * 01c98a1 bug fixes
+| | | | | | * 9b7753e bug fixes
+| | | | | | * dd801c4 Fixed turn logic
+| | | |_|_|/  
+| | |/| | |   
+| | * | | | 1b1dc1b Added unsafe piece movement
+| | | |_|/  
+| | |/| |   
+| | | | | * f77386d (origin/king) bug fixes
+| | | | | * 052b8b0 Now including stdlib
+| | | | | * 191e675 Update chess.c
+| | |_|_|/  
+| |/| | |   
+| * | | | 98369eb Update chess.c
+| * | | | 1f1e1ec Added pawn behaviour
+| * | | | a1df1be Set up function
+| |/ / /  
+| * | | c09502b More Bugfixes
+| * | | df23da4 Bug fixes
+| * | | 35c6188 Initial Turn logic
+|/ / /  
+| | | * efec8d7 (origin/Show_Board_Prettier) removed redundant newlines
+| | | * 377d987 A double lined border looks doubly nice!
+| | |/  
+| | * 4de145e Update chess.c
+| | * 7a62585 showBoard -> switch case to if statements
+| |/  
+| * e9d9041 Update chess.c
+| * 670418a Added showBoard function
+|/  
+* d800757 Create chess.c
+* ef1be0e Create makefile
+* 37a4fd8 Update README
+[maruj@pascal 1XC3_L03]$ git reset --hard
+HEAD is now at 0bec659 Update README
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ git reflog
+0bec659 (HEAD, origin/main, origin/HEAD, main) HEAD@{0}: checkout: moving from c1134997eea7fb567b9b505ce7f5f1cca0387796 to 0bec659
+c113499 HEAD@{1}: checkout: moving from 3489e6255f535261a9bd803e9b043401561b4fe6 to c113499
+3489e62 HEAD@{2}: merge 3489e62: Fast-forward
+3102677 HEAD@{3}: merge 3102677: Fast-forward
+5fbbef0 HEAD@{4}: checkout: moving from a5806d3e211e054cbedcd9cdc35e59cff01c4e87 to 5fbbef0
+a5806d3 HEAD@{5}: checkout: moving from a8212a93098a0c7d5375d72cc79eba453f8f0c0d to a5806d3
+a8212a9 HEAD@{6}: checkout: moving from d22fda1e5cc0790e09031d9dcc4be1528ea721c3 to a8212a9
+d22fda1 HEAD@{7}: checkout: moving from 3e4391fa917586fee467b6d3e6b4d05ca479e830 to d22fda1
+3e4391f HEAD@{8}: checkout: moving from d679b2427ab37018849bffa860e991e679b0a8cc to 3e4391f
+d679b24 HEAD@{9}: checkout: moving from bc9f51c645a938fad2385b634981f53008d5c3d2 to d679b24
+bc9f51c HEAD@{10}: checkout: moving from df7fef099870c7229c1c932dbea539f22d67932b to bc9f51c
+df7fef0 (origin/Spennys_branch) HEAD@{11}: checkout: moving from a05777ab6b66a3ed6008823481a642b5d4475157 to df7fef0
+a05777a HEAD@{12}: checkout: moving from b67c8823a7d25dee87376419efff1f0ad52a3ee[maruj@pascal 1XC3_L03]$ git reset --hard 0bec659
+HEAD is now at 0bec659 Update README
+[maruj@pascal 1XC3_L03]$ git 
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ git merge edcbe2e 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge 3e4391f 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout df7fef0 
+Previous HEAD position was 0bec659 Update README
+HEAD is now at df7fef0 Updated Bishop, Rook, & Pawn Behaviour
+[maruj@pascal 1XC3_L03]$ git merge 0bec659 
+Auto-merging chess.c
+CONFLICT (content): Merge conflict in chess.c
+Automatic merge failed; fix conflicts and then commit the result.
+[maruj@pascal 1XC3_L03]$ git checkout 670418a 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c:2:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+In file included from chess.c:4:
+/usr/include/stdlib.h:922:20: error: unknown type name 'wchar_t'
+ extern int mbtowc (wchar_t *__restrict __pwc,
+                    ^~~~~~~
+/usr/include/stdlib.h:922:20: note: 'wchar_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+/usr/include/stdlib.h:567:1:
++#include <stddef.h>
+ #endif /* Use misc.  */
+/usr/include/stdlib.h:922:20:
+ extern int mbtowc (wchar_t *__restrict __pwc,
+                    ^~~~~~~
+/usr/include/stdlib.h:926:31: error: unknown type name 'wchar_t'
+ extern int wctomb (char *__s, wchar_t __wchar) __THROW;
+                               ^~~~~~~
+/usr/include/stdlib.h:926:31: note: 'wchar_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+/usr/include/stdlib.h:930:25: error: unknown type name 'wchar_t'
+ extern size_t mbstowcs (wchar_t *__restrict  __pwcs,
+                         ^~~~~~~
+/usr/include/stdlib.h:930:25: note: 'wchar_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+/usr/include/stdlib.h:934:10: error: unknown type name 'wchar_t'
+    const wchar_t *__restrict __pwcs, size_t __n)
+          ^~~~~~~
+chess.c: In function 'isValidMove':
+chess.c:117:1: error: version control conflict marker in file
+ =======
+ ^~~~~~~
+chess.c:138:9: error: invalid suffix "bec659" on integer constant
+ >>>>>>> 0bec659
+         ^~~~~~~
+chess.c:139:1: error: expected declaration or statement at end of input
+ }
+ ^
+[maruj@pascal 1XC3_L03]$ git checkout 3e4391f 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ git checkout 0bec659 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ gitt checkout 5fbbef0 
+-bash: gitt: command not found
+[maruj@pascal 1XC3_L03]$ git checkout 5fbbef0 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ git merge d800757 
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[maruj@pascal 1XC3_L03]$ git status
+HEAD detached at df7fef0
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+	modified:   README
+	new file:   example_output.txt
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	both modified:   chess.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	a.out
+
+[maruj@pascal 1XC3_L03]$ git commit -m "comitting files"
+U	chess.c
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[maruj@pascal 1XC3_L03]$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+[maruj@pascal 1XC3_L03]$ git add README
+[maruj@pascal 1XC3_L03]$ git add example_output.c
+fatal: pathspec 'example_output.c' did not match any files
+[maruj@pascal 1XC3_L03]$ git add example_output.txt
+[maruj@pascal 1XC3_L03]$ git commit -m "comitting files"
+U	chess.c
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[maruj@pascal 1XC3_L03]$ git status
+HEAD detached at df7fef0
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+	modified:   README
+	new file:   example_output.txt
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	both modified:   chess.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	a.out
+
+[maruj@pascal 1XC3_L03]$ git merge edcbe2e 
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[maruj@pascal 1XC3_L03]$ git add .
+[maruj@pascal 1XC3_L03]$ git merge edcbe2e 
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you merge.
+[maruj@pascal 1XC3_L03]$ git commit -m
+error: switch `m' requires a value
+[maruj@pascal 1XC3_L03]$ git commit -m "trial commit"
+[detached HEAD 11b5882] trial commit
+ Committer: maruj <maruj@pascal.cas.mcmaster.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+[maruj@pascal 1XC3_L03]$ git merge edcbe2e 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge 37a4fd8 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge d679b24 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c:2:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+In file included from chess.c:4:
+/usr/include/stdlib.h:922:20: error: unknown type name 'wchar_t'
+ extern int mbtowc (wchar_t *__restrict __pwc,
+                    ^~~~~~~
+/usr/include/stdlib.h:922:20: note: 'wchar_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+/usr/include/stdlib.h:567:1:
++#include <stddef.h>
+ #endif /* Use misc.  */
+/usr/include/stdlib.h:922:20:
+ extern int mbtowc (wchar_t *__restrict __pwc,
+                    ^~~~~~~
+/usr/include/stdlib.h:926:31: error: unknown type name 'wchar_t'
+ extern int wctomb (char *__s, wchar_t __wchar) __THROW;
+                               ^~~~~~~
+/usr/include/stdlib.h:926:31: note: 'wchar_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+/usr/include/stdlib.h:930:25: error: unknown type name 'wchar_t'
+ extern size_t mbstowcs (wchar_t *__restrict  __pwcs,
+                         ^~~~~~~
+/usr/include/stdlib.h:930:25: note: 'wchar_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+/usr/include/stdlib.h:934:10: error: unknown type name 'wchar_t'
+    const wchar_t *__restrict __pwcs, size_t __n)
+          ^~~~~~~
+chess.c: In function 'isValidMove':
+chess.c:117:1: error: version control conflict marker in file
+ =======
+ ^~~~~~~
+chess.c:138:9: error: invalid suffix "bec659" on integer constant
+ >>>>>>> 0bec659
+         ^~~~~~~
+chess.c:139:1: error: expected declaration or statement at end of input
+ }
+ ^
+[maruj@pascal 1XC3_L03]$ git merge 0bec659 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 670418a 
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  11b5882 trial commit
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 11b5882
+
+HEAD is now at 670418a Added showBoard function
+[maruj@pascal 1XC3_L03]$ git merge d800757 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge 670418a 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout e9d9041 
+Previous HEAD position was 670418a Added showBoard function
+HEAD is now at e9d9041 Update chess.c
+[maruj@pascal 1XC3_L03]$ git merge d800757 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge e9d9041 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 35c6188 
+Previous HEAD position was e9d9041 Update chess.c
+HEAD is now at 35c6188 Initial Turn logic
+[maruj@pascal 1XC3_L03]$ git merge d800757 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout df23da4 
+Previous HEAD position was 35c6188 Initial Turn logic
+HEAD is now at df23da4 Bug fixes
+[maruj@pascal 1XC3_L03]$ git merge d800757 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout df23da4 
+HEAD is now at df23da4 Bug fixes
+[maruj@pascal 1XC3_L03]$ git merge d800757 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout c09502b 
+Previous HEAD position was df23da4 Bug fixes
+HEAD is now at c09502b More Bugfixes
+[maruj@pascal 1XC3_L03]$ git merge d800757 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge c09502b 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout a1df1be 
+Previous HEAD position was c09502b More Bugfixes
+HEAD is now at a1df1be Set up function
+[maruj@pascal 1XC3_L03]$ git merge d800757 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ less chess.c 
+w[maruj@pascal 1XC3_L03]$ git checkout 1f1e1ec 
+Previous HEAD position was a1df1be Set up function
+HEAD is now at 1f1e1ec Added pawn behaviour
+[maruj@pascal 1XC3_L03]$ git merge d800757 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 98369eb 
+Previous HEAD position was 1f1e1ec Added pawn behaviour
+HEAD is now at 98369eb Update chess.c
+[maruj@pascal 1XC3_L03]$ git merge d800757 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 8cad529 
+Previous HEAD position was 98369eb Update chess.c
+HEAD is now at 8cad529 Added King Functionality
+[maruj@pascal 1XC3_L03]$ git merge 98369eb 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 191e675 
+Previous HEAD position was 8cad529 Added King Functionality
+HEAD is now at 191e675 Update chess.c
+[maruj@pascal 1XC3_L03]$ git merge 98369eb 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 052b8b0 
+Previous HEAD position was 191e675 Update chess.c
+HEAD is now at 052b8b0 Now including stdlib
+[maruj@pascal 1XC3_L03]$ git merge 98369eb 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout f77386d 
+Previous HEAD position was 052b8b0 Now including stdlib
+HEAD is now at f77386d bug fixes
+[maruj@pascal 1XC3_L03]$ git merge 98369eb 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ less chess.c
+[maruj@pascal 1XC3_L03]$ git checkout 7a62585 
+Previous HEAD position was f77386d bug fixes
+HEAD is now at 7a62585 showBoard -> switch case to if statements
+[maruj@pascal 1XC3_L03]$ git merge e9d9041 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 4de145e 
+Previous HEAD position was 7a62585 showBoard -> switch case to if statements
+HEAD is now at 4de145e Update chess.c
+[maruj@pascal 1XC3_L03]$ git merge e9d9041 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 377d987 
+Previous HEAD position was 4de145e Update chess.c
+HEAD is now at 377d987 A double lined border looks doubly nice!
+[maruj@pascal 1XC3_L03]$ git merge 4de145e 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout efec8d7 
+Previous HEAD position was 377d987 A double lined border looks doubly nice!
+HEAD is now at efec8d7 removed redundant newlines
+[maruj@pascal 1XC3_L03]$ git merge 4de145e 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ less chess.c
+"chess.c" may be a binary file.  See it anyway? 
+[maruj@pascal 1XC3_L03]$ git status
+HEAD detached at efec8d7
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	a.out
+
+nothing added to commit but untracked files present (use "git add" to track)
+[maruj@pascal 1XC3_L03]$ git checkout ,ain
+error: pathspec ',ain' did not match any file(s) known to git
+[maruj@pascal 1XC3_L03]$ git checkout main
+Previous HEAD position was efec8d7 removed redundant newlines
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+[maruj@pascal 1XC3_L03]$ git checkout Show_Board_Prettier
+Branch 'Show_Board_Prettier' set up to track remote branch 'Show_Board_Prettier' from 'origin'.
+Switched to a new branch 'Show_Board_Prettier'
+[maruj@pascal 1XC3_L03]$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+[maruj@pascal 1XC3_L03]$ git merge Show_Board_Prettier
+Auto-merging chess.c
+CONFLICT (content): Merge conflict in chess.c
+Automatic merge failed; fix conflicts and then commit the result.
+[maruj@pascal 1XC3_L03]$ git checkout Show_Board_Prettier
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c:3:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+[maruj@pascal 1XC3_L03]$ git merge --abort
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c: In function 'main':
+chess.c:14:8: warning: excess elements in array initializer
+      , {5, 4, 3, 2, 1, 3, 4, 5}
+        ^
+chess.c:14:8: note: (near initialization for 'board')
+[maruj@pascal 1XC3_L03]$ less chess.c
+[maruj@pascal 1XC3_L03]$ git checkout 670418a 
+Note: switching to '670418a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 670418a Added showBoard function
+[maruj@pascal 1XC3_L03]$ git merge d800757 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout e9d9041 
+Previous HEAD position was 670418a Added showBoard function
+HEAD is now at e9d9041 Update chess.c
+[maruj@pascal 1XC3_L03]$ git merge d800757 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ less chess.c
+"chess.c" may be a binary file.  See it anyway? 
+[maruj@pascal 1XC3_L03]$ git checkout 7a62585 
+Previous HEAD position was e9d9041 Update chess.c
+HEAD is now at 7a62585 showBoard -> switch case to if statements
+[maruj@pascal 1XC3_L03]$ git merge e9d9041 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 4de145e 
+Previous HEAD position was 7a62585 showBoard -> switch case to if statements
+HEAD is now at 4de145e Update chess.c
+[maruj@pascal 1XC3_L03]$ git merge e9d9041 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 377d987 
+Previous HEAD position was 4de145e Update chess.c
+HEAD is now at 377d987 A double lined border looks doubly nice!
+[maruj@pascal 1XC3_L03]$ git merge 4de145e 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ less chess.c
+"chess.c" may be a binary file.  See it anyway? 
+[maruj@pascal 1XC3_L03]$ git checkout efec8d7 
+Previous HEAD position was 377d987 A double lined border looks doubly nice!
+HEAD is now at efec8d7 removed redundant newlines
+[maruj@pascal 1XC3_L03]$ git merge 4de145e 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 35c6188 
+Previous HEAD position was efec8d7 removed redundant newlines
+HEAD is now at 35c6188 Initial Turn logic
+[maruj@pascal 1XC3_L03]$ git merge d800757 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout df23da4 
+Previous HEAD position was 35c6188 Initial Turn logic
+HEAD is now at df23da4 Bug fixes
+[maruj@pascal 1XC3_L03]$ git merge d800757 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout c09502b 
+Previous HEAD position was df23da4 Bug fixes
+HEAD is now at c09502b More Bugfixes
+[maruj@pascal 1XC3_L03]$ git merge d800757 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout a1df1be 
+Previous HEAD position was c09502b More Bugfixes
+HEAD is now at a1df1be Set up function
+[maruj@pascal 1XC3_L03]$ git merge c09502b 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 1f1e1ec 
+Previous HEAD position was a1df1be Set up function
+HEAD is now at 1f1e1ec Added pawn behaviour
+[maruj@pascal 1XC3_L03]$ git merge c09502b 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 98369eb 
+Previous HEAD position was 1f1e1ec Added pawn behaviour
+HEAD is now at 98369eb Update chess.c
+[maruj@pascal 1XC3_L03]$ git merge c09502b 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout origin
+Previous HEAD position was 98369eb Update chess.c
+HEAD is now at 0bec659 Update README
+[maruj@pascal 1XC3_L03]$ git checkout 191e675 
+Previous HEAD position was 0bec659 Update README
+HEAD is now at 191e675 Update chess.c
+[maruj@pascal 1XC3_L03]$ git merge 98369eb 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 052b8b0 
+Previous HEAD position was 191e675 Update chess.c
+HEAD is now at 052b8b0 Now including stdlib
+[maruj@pascal 1XC3_L03]$ git merge 98369eb 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout f77386d 
+Previous HEAD position was 052b8b0 Now including stdlib
+HEAD is now at f77386d bug fixes
+[maruj@pascal 1XC3_L03]$ git merge 98369eb 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ less chess.c
+[maruj@pascal 1XC3_L03]$ git checkout 1b1dc1b 
+Previous HEAD position was f77386d bug fixes
+HEAD is now at 1b1dc1b Added unsafe piece movement
+[maruj@pascal 1XC3_L03]$ git merge c09502b 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c: In function 'validMove':
+chess.c:6:9: error: 'True' undeclared (first use in this function); did you mean 'true'?
+  return True;
+         ^~~~
+         true
+chess.c:6:9: note: each undeclared identifier is reported only once for each function it appears in
+chess.c: In function 'makeMove':
+chess.c:10:2: error: 'start_x' undeclared (first use in this function)
+  start_x = input[0] - 48;
+  ^~~~~~~
+chess.c:11:2: error: 'start_y' undeclared (first use in this function)
+  start_y = input[1] - 48;
+  ^~~~~~~
+chess.c:12:2: error: 'end_x' undeclared (first use in this function)
+  end_x = input[3] - 48;
+  ^~~~~
+chess.c:13:2: error: 'end_y' undeclared (first use in this function)
+  end_y = input[4] - 48;
+  ^~~~~
+chess.c: In function 'main':
+chess.c:42:37: error: expected ';' before '}' token
+   printf("Move Invalid! Try again!")
+                                     ^
+                                     ;
+  }
+  ~                                   
+chess.c:53:19: warning: passing argument 2 of 'makeMove' from incompatible pointer type [-Wincompatible-pointer-types]
+     makeMove(buf, &board);
+                   ^~~~~~
+chess.c:9:34: note: expected 'int * (*)[8]' but argument is of type 'int (*)[8][8]'
+ void makeMove (char* input, int* board[8][8]) {
+                             ~~~~~^~~~~~~~~~~
+[maruj@pascal 1XC3_L03]$ git checkout dd801c4 
+Previous HEAD position was 1b1dc1b Added unsafe piece movement
+HEAD is now at dd801c4 Fixed turn logic
+[maruj@pascal 1XC3_L03]$ git merge 1b1dc1b 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 9b7753e 
+Previous HEAD position was dd801c4 Fixed turn logic
+HEAD is now at 9b7753e bug fixes
+[maruj@pascal 1XC3_L03]$ git merge 1b1dc1b 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 9b7753e 
+HEAD is now at 9b7753e bug fixes
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ git merge 01c98a1 
+Updating 9b7753e..01c98a1
+Fast-forward
+ chess.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+[maruj@pascal 1XC3_L03]$ git checkout 01c98a1 
+HEAD is now at 01c98a1 bug fixes
+[maruj@pascal 1XC3_L03]$ git merge 1b1dc1b 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c: In function 'showBoard':
+chess.c:5:2: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  print ("Added on another branch...\n");
+  ^~~~~
+  printf
+chess.c: In function 'main':
+chess.c:58:19: warning: passing argument 2 of 'makeMove' from incompatible pointer type [-Wincompatible-pointer-types]
+     makeMove(buf, board);
+                   ^~~~~
+chess.c:13:34: note: expected 'int * (*)[8]' but argument is of type 'int (*)[8'
+ void makeMove (char* input, int* board[8][8]) {
+                             ~~~~~^~~~~~~~~~~
+/tmp/cchejKcp.o: In function `showBoard':
+chess.c:(.text+0x17): undefined reference to `print'
+collect2: error: ld returned 1 exit status
+[maruj@pascal 1XC3_L03]$ git checkout 52897c4 
+Previous HEAD position was 01c98a1 bug fixes
+HEAD is now at 52897c4 bug feeexes
+[maruj@pascal 1XC3_L03]$ git merge 1b1dc1b 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git chckout e9faa8f 
+git: 'chckout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+[maruj@pascal 1XC3_L03]$ git checkout e9faa8f 
+Previous HEAD position was 52897c4 bug feeexes
+HEAD is now at e9faa8f bug flexes
+[maruj@pascal 1XC3_L03]$ git merge 1b1dc1b 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ less chess.c
+[maruj@pascal 1XC3_L03]$ git checkout 157d61a 
+Previous HEAD position was e9faa8f bug flexes
+HEAD is now at 157d61a Changed to If Statements
+[maruj@pascal 1XC3_L03]$ git merge e9d9041 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 8dd5b63 
+Previous HEAD position was 157d61a Changed to If Statements
+HEAD is now at 8dd5b63 Added black Squares
+[maruj@pascal 1XC3_L03]$ git merge 157d61a 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c: In function 'showBoard':
+chess.c:11:5: error: expected '}' before 'else'
+     else {
+     ^~~~
+chess.c: In function 'main':
+chess.c:42:14: warning: excess elements in array initializer
+            , {5, 4, 3, 1, 2, 3, 4, 5}
+              ^
+chess.c:42:14: note: (near initialization for 'board')
+chess.c: In function 'showBoard':
+chess.c:52:1: error: expected declaration or statement at end of input
+ }
+ ^
+[maruj@pascal 1XC3_L03]$ less chess.c
+"chess.c" may be a binary file.  See it anyway? 
+[maruj@pascal 1XC3_L03]$ git log --graph --all --oneline
+* 0bec659 (origin/main, origin/HEAD, main) Update README
+* c113499 Create example_output.txt
+* 3489e62 Update README
+* 3102677 updated Readme
+* 5fbbef0 Update README
+* a5806d3 swapped king and queen
+* a8212a9 yet more bug fixes
+* d22fda1 more bug fixes
+* 3e4391f bug fixes
+* d679b24 Updated Readme with piece values
+* bc9f51c Added Board Initialisation
+| * df7fef0 (origin/Spennys_branch) Updated Bishop, Rook, & Pawn Behaviour
+| * a05777a bug fixes
+| * b67c882 Update chess.c
+| | * cb7ebd1 (origin/movement_checks) updated queen logic
+| | * 805aa32 Various Bugfixes
+| | * b674897 You guessed it... more bug fixes
+| | * 5eecf4d yet more bug fixes
+| | * 6ed1dfa gub xif
+| | * 7842432 bug fixes
+| | * 024529c Added Queen's Behaviour
+| | * ac73c02 bug fixes
+| | * 6e0a1d5 Started Valid move logic
+| | | * 94b4809 (origin/coordinates) Fixed Piece Display
+| | | * 55f898b Added Coordinate indicators
+| | | | * 0c0063f (origin/gridlines) swapped king and queen
+| | | | * 9fd8ea9 now using stdbool
+| | | | * deb568b Corrected display somewhat
+| | | | * 0b3dd71 Added gridlines
+| | | | | * 4ac969b (origin/Game_Logic) Swapped king and queen
+| | | | | | * afb39b2 (origin/valid_move_checks) bug fixes
+| | | | | | * d6fc917 Now using stdlib
+| | | | | | * b96306e Added Knight behaviour
+| | |_|_|_|/  
+| |/| | | |   
+| * | | | | 8cad529 Added King Functionality
+| | | | | | * c84b698 (origin/Show_Board) bug fixos
+| | | | | | * aecee2f fixed squares
+| | | | | | * 8dd5b63 (HEAD) Added black Squares
+| | | | |_|/  
+| | | |/| |   
+| | | * | | 157d61a Changed to If Statements
+| | | | | | * e9faa8f (origin/piece_movement) bug flexes
+| | | | | | * 52897c4 bug feeexes
+| | | | | | * 01c98a1 bug fixes
+| | | | | | * 9b7753e bug fixes
+| | | | | | * dd801c4 Fixed turn logic
+| | | |_|_|/  
+| | |/| | |   
+| | * | | | 1b1dc1b Added unsafe piece movement
+| | | |_|/  
+| | |/| |   
+| | | | | * f77386d (origin/king) bug fixes
+| | | | | * 052b8b0 Now including stdlib
+| | | | | * 191e675 Update chess.c
+| | |_|_|/  
+| |/| | |   
+| * | | | 98369eb Update chess.c
+| * | | | 1f1e1ec Added pawn behaviour
+| * | | | a1df1be Set up function
+| |/ / /  
+| * | | c09502b More Bugfixes
+| * | | df23da4 Bug fixes
+| * | | 35c6188 Initial Turn logic
+|/ / /  
+| | | * efec8d7 (origin/Show_Board_Prettier, Show_Board_Prettier) removed redundant newlines
+| | | * 377d987 A double lined border looks doubly nice!
+| | |/  
+| | * 4de145e Update chess.c
+| | * 7a62585 showBoard -> switch case to if statements
+| |/  
+| * e9d9041 Update chess.c
+| * 670418a Added showBoard function
+|/  
+* d800757 Create chess.c
+* ef1be0e Create makefile
+* 37a4fd8 Update README
+* edcbe2e Create README
+[maruj@pascal 1XC3_L03]$ git commit
+HEAD detached at 8dd5b63
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	a.out
+
+nothing added to commit but untracked files present (use "git add" to track)
+[maruj@pascal 1XC3_L03]$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+[maruj@pascal 1XC3_L03]$ git add all
+fatal: pathspec 'all' did not match any files
+[maruj@pascal 1XC3_L03]$ client_loop: send disconnect: Broken pipe
+(base) jenil@Jenils-MacBook-Pro ~ % ssh maruj@pascal.cas.mcmaster.ca
+maruj@pascal.cas.mcmaster.ca's password: 
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last login: Wed Feb  8 10:53:07 2023 from 172.18.116.116
+[maruj@pascal ~]$ ls
+CS1XC3  L03.git  public_html  rough.txt  topic2
+[maruj@pascal ~]$ cd L03.git/
+[maruj@pascal L03.git]$ ls
+1XC3_L03  branches  description  info     packed-refs
+HEAD      config    hooks        objects  refs
+[maruj@pascal L03.git]$ cd
+[maruj@pascal ~]$ ls
+CS1XC3  L03.git  public_html  rough.txt  topic2
+[maruj@pascal ~]$ cd L03.git
+[maruj@pascal L03.git]$ ls
+1XC3_L03  branches  description  info     packed-refs
+HEAD      config    hooks        objects  refs
+[maruj@pascal L03.git]$ cd 1XC3_L03/
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  makefile
+[maruj@pascal 1XC3_L03]$ cd..
+-bash: cd..: command not found
+[maruj@pascal 1XC3_L03]$ cd
+[maruj@pascal ~]$ ls
+CS1XC3  L03.git  public_html  rough.txt  topic2
+[maruj@pascal ~]$ cd L03.git/
+[maruj@pascal L03.git]$ ls
+1XC3_L03  branches  description  info     packed-refs
+HEAD      config    hooks        objects  refs
+[maruj@pascal L03.git]$ cd 1XC3_L03/
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  makefile
+[maruj@pascal 1XC3_L03]$ git status
+HEAD detached at 8dd5b63
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	a.out
+
+nothing added to commit but untracked files present (use "git add" to track)
+[maruj@pascal 1XC3_L03]$ ./chess.c
+-bash: ./chess.c: Permission denied
+[maruj@pascal 1XC3_L03]$ git log --graph --all --oneline
+* 0bec659 (origin/main, origin/HEAD, main) Update README
+* c113499 Create example_output.txt
+* 3489e62 Update README
+* 3102677 updated Readme
+* 5fbbef0 Update README
+* a5806d3 swapped king and queen
+* a8212a9 yet more bug fixes
+* d22fda1 more bug fixes
+* 3e4391f bug fixes
+* d679b24 Updated Readme with piece values
+* bc9f51c Added Board Initialisation
+| * df7fef0 (origin/Spennys_branch) Updated Bishop, Rook, & Pawn Behaviour
+| * a05777a bug fixes
+| * b67c882 Update chess.c
+| | * cb7ebd1 (origin/movement_checks) updated queen logic
+| | * 805aa32 Various Bugfixes
+| | * b674897 You guessed it... more bug fixes
+| | * 5eecf4d yet more bug fixes
+| | * 6ed1dfa gub xif
+| | * 7842432 bug fixes
+| | * 024529c Added Queen's Behaviour
+| | * ac73c02 bug fixes
+| | * 6e0a1d5 Started Valid move logic
+| | | * 94b4809 (origin/coordinates) Fixed Piece Display
+| | | * 55f898b Added Coordinate indicators
+| | | | * 0c0063f (origin/gridlines) swapped king and queen
+| | | | * 9fd8ea9 now using stdbool
+| | | | * deb568b Corrected display somewhat
+| | | | * 0b3dd71 Added gridlines
+| | | | | * 4ac969b (origin/Game_Logic) Swapped king and queen
+| | | | | | * afb39b2 (origin/valid_move_checks) bug fixes
+| | | | | | * d6fc917 Now using stdlib
+| | | | | | * b96306e Added Knight behaviour
+| | |_|_|_|/  
+| |/| | | |   
+| * | | | | 8cad529 Added King Functionality
+| | | | | | * c84b698 (origin/Show_Board) bug fixos
+| | | | | | * aecee2f fixed squares
+| | | | | | * 8dd5b63 (HEAD) Added black Squares
+| | | | |_|/  
+| | | |/| |   
+| | | * | | 157d61a Changed to If Statements
+| | | | | | * e9faa8f (origin/piece_movement) bug flexes
+| | | | | | * 52897c4 bug feeexes
+| | | | | | * 01c98a1 bug fixes
+| | | | | | * 9b7753e bug fixes
+| | | | | | * dd801c4 Fixed turn logic
+| | | |_|_|/  
+| | |/| | |   
+| | * | | | 1b1dc1b Added unsafe piece movement
+| | | |_|/  
+| | |/| |   
+| | | | | * f77386d (origin/king) bug fixes
+| | | | | * 052b8b0 Now including stdlib
+| | | | | * 191e675 Update chess.c
+| | |_|_|/  
+| |/| | |   
+| * | | | 98369eb Update chess.c
+| * | | | 1f1e1ec Added pawn behaviour
+| * | | | a1df1be Set up function
+| |/ / /  
+| * | | c09502b More Bugfixes
+| * | | df23da4 Bug fixes
+| * | | 35c6188 Initial Turn logic
+|/ / /  
+| | | * efec8d7 (origin/Show_Board_Prettier, Show_Board_Prettier) removed redundant newlines
+| | | * 377d987 A double lined border looks doubly nice!
+| | |/  
+| | * 4de145e Update chess.c
+| | * 7a62585 showBoard -> switch case to if statements
+| |/  
+| * e9d9041 Update chess.c
+| * 670418a Added showBoard function
+|/  
+* d800757 Create chess.c
+* ef1be0e Create makefile
+* 37a4fd8 Update README
+* edcbe2e Create README
+[maruj@pascal 1XC3_L03]$ less chess.c
+"chess.c" may be a binary file.  See it anyway? 
+[maruj@pascal 1XC3_L03]$ git checkout aecee2f 
+Previous HEAD position was 8dd5b63 Added black Squares
+HEAD is now at aecee2f fixed squares
+[maruj@pascal 1XC3_L03]$ git merge 157d61a
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout c84b698 
+Previous HEAD position was aecee2f fixed squares
+HEAD is now at c84b698 bug fixos
+[maruj@pascal 1XC3_L03]$ git merge 157d61a
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 8cad529 
+Previous HEAD position was c84b698 bug fixos
+HEAD is now at 8cad529 Added King Functionality
+[maruj@pascal 1XC3_L03]$ git merge 98369eb 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout b96306e 
+Previous HEAD position was 8cad529 Added King Functionality
+HEAD is now at b96306e Added Knight behaviour
+[maruj@pascal 1XC3_L03]$ git merge 8cad529 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout d6fc917 
+Previous HEAD position was b96306e Added Knight behaviour
+HEAD is now at d6fc917 Now using stdlib
+[maruj@pascal 1XC3_L03]$ git merge 8cad529 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout afb39b2 
+Previous HEAD position was d6fc917 Now using stdlib
+HEAD is now at afb39b2 bug fixes
+[maruj@pascal 1XC3_L03]$ git merge 8cad529 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 4ac969b 
+Previous HEAD position was afb39b2 bug fixes
+HEAD is now at 4ac969b Swapped king and queen
+[maruj@pascal 1XC3_L03]$ git merge c09502b 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git log --graph --all --oneline
+* 0bec659 (origin/main, origin/HEAD, main) Update README
+* c113499 Create example_output.txt
+* 3489e62 Update README
+* 3102677 updated Readme
+* 5fbbef0 Update README
+* a5806d3 swapped king and queen
+* a8212a9 yet more bug fixes
+* d22fda1 more bug fixes
+* 3e4391f bug fixes
+* d679b24 Updated Readme with piece values
+* bc9f51c Added Board Initialisation
+| * df7fef0 (origin/Spennys_branch) Updated Bishop, Rook, & Pawn Behaviour
+| * a05777a bug fixes
+| * b67c882 Update chess.c
+| | * cb7ebd1 (origin/movement_checks) updated queen logic
+| | * 805aa32 Various Bugfixes
+| | * b674897 You guessed it... more bug fixes
+| | * 5eecf4d yet more bug fixes
+| | * 6ed1dfa gub xif
+| | * 7842432 bug fixes
+| | * 024529c Added Queen's Behaviour
+| | * ac73c02 bug fixes
+| | * 6e0a1d5 Started Valid move logic
+| | | * 94b4809 (origin/coordinates) Fixed Piece Display
+| | | * 55f898b Added Coordinate indicators
+| | | | * 0c0063f (origin/gridlines) swapped king and queen
+| | | | * 9fd8ea9 now using stdbool
+| | | | * deb568b Corrected display somewhat
+| | | | * 0b3dd71 Added gridlines
+| | | | | * 4ac969b (HEAD, origin/Game_Logic) Swapped king and queen
+| | | | | | * afb39b2 (origin/valid_move_checks) bug fixes
+| | | | | | * d6fc917 Now using stdlib
+| | | | | | * b96306e Added Knight behaviour
+| | |_|_|_|/  
+| |/| | | |   
+| * | | | | 8cad529 Added King Functionality
+| | | | | | * c84b698 (origin/Show_Board) bug fixos
+| | | | | | * aecee2f fixed squares
+| | | | | | * 8dd5b63 Added black Squares
+| | | | |_|/  
+| | | |/| |   
+| | | * | | 157d61a Changed to If Statements
+| | | | | | * e9faa8f (origin/piece_movement) bug flexes
+| | | | | | * 52897c4 bug feeexes
+| | | | | | * 01c98a1 bug fixes
+| | | | | | * 9b7753e bug fixes
+| | | | | | * dd801c4 Fixed turn logic
+| | | |_|_|/  
+| | |/| | |   
+| | * | | | 1b1dc1b Added unsafe piece movement
+| | | |_|/  
+| | |/| |   
+| | | | | * f77386d (origin/king) bug fixes
+| | | | | * 052b8b0 Now including stdlib
+| | | | | * 191e675 Update chess.c
+| | |_|_|/  
+| |/| | |   
+| * | | | 98369eb Update chess.c
+| * | | | 1f1e1ec Added pawn behaviour
+| * | | | a1df1be Set up function
+| |/ / /  
+| * | | c09502b More Bugfixes
+| * | | df23da4 Bug fixes
+| * | | 35c6188 Initial Turn logic
+|/ / /  
+| | | * efec8d7 (origin/Show_Board_Prettier, Show_Board_Prettier) removed redundant newlines
+| | | * 377d987 A double lined border looks doubly nice!
+| | |/  
+| | * 4de145e Update chess.c
+| | * 7a62585 showBoard -> switch case to if statements
+| |/  
+| * e9d9041 Update chess.c
+| * 670418a Added showBoard function
+|/  
+* d800757 Create chess.c
+* ef1be0e Create makefile
+* 37a4fd8 Update README
+* edcbe2e Create README
+[maruj@pascal 1XC3_L03]$ git checkout 0b3dd71 
+Previous HEAD position was 4ac969b Swapped king and queen
+HEAD is now at 0b3dd71 Added gridlines
+[maruj@pascal 1XC3_L03]$ git merge 4de145e 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout deb568b 
+Previous HEAD position was 0b3dd71 Added gridlines
+HEAD is now at deb568b Corrected display somewhat
+[maruj@pascal 1XC3_L03]$ git merge 4de145e 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 9fd8ea9 
+Previous HEAD position was deb568b Corrected display somewhat
+HEAD is now at 9fd8ea9 now using stdbool
+[maruj@pascal 1XC3_L03]$ git merge 4de145e 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 0c0063f 
+Previous HEAD position was 9fd8ea9 now using stdbool
+HEAD is now at 0c0063f swapped king and queen
+[maruj@pascal 1XC3_L03]$ git merge 4de145e 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ ./chess.c
+-bash: ./chess.c: Permission denied
+[maruj@pascal 1XC3_L03]$ gcc chess.c -o chess
+[maruj@pascal 1XC3_L03]$ ./chess
+Welcome to Terminal Chess!
+Initializing Board...Board Initialized!
+
+┌─┬─┬─┬─┬─┬─┬─┬─┐
+♙│♘│♗│♕│♔│♗│♘│♙│
+├─┼─┼─┼─┼─┼─┼─┼─┤
+││││││││
+├─┼─┼─┼─┼─┼─┼─┼─┤
+ │ │ │ │ │ │ │ │
+├─┼─┼─┼─┼─┼─┼─┼─┤
+ │ │ │ │ │ │ │ │
+├─┼─┼─┼─┼─┼─┼─┼─┤
+ │ │ │ │ │ │ │ │
+├─┼─┼─┼─┼─┼─┼─┼─┤
+ │ │ │ │ │ │ │ │
+├─┼─┼─┼─┼─┼─┼─┼─┤
+││││││││
+├─┼─┼─┼─┼─┼─┼─┼─┤
+♙│♘│♗│♕│♔│♗│♘│♙│
+└─┴─┴─┴─┴─┴─┴─┴─┘
+Terminating...[maruj@pascal 1XC3_L03]$ q
+-bash: q: command not found
+[maruj@pascal 1XC3_L03]$ nan0 chess.c
+-bash: nan0: command not found
+[maruj@pascal 1XC3_L03]$ nano chess.c
+[maruj@pascal 1XC3_L03]$ client_loop: send disconnect: Broken pipe
+(base) jenil@Jenils-MacBook-Pro ~ % 

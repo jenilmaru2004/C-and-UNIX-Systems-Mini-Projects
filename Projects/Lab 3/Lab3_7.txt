@@ -1,0 +1,612 @@
+Last login: Tue Feb 14 13:19:47 on ttys000
+(base) jenil@Jenils-MacBook-Pro ~ % ssh maruj@pascal.cas.mcmaster.ca
+maruj@pascal.cas.mcmaster.ca's password: 
+Permission denied, please try again.
+maruj@pascal.cas.mcmaster.ca's password: 
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last failed login: Tue Feb 14 15:27:07 EST 2023 from 172.18.113.147 on ssh:notty
+There was 1 failed login attempt since the last successful login.
+Last login: Mon Feb 13 23:16:02 2023 from 172.18.45.64
+[maruj@pascal ~]$ ls
+1XC3_L03  CS1XC3  public_html  rough.txt  topic2
+[maruj@pascal ~]$ cd 1XC3_L03/
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ ./a.out
+Welcome to Terminal Chess!
+Initializing Board...
+Board Initialized!
+Enter `q` to quit at any time.
+Moves are entered as co-ordinate pairs, such as "13-33" 
+
+
+  01234567
+ ╔════════╗
+0║♘♗♖♕♔♖♗♘║
+1║♙♙♙♙♙♙♙♙║
+2║ ▒ ▒ ▒ ▒║
+3║▒ ▒ ▒ ▒ ║
+4║ ▒ ▒ ▒ ▒║
+5║▒ ▒ ▒ ▒ ║
+6║♙♙♙♙♙♙♙♙║
+7║♘♗♖♕♔♖♗♘║
+ ╚════════╝
+White to move.
+♔ >> q
+Terminating...
+[maruj@pascal 1XC3_L03]$ cat example_output.txt 
+Welcome to Terminal Chess!
+Initializing Board...
+Board Initialized!
+Enter `q` to quit at any time.
+Moves are entered as co-ordinate pairs, such as "13-33" 
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+White to move.
+♔ >> 46-44
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│ │▒│♙│▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+Black to move.
+♔ >> 67-55
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│ │▒│♙│▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │▒│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│♘│♗│♕│♔│♗│▒│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+White to move.
+♔ >> 17-25
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│ │▒│♙│▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │♗│♕│♔│♗│▒│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+Black to move.
+♔ >> 57-24
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│♗│▒│♙│▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │♗│♕│♔│ │▒│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+White to move.
+♔ >> 27-54
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│♗│▒│♙│♗│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │▒│♕│♔│ │▒│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+Black to move.
+♔ >> 36-34
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│♗│♙│♙│♗│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│▒│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │▒│♕│♔│ │▒│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+White to move.
+♔ >> 77-57
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│♗│♙│♙│♗│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│▒│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │▒│♕│♔│♖│▒│ ║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+Black to move.
+♔ >> 37-35
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│♗│♙│♙│♗│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│♕│▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│▒│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │▒│ │♔│♖│▒│ ║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+White to move.
+♔ >> q
+Terminating...
+[maruj@pascal 1XC3_L03]$ git log --graph --all --oneline
+* b494f8c (HEAD -> main, origin/main, origin/HEAD) FINAL
+*   675eea3 Merge branch 'main' of github.com:jenilmaru2004/1XC3_L03
+|\  
+| * a1389d0 Update chess.c
+* | 47d0a1a some change
+|/  
+*   700ef96 Show_Board_Prettier
+|\  
+| * efec8d7 (origin/Show_Board_Prettier) removed redundant newlines
+| * 377d987 A double lined border looks doubly nice!
+* |   40bb9b7 king
+|\ \  
+| * | f77386d (origin/king) bug fixes
+| * | 052b8b0 Now including stdlib
+| * | 191e675 Update chess.c
+* | |   9f6cfe0 piece_movement
+|\ \ \  
+| * | | e9faa8f (origin/piece_movement) bug flexes
+| * | | 52897c4 bug feeexes
+| * | | 01c98a1 bug fixes
+| * | | 9b7753e bug fixes
+| * | | dd801c4 Fixed turn logic
+* | | |   ff42921 Show_Board
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ cd 
+[maruj@pascal ~]$ ls
+1XC3_L03  CS1XC3  public_html  rough.txt  topic2
+[maruj@pascal ~]$ cd CS1XC3/
+[maruj@pascal CS1XC3]$ ls
+L01  L02  L03  README.md
+[maruj@pascal CS1XC3]$ cd L03
+[maruj@pascal L03]$ ls
+[maruj@pascal L03]$ git push
+Everything up-to-date
+[maruj@pascal L03]$ git submodule add git@github.com:jenilmaru2004/1XC3_L03.git
+Cloning into '/home/maruj/CS1XC3/L03/1XC3_L03'...
+remote: Enumerating objects: 224, done.
+remote: Counting objects: 100% (224/224), done.
+remote: Compressing objects: 100% (153/153), done.
+remote: Total 224 (delta 80), reused 210 (delta 67), pack-reused 0
+Receiving objects: 100% (224/224), 57.43 KiB | 1.59 MiB/s, done.
+Resolving deltas: 100% (80/80), done.
+[maruj@pascal L03]$ ls
+1XC3_L03
+[maruj@pascal L03]$ cd ..
+[maruj@pascal CS1XC3]$ ls
+L01  L02  L03  README.md
+[maruj@pascal CS1XC3]$ git commit -m "added submodule"
+[main 027abb0] added submodule
+ Committer: maruj <maruj@pascal.cas.mcmaster.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 4 insertions(+)
+ create mode 100644 .gitmodules
+ create mode 160000 L03/1XC3_L03
+[maruj@pascal CS1XC3]$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 482 bytes | 482.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:jenilmaru2004/CS1XC3.git
+   bb309a2..027abb0  main -> main
+[maruj@pascal CS1XC3]$ ls
+L01  L02  L03  README.md
+[maruj@pascal CS1XC3]$ cd L03
+[maruj@pascal L03]$ ls
+1XC3_L03
+[maruj@pascal L03]$ cd 1XC3_L03/
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ ./a.out
+Welcome to Terminal Chess!
+Initializing Board...
+Board Initialized!
+Enter `q` to quit at any time.
+Moves are entered as co-ordinate pairs, such as "13-33" 
+
+
+  01234567
+ ╔════════╗
+0║♘♗♖♕♔♖♗♘║
+1║♙♙♙♙♙♙♙♙║
+2║ ▒ ▒ ▒ ▒║
+3║▒ ▒ ▒ ▒ ║
+4║ ▒ ▒ ▒ ▒║
+5║▒ ▒ ▒ ▒ ║
+6║♙♙♙♙♙♙♙♙║
+7║♘♗♖♕♔♖♗♘║
+ ╚════════╝
+White to move.
+♔ >> cd ..
+Move Invalid! Try again!White to move.
+♔ >> Move Invalid! Try again!White to move.
+♔ >> q
+Terminating...
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ cd ..
+[maruj@pascal L03]$ ls
+1XC3_L03
+[maruj@pascal L03]$ vim question1.c
+[maruj@pascal L03]$ ls
+1XC3_L03  question1.c
+[maruj@pascal L03]$ gcc question1.c
+[maruj@pascal L03]$ ls
+1XC3_L03  a.out  question1.c
+[maruj@pascal L03]$ ./a.out
+[maruj@pascal L03]$ cd 
+[maruj@pascal ~]$ cd 1XC3_L03/
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ cat example_output.txt 
+Welcome to Terminal Chess!
+Initializing Board...
+Board Initialized!
+Enter `q` to quit at any time.
+Moves are entered as co-ordinate pairs, such as "13-33" 
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+White to move.
+♔ >> 46-44
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│ │▒│♙│▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+Black to move.
+♔ >> 67-55
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│ │▒│♙│▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │▒│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│♘│♗│♕│♔│♗│▒│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+White to move.
+♔ >> 17-25
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│ │▒│♙│▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │♗│♕│♔│♗│▒│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+Black to move.
+♔ >> 57-24
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│♗│▒│♙│▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │♗│♕│♔│ │▒│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+White to move.
+♔ >> 27-54
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│♗│▒│♙│♗│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │▒│♕│♔│ │▒│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+Black to move.
+♔ >> 36-34
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│♗│♙│♙│♗│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│▒│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │▒│♕│♔│ │▒│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+White to move.
+♔ >> 77-57
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│♗│♙│♙│♗│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│▒│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │▒│♕│♔│♖│▒│ ║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+Black to move.
+♔ >> 37-35
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│♗│♙│♙│♗│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│♕│▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│▒│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │▒│ │♔│♖│▒│ ║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+White to move.
+♔ >> q
+Terminating...
+[maruj@pascal 1XC3_L03]$ ./a.out
+Welcome to Terminal Chess!
+Initializing Board...
+Board Initialized!
+Enter `q` to quit at any time.
+Moves are entered as co-ordinate pairs, such as "13-33" 
+
+
+  01234567
+ ╔════════╗
+0║♘♗♖♕♔♖♗♘║
+1║♙♙♙♙♙♙♙♙║
+2║ ▒ ▒ ▒ ▒║
+3║▒ ▒ ▒ ▒ ║
+4║ ▒ ▒ ▒ ▒║
+5║▒ ▒ ▒ ▒ ║
+6║♙♙♙♙♙♙♙♙║
+7║♘♗♖♕♔♖♗♘║
+ ╚════════╝
+White to move.
+♔ >> vim chess.c
+Move Invalid! Try again!White to move.
+♔ >> Move Invalid! Try again!White to move.
+♔ >> q
+Terminating...
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ vim chess.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| * | | 98369eb Update chess.c
+| * | | 1f1e1ec Added pawn behaviour
+| * | | a1df1be Set up function
+| |/ /  
+| * | c09502b More Bugfixes
+| * | df23da4 Bug fixes
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ e
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ e with piece values
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ c
+[maruj@pascal 1XC3_L03]$ 

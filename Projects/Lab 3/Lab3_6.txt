@@ -1,0 +1,1855 @@
+(base) jenil@Jenils-MacBook-Pro ~ % 
+(base) jenil@Jenils-MacBook-Pro ~ % 
+(base) jenil@Jenils-MacBook-Pro ~ % 
+(base) jenil@Jenils-MacBook-Pro ~ % ssh 
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
+           [-b bind_address] [-c cipher_spec] [-D [bind_address:]port]
+           [-E log_file] [-e escape_char] [-F configfile] [-I pkcs11]
+           [-i identity_file] [-J [user@]host[:port]] [-L address]
+           [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port]
+           [-Q query_option] [-R address] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] destination [command [argument ...]]
+(base) jenil@Jenils-MacBook-Pro ~ % q
+zsh: command not found: q
+(base) jenil@Jenils-MacBook-Pro ~ % :q
+zsh: command not found: :q
+(base) jenil@Jenils-MacBook-Pro ~ % ssh maruj@pascal.cas.mcmaster.ca
+maruj@pascal.cas.mcmaster.ca's password: 
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last login: Mon Feb 13 15:45:21 2023 from 172.18.127.42
+[maruj@pascal ~]$ ls
+1XC3_L03  CS1XC3  L03.git  public_html  rough.txt  topic2
+[maruj@pascal ~]$ cd 1XC3_L03/
+[maruj@pascal 1XC3_L03]$ ls
+README  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[maruj@pascal 1XC3_L03]$ git log --graph --all --oneline
+*   5490b96 (HEAD -> main, origin/main, origin/HEAD) coordinates
+|\  
+| * 94b4809 (origin/coordinates) Fixed Piece Display
+| * 55f898b Added Coordinate indicators
+* |   3f271a5 Merge remote-tracking branch 'origin/movement_checks'
+|\ \  
+| * | cb7ebd1 (origin/movement_checks) updated queen logic
+| * | 805aa32 Various Bugfixes
+| * | b674897 You guessed it... more bug fixes
+| * | 5eecf4d yet more bug fixes
+| * | 6ed1dfa gub xif
+| * | 7842432 bug fixes
+| * | 024529c Added Queen's Behaviour
+| * | ac73c02 bug fixes
+| * | 6e0a1d5 Started Valid move logic
+* | |   a6ffc67 Spennys_branch
+|\ \ \  
+| * | | df7fef0 (origin/Spennys_branch) Updated Bishop, Rook, & Pawn Behaviour
+| * | | a05777a bug fixes
+| * | | b67c882 Update chess.c
+* | | | 0bec659 Update README
+* | | | c113499 Create example_output.txt
+* | | | 3489e62 Update README
+* | | | 3102677 updated Readme
+* | | | 5fbbef0 Update README
+* | | | a5806d3 swapped king and queen
+* | | | a8212a9 yet more bug fixes
+* | | | d22fda1 more bug fixes
+* | | | 3e4391f bug fixes
+* | | | d679b24 Updated Readme with piece values
+* | | | bc9f51c Added Board Initialisation
+| | | | * 0c0063f (origin/gridlines) swapped king and queen
+| | | | * 9fd8ea9 now using stdbool
+| | | | * deb568b Corrected display somewhat
+| | | | * 0b3dd71 Added gridlines
+| | | | | * 4ac969b (origin/Game_Logic) Swapped king and queen
+| | | | | | * afb39b2 (origin/valid_move_checks) bug fixes
+| | | | | | * d6fc917 Now using stdlib
+| | | | | | * b96306e Added Knight behaviour
+| | |_|_|_|/  
+| |/| | | |   
+| * | | | | 8cad529 Added King Functionality
+| | | | | | * c84b698 (origin/Show_Board) bug fixos
+| | | | | | * aecee2f fixed squares
+| | | | | | * 8dd5b63 Added black Squares
+| | | | |_|/  
+| | | |/| |   
+| | | * | | 157d61a Changed to If Statements
+| | | | | | * e9faa8f (origin/piece_movement) bug flexes
+| | | | | | * 52897c4 bug feeexes
+| | | | | | * 01c98a1 bug fixes
+| | | | | | * 9b7753e bug fixes
+| | | | | | * dd801c4 Fixed turn logic
+| | | |_|_|/  
+| | |/| | |   
+| | * | | | 1b1dc1b Added unsafe piece movement
+| | | |_|/  
+| | |/| |   
+| | | | | * f77386d (origin/king) bug fixes
+| | | | | * 052b8b0 Now including stdlib
+| | | | | * 191e675 Update chess.c
+| | |_|_|/  
+| |/| | |   
+| * | | | 98369eb Update chess.c
+| * | | | 1f1e1ec Added pawn behaviour
+| * | | | a1df1be Set up function
+| |/ / /  
+| * | | c09502b More Bugfixes
+| * | | df23da4 Bug fixes
+| * | | 35c6188 Initial Turn logic
+|/ / /  
+| | | * efec8d7 (origin/Show_Board_Prettier) removed redundant newlines
+| | | * 377d987 A double lined border looks doubly nice!
+| | |/  
+| | * 4de145e Update chess.c
+| | * 7a62585 showBoard -> switch case to if statements
+| |/  
+| * e9d9041 Update chess.c
+| * 670418a Added showBoard function
+|/  
+* d800757 Create chess.c
+* ef1be0e Create makefile
+* 37a4fd8 Update README
+* edcbe2e Create README
+[maruj@pascal 1XC3_L03]$ git merge origin/gridlines
+Auto-merging chess.c
+CONFLICT (content): Merge conflict in chess.c
+Automatic merge failed; fix conflicts and then commit the result.
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ git add .
+[maruj@pascal 1XC3_L03]$ git commit -m "gridlines"
+[main c74bec1] gridlines
+ Committer: maruj <maruj@pascal.cas.mcmaster.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+[maruj@pascal 1XC3_L03]$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 603 bytes | 603.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:jenilmaru2004/1XC3_L03.git
+   5490b96..c74bec1  main -> main
+[maruj@pascal 1XC3_L03]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[maruj@pascal 1XC3_L03]$ git log --graph --all --oneline
+*   c74bec1 (HEAD -> main, origin/main, origin/HEAD) gridlines
+|\  
+| * 0c0063f (origin/gridlines) swapped king and queen
+| * 9fd8ea9 now using stdbool
+| * deb568b Corrected display somewhat
+| * 0b3dd71 Added gridlines
+* |   5490b96 coordinates
+|\ \  
+| * | 94b4809 (origin/coordinates) Fixed Piece Display
+| * | 55f898b Added Coordinate indicators
+* | |   3f271a5 Merge remote-tracking branch 'origin/movement_checks'
+|\ \ \  
+| * | | cb7ebd1 (origin/movement_checks) updated queen logic
+| * | | 805aa32 Various Bugfixes
+| * | | b674897 You guessed it... more bug fixes
+| * | | 5eecf4d yet more bug fixes
+| * | | 6ed1dfa gub xif
+| * | | 7842432 bug fixes
+| * | | 024529c Added Queen's Behaviour
+| * | | ac73c02 bug fixes
+| * | | 6e0a1d5 Started Valid move logic
+* | | |   a6ffc67 Spennys_branch
+|\ \ \ \  
+| * | | | df7fef0 (origin/Spennys_branch) Updated Bishop, Rook, & Pawn Behaviour
+| * | | | a05777a bug fixes
+| * | | | b67c882 Update chess.c
+* | | | | 0bec659 Update README
+* | | | | c113499 Create example_output.txt
+* | | | | 3489e62 Update README
+* | | | | 3102677 updated Readme
+* | | | | 5fbbef0 Update README
+* | | | | a5806d3 swapped king and queen
+* | | | | a8212a9 yet more bug fixes
+* | | | | d22fda1 more bug fixes
+* | | | | 3e4391f bug fixes
+* | | | | d679b24 Updated Readme with piece values
+* | | | | bc9f51c Added Board Initialisation
+| | | | | * 4ac969b (origin/Game_Logic) Swapped king and queen
+| | | | | | * afb39b2 (origin/valid_move_checks) bug fixes
+| | | | | | * d6fc917 Now using stdlib
+| | | | | | * b96306e Added Knight behaviour
+| | |_|_|_|/  
+| |/| | | |   
+| * | | | | 8cad529 Added King Functionality
+| | | | | | * c84b698 (origin/Show_Board) bug fixos
+| | | | | | * aecee2f fixed squares
+| | | | | | * 8dd5b63 Added black Squares
+| | | | |_|/  
+| | | |/| |   
+| | | * | | 157d61a Changed to If Statements
+| | | | | | * e9faa8f (origin/piece_movement) bug flexes
+| | | | | | * 52897c4 bug feeexes
+| | | | | | * 01c98a1 bug fixes
+| | | | | | * 9b7753e bug fixes
+| | | | | | * dd801c4 Fixed turn logic
+| | | |_|_|/  
+| | |/| | |   
+| | * | | | 1b1dc1b Added unsafe piece movement
+| | | |_|/  
+| | |/| |   
+| | | | | * f77386d (origin/king) bug fixes
+| | | | | * 052b8b0 Now including stdlib
+| | | | | * 191e675 Update chess.c
+| | |_|_|/  
+| |/| | |   
+| * | | | 98369eb Update chess.c
+| * | | | 1f1e1ec Added pawn behaviour
+| * | | | a1df1be Set up function
+| |/ / /  
+| * | | c09502b More Bugfixes
+| * | | df23da4 Bug fixes
+| * | | 35c6188 Initial Turn logic
+|/ / /  
+| | | * efec8d7 (origin/Show_Board_Prettier) removed redundant newlines
+| | | * 377d987 A double lined border looks doubly nice!
+| | |/  
+| | * 4de145e Update chess.c
+| | * 7a62585 showBoard -> switch case to if statements
+| |/  
+| * e9d9041 Update chess.c
+| * 670418a Added showBoard function
+|/  
+* d800757 Create chess.c
+* ef1be0e Create makefile
+* 37a4fd8 Update README
+* edcbe2e Create README
+[maruj@pascal 1XC3_L03]$ git merge origin/Game_Logic
+Auto-merging chess.c
+CONFLICT (content): Merge conflict in chess.c
+Automatic merge failed; fix conflicts and then commit the result.
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ git add .
+[maruj@pascal 1XC3_L03]$ git commit -m "Game_Logic"
+[main 688bc3d] Game_Logic
+ Committer: maruj <maruj@pascal.cas.mcmaster.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+[maruj@pascal 1XC3_L03]$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 352 bytes | 352.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:jenilmaru2004/1XC3_L03.git
+   c74bec1..688bc3d  main -> main
+[maruj@pascal 1XC3_L03]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[maruj@pascal 1XC3_L03]$ git log --graph --all --oneline
+*   688bc3d (HEAD -> main, origin/main, origin/HEAD) Game_Logic
+|\  
+| * 4ac969b (origin/Game_Logic) Swapped king and queen
+* |   c74bec1 gridlines
+|\ \  
+| * | 0c0063f (origin/gridlines) swapped king and queen
+| * | 9fd8ea9 now using stdbool
+| * | deb568b Corrected display somewhat
+| * | 0b3dd71 Added gridlines
+* | |   5490b96 coordinates
+|\ \ \  
+| * | | 94b4809 (origin/coordinates) Fixed Piece Display
+| * | | 55f898b Added Coordinate indicators
+* | | |   3f271a5 Merge remote-tracking branch 'origin/movement_checks'
+|\ \ \ \  
+| * | | | cb7ebd1 (origin/movement_checks) updated queen logic
+| * | | | 805aa32 Various Bugfixes
+| * | | | b674897 You guessed it... more bug fixes
+| * | | | 5eecf4d yet more bug fixes
+| * | | | 6ed1dfa gub xif
+| * | | | 7842432 bug fixes
+| * | | | 024529c Added Queen's Behaviour
+| * | | | ac73c02 bug fixes
+| * | | | 6e0a1d5 Started Valid move logic
+* | | | |   a6ffc67 Spennys_branch
+|\ \ \ \ \  
+| * | | | | df7fef0 (origin/Spennys_branch) Updated Bishop, Rook, & Pawn Behaviour
+| * | | | | a05777a bug fixes
+| * | | | | b67c882 Update chess.c
+* | | | | | 0bec659 Update README
+* | | | | | c113499 Create example_output.txt
+* | | | | | 3489e62 Update README
+* | | | | | 3102677 updated Readme
+* | | | | | 5fbbef0 Update README
+* | | | | | a5806d3 swapped king and queen
+* | | | | | a8212a9 yet more bug fixes
+* | | | | | d22fda1 more bug fixes
+* | | | | | 3e4391f bug fixes
+* | | | | | d679b24 Updated Readme with piece values
+* | | | | | bc9f51c Added Board Initialisation
+| | | | | | * afb39b2 (origin/valid_move_checks) bug fixes
+| | | | | | * d6fc917 Now using stdlib
+| | | | | | * b96306e Added Knight behaviour
+| | |_|_|_|/  
+| |/| | | |   
+| * | | | | 8cad529 Added King Functionality
+| | | | | | * c84b698 (origin/Show_Board) bug fixos
+| | | | | | * aecee2f fixed squares
+| | | | | | * 8dd5b63 Added black Squares
+| | | | |_|/  
+| | | |/| |   
+| | | * | | 157d61a Changed to If Statements
+| | | | | | * e9faa8f (origin/piece_movement) bug flexes
+| | | | | | * 52897c4 bug feeexes
+| | | | | | * 01c98a1 bug fixes
+| | | | | | * 9b7753e bug fixes
+| | | | | | * dd801c4 Fixed turn logic
+| | | |_|_|/  
+| | |/| | |   
+| | * | | | 1b1dc1b Added unsafe piece movement
+| | | |_|/  
+| | |/| |   
+| | | | | * f77386d (origin/king) bug fixes
+| | | | | * 052b8b0 Now including stdlib
+| | | | | * 191e675 Update chess.c
+| | |_|_|/  
+| |/| | |   
+| * | | | 98369eb Update chess.c
+| * | | | 1f1e1ec Added pawn behaviour
+| * | | | a1df1be Set up function
+| |/ / /  
+| * | | c09502b More Bugfixes
+| * | | df23da4 Bug fixes
+| * | | 35c6188 Initial Turn logic
+|/ / /  
+| | | * efec8d7 (origin/Show_Board_Prettier) removed redundant newlines
+| | | * 377d987 A double lined border looks doubly nice!
+| | |/  
+| | * 4de145e Update chess.c
+| | * 7a62585 showBoard -> switch case to if statements
+| |/  
+| * e9d9041 Update chess.c
+| * 670418a Added showBoard function
+|/  
+* d800757 Create chess.c
+* ef1be0e Create makefile
+* 37a4fd8 Update README
+* edcbe2e Create README
+[maruj@pascal 1XC3_L03]$ git merge origin/valid_move_checks
+Auto-merging chess.c
+CONFLICT (content): Merge conflict in chess.c
+Automatic merge failed; fix conflicts and then commit the result.
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ git add .
+[maruj@pascal 1XC3_L03]$ git commit -m "valid_move_checks"
+[main 7cef3de] valid_move_checks
+ Committer: maruj <maruj@pascal.cas.mcmaster.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+[maruj@pascal 1XC3_L03]$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 542 bytes | 542.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:jenilmaru2004/1XC3_L03.git
+   688bc3d..7cef3de  main -> main
+[maruj@pascal 1XC3_L03]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[maruj@pascal 1XC3_L03]$ git log --graph --all --oneline
+*   7cef3de (HEAD -> main, origin/main, origin/HEAD) valid_move_checks
+|\  
+| * afb39b2 (origin/valid_move_checks) bug fixes
+| * d6fc917 Now using stdlib
+| * b96306e Added Knight behaviour
+* |   688bc3d Game_Logic
+|\ \  
+| * | 4ac969b (origin/Game_Logic) Swapped king and queen
+* | |   c74bec1 gridlines
+|\ \ \  
+| * | | 0c0063f (origin/gridlines) swapped king and queen
+| * | | 9fd8ea9 now using stdbool
+| * | | deb568b Corrected display somewhat
+| * | | 0b3dd71 Added gridlines
+* | | |   5490b96 coordinates
+|\ \ \ \  
+| * | | | 94b4809 (origin/coordinates) Fixed Piece Display
+| * | | | 55f898b Added Coordinate indicators
+* | | | |   3f271a5 Merge remote-tracking branch 'origin/movement_checks'
+|\ \ \ \ \  
+| * | | | | cb7ebd1 (origin/movement_checks) updated queen logic
+| * | | | | 805aa32 Various Bugfixes
+| * | | | | b674897 You guessed it... more bug fixes
+| * | | | | 5eecf4d yet more bug fixes
+| * | | | | 6ed1dfa gub xif
+| * | | | | 7842432 bug fixes
+| * | | | | 024529c Added Queen's Behaviour
+| * | | | | ac73c02 bug fixes
+| * | | | | 6e0a1d5 Started Valid move logic
+* | | | | |   a6ffc67 Spennys_branch
+|\ \ \ \ \ \  
+| * | | | | | df7fef0 (origin/Spennys_branch) Updated Bishop, Rook, & Pawn Behaviour
+| * | | | | | a05777a bug fixes
+| * | | | | | b67c882 Update chess.c
+| | |_|_|_|/  
+| |/| | | |   
+| * | | | | 8cad529 Added King Functionality
+* | | | | | 0bec659 Update README
+* | | | | | c113499 Create example_output.txt
+* | | | | | 3489e62 Update README
+* | | | | | 3102677 updated Readme
+* | | | | | 5fbbef0 Update README
+* | | | | | a5806d3 swapped king and queen
+* | | | | | a8212a9 yet more bug fixes
+* | | | | | d22fda1 more bug fixes
+* | | | | | 3e4391f bug fixes
+* | | | | | d679b24 Updated Readme with piece values
+* | | | | | bc9f51c Added Board Initialisation
+| | | | | | * c84b698 (origin/Show_Board) bug fixos
+| | | | | | * aecee2f fixed squares
+| | | | | | * 8dd5b63 Added black Squares
+| | | | |_|/  
+| | | |/| |   
+| | | * | | 157d61a Changed to If Statements
+| | | | | | * e9faa8f (origin/piece_movement) bug flexes
+| | | | | | * 52897c4 bug feeexes
+| | | | | | * 01c98a1 bug fixes
+| | | | | | * 9b7753e bug fixes
+| | | | | | * dd801c4 Fixed turn logic
+| | | |_|_|/  
+| | |/| | |   
+| | * | | | 1b1dc1b Added unsafe piece movement
+| | | |_|/  
+| | |/| |   
+| | | | | * f77386d (origin/king) bug fixes
+| | | | | * 052b8b0 Now including stdlib
+| | | | | * 191e675 Update chess.c
+| | |_|_|/  
+| |/| | |   
+| * | | | 98369eb Update chess.c
+| * | | | 1f1e1ec Added pawn behaviour
+| * | | | a1df1be Set up function
+| |/ / /  
+| * | | c09502b More Bugfixes
+| * | | df23da4 Bug fixes
+| * | | 35c6188 Initial Turn logic
+|/ / /  
+| | | * efec8d7 (origin/Show_Board_Prettier) removed redundant newlines
+| | | * 377d987 A double lined border looks doubly nice!
+| | |/  
+| | * 4de145e Update chess.c
+| | * 7a62585 showBoard -> switch case to if statements
+| |/  
+| * e9d9041 Update chess.c
+| * 670418a Added showBoard function
+|/  
+* d800757 Create chess.c
+* ef1be0e Create makefile
+* 37a4fd8 Update README
+* edcbe2e Create README
+[maruj@pascal 1XC3_L03]$ git merge origin/Show_Board
+Auto-merging chess.c
+CONFLICT (content): Merge conflict in chess.c
+Automatic merge failed; fix conflicts and then commit the result.
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ git add .
+[maruj@pascal 1XC3_L03]$ git commit -m "Show_Board"
+[main ff42921] Show_Board
+ Committer: maruj <maruj@pascal.cas.mcmaster.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+[maruj@pascal 1XC3_L03]$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 472 bytes | 472.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:jenilmaru2004/1XC3_L03.git
+   7cef3de..ff42921  main -> main
+[maruj@pascal 1XC3_L03]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[maruj@pascal 1XC3_L03]$ git log --graph --all --onelien
+fatal: unrecognized argument: --onelien
+[maruj@pascal 1XC3_L03]$ git log --graph --all --onelien
+fatal: unrecognized argument: --onelien
+[maruj@pascal 1XC3_L03]$ git log --graph --all --oneline
+*   ff42921 (HEAD -> main, origin/main, origin/HEAD) Show_Board
+|\  
+| * c84b698 (origin/Show_Board) bug fixos
+| * aecee2f fixed squares
+| * 8dd5b63 Added black Squares
+* |   7cef3de valid_move_checks
+|\ \  
+| * | afb39b2 (origin/valid_move_checks) bug fixes
+| * | d6fc917 Now using stdlib
+| * | b96306e Added Knight behaviour
+* | |   688bc3d Game_Logic
+|\ \ \  
+| * | | 4ac969b (origin/Game_Logic) Swapped king and queen
+* | | |   c74bec1 gridlines
+|\ \ \ \  
+| * | | | 0c0063f (origin/gridlines) swapped king and queen
+| * | | | 9fd8ea9 now using stdbool
+| * | | | deb568b Corrected display somewhat
+| * | | | 0b3dd71 Added gridlines
+* | | | |   5490b96 coordinates
+|\ \ \ \ \  
+| * | | | | 94b4809 (origin/coordinates) Fixed Piece Display
+| * | | | | 55f898b Added Coordinate indicators
+| | |_|_|/  
+| |/| | |   
+| * | | | 157d61a Changed to If Statements
+* | | | |   3f271a5 Merge remote-tracking branch 'origin/movement_checks'
+|\ \ \ \ \  
+| * | | | | cb7ebd1 (origin/movement_checks) updated queen logic
+| * | | | | 805aa32 Various Bugfixes
+| * | | | | b674897 You guessed it... more bug fixes
+| * | | | | 5eecf4d yet more bug fixes
+| * | | | | 6ed1dfa gub xif
+| * | | | | 7842432 bug fixes
+| * | | | | 024529c Added Queen's Behaviour
+| * | | | | ac73c02 bug fixes
+| * | | | | 6e0a1d5 Started Valid move logic
+* | | | | |   a6ffc67 Spennys_branch
+|\ \ \ \ \ \  
+| * | | | | | df7fef0 (origin/Spennys_branch) Updated Bishop, Rook, & Pawn Behaviour
+| * | | | | | a05777a bug fixes
+| * | | | | | b67c882 Update chess.c
+| | |_|_|_|/  
+| |/| | | |   
+| * | | | | 8cad529 Added King Functionality
+* | | | | | 0bec659 Update README
+* | | | | | c113499 Create example_output.txt
+* | | | | | 3489e62 Update README
+* | | | | | 3102677 updated Readme
+* | | | | | 5fbbef0 Update README
+* | | | | | a5806d3 swapped king and queen
+* | | | | | a8212a9 yet more bug fixes
+* | | | | | d22fda1 more bug fixes
+* | | | | | 3e4391f bug fixes
+* | | | | | d679b24 Updated Readme with piece values
+* | | | | | bc9f51c Added Board Initialisation
+| | | | | | * e9faa8f (origin/piece_movement) bug flexes
+| | | | | | * 52897c4 bug feeexes
+| | | | | | * 01c98a1 bug fixes
+| | | | | | * 9b7753e bug fixes
+| | | | | | * dd801c4 Fixed turn logic
+| | | |_|_|/  
+| | |/| | |   
+| | * | | | 1b1dc1b Added unsafe piece movement
+| | | |_|/  
+| | |/| |   
+| | | | | * f77386d (origin/king) bug fixes
+| | | | | * 052b8b0 Now including stdlib
+| | | | | * 191e675 Update chess.c
+| | |_|_|/  
+| |/| | |   
+| * | | | 98369eb Update chess.c
+| * | | | 1f1e1ec Added pawn behaviour
+| * | | | a1df1be Set up function
+| |/ / /  
+| * | | c09502b More Bugfixes
+| * | | df23da4 Bug fixes
+| * | | 35c6188 Initial Turn logic
+|/ / /  
+| | | * efec8d7 (origin/Show_Board_Prettier) removed redundant newlines
+| | | * 377d987 A double lined border looks doubly nice!
+| | |/  
+| | * 4de145e Update chess.c
+| | * 7a62585 showBoard -> switch case to if statements
+| |/  
+| * e9d9041 Update chess.c
+| * 670418a Added showBoard function
+|/  
+* d800757 Create chess.c
+* ef1be0e Create makefile
+* 37a4fd8 Update README
+* edcbe2e Create README
+[maruj@pascal 1XC3_L03]$ git merge origin/piece_movement
+Auto-merging chess.c
+CONFLICT (content): Merge conflict in chess.c
+Automatic merge failed; fix conflicts and then commit the result.
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ git add .
+[maruj@pascal 1XC3_L03]$ git commit -m "piece_movement"
+[main 9f6cfe0] piece_movement
+ Committer: maruj <maruj@pascal.cas.mcmaster.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+[maruj@pascal 1XC3_L03]$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 510 bytes | 510.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:jenilmaru2004/1XC3_L03.git
+   ff42921..9f6cfe0  main -> main
+[maruj@pascal 1XC3_L03]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[maruj@pascal 1XC3_L03]$ git log --graph --all --oneline
+*   9f6cfe0 (HEAD -> main, origin/main, origin/HEAD) piece_movement
+|\  
+| * e9faa8f (origin/piece_movement) bug flexes
+| * 52897c4 bug feeexes
+| * 01c98a1 bug fixes
+| * 9b7753e bug fixes
+| * dd801c4 Fixed turn logic
+* |   ff42921 Show_Board
+|\ \  
+| * | c84b698 (origin/Show_Board) bug fixos
+| * | aecee2f fixed squares
+| * | 8dd5b63 Added black Squares
+* | |   7cef3de valid_move_checks
+|\ \ \  
+| * | | afb39b2 (origin/valid_move_checks) bug fixes
+| * | | d6fc917 Now using stdlib
+| * | | b96306e Added Knight behaviour
+* | | |   688bc3d Game_Logic
+|\ \ \ \  
+| * | | | 4ac969b (origin/Game_Logic) Swapped king and queen
+* | | | |   c74bec1 gridlines
+|\ \ \ \ \  
+| * | | | | 0c0063f (origin/gridlines) swapped king and queen
+| * | | | | 9fd8ea9 now using stdbool
+| * | | | | deb568b Corrected display somewhat
+| * | | | | 0b3dd71 Added gridlines
+* | | | | |   5490b96 coordinates
+|\ \ \ \ \ \  
+| * | | | | | 94b4809 (origin/coordinates) Fixed Piece Display
+| * | | | | | 55f898b Added Coordinate indicators
+| | |_|_|/ /  
+| |/| | | |   
+| * | | | | 157d61a Changed to If Statements
+* | | | | |   3f271a5 Merge remote-tracking branch 'origin/movement_checks'
+|\ \ \ \ \ \  
+| * | | | | | cb7ebd1 (origin/movement_checks) updated queen logic
+| * | | | | | 805aa32 Various Bugfixes
+| * | | | | | b674897 You guessed it... more bug fixes
+| * | | | | | 5eecf4d yet more bug fixes
+| * | | | | | 6ed1dfa gub xif
+| * | | | | | 7842432 bug fixes
+| * | | | | | 024529c Added Queen's Behaviour
+| * | | | | | ac73c02 bug fixes
+| * | | | | | 6e0a1d5 Started Valid move logic
+| | |_|_|_|/  
+| |/| | | |   
+| * | | | | 1b1dc1b Added unsafe piece movement
+| | |_|/ /  
+| |/| | |   
+* | | | |   a6ffc67 Spennys_branch
+|\ \ \ \ \  
+| * | | | | df7fef0 (origin/Spennys_branch) Updated Bishop, Rook, & Pawn Behaviour
+| * | | | | a05777a bug fixes
+| * | | | | b67c882 Update chess.c
+| | |_|_|/  
+| |/| | |   
+| * | | | 8cad529 Added King Functionality
+* | | | | 0bec659 Update README
+* | | | | c113499 Create example_output.txt
+* | | | | 3489e62 Update README
+* | | | | 3102677 updated Readme
+* | | | | 5fbbef0 Update README
+* | | | | a5806d3 swapped king and queen
+* | | | | a8212a9 yet more bug fixes
+* | | | | d22fda1 more bug fixes
+* | | | | 3e4391f bug fixes
+* | | | | d679b24 Updated Readme with piece values
+* | | | | bc9f51c Added Board Initialisation
+| | | | | * f77386d (origin/king) bug fixes
+| | | | | * 052b8b0 Now including stdlib
+| | | | | * 191e675 Update chess.c
+| | |_|_|/  
+| |/| | |   
+| * | | | 98369eb Update chess.c
+| * | | | 1f1e1ec Added pawn behaviour
+| * | | | a1df1be Set up function
+| |/ / /  
+| * | | c09502b More Bugfixes
+| * | | df23da4 Bug fixes
+| * | | 35c6188 Initial Turn logic
+|/ / /  
+| | | * efec8d7 (origin/Show_Board_Prettier) removed redundant newlines
+| | | * 377d987 A double lined border looks doubly nice!
+| | |/  
+| | * 4de145e Update chess.c
+| | * 7a62585 showBoard -> switch case to if statements
+| |/  
+| * e9d9041 Update chess.c
+| * 670418a Added showBoard function
+|/  
+* d800757 Create chess.c
+* ef1be0e Create makefile
+* 37a4fd8 Update README
+* edcbe2e Create README
+[maruj@pascal 1XC3_L03]$ git merge origin/king
+Auto-merging chess.c
+CONFLICT (content): Merge conflict in chess.c
+Automatic merge failed; fix conflicts and then commit the result.
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ git add .
+[maruj@pascal 1XC3_L03]$ git commit -m "king"
+[main 40bb9b7] king
+ Committer: maruj <maruj@pascal.cas.mcmaster.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+[maruj@pascal 1XC3_L03]$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 425 bytes | 425.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:jenilmaru2004/1XC3_L03.git
+   9f6cfe0..40bb9b7  main -> main
+[maruj@pascal 1XC3_L03]$ git log --graph --all --oneline
+*   40bb9b7 (HEAD -> main, origin/main, origin/HEAD) king
+|\  
+| * f77386d (origin/king) bug fixes
+| * 052b8b0 Now including stdlib
+| * 191e675 Update chess.c
+* |   9f6cfe0 piece_movement
+|\ \  
+| * | e9faa8f (origin/piece_movement) bug flexes
+| * | 52897c4 bug feeexes
+| * | 01c98a1 bug fixes
+| * | 9b7753e bug fixes
+| * | dd801c4 Fixed turn logic
+* | |   ff42921 Show_Board
+|\ \ \  
+| * | | c84b698 (origin/Show_Board) bug fixos
+| * | | aecee2f fixed squares
+| * | | 8dd5b63 Added black Squares
+* | | |   7cef3de valid_move_checks
+|\ \ \ \  
+| * | | | afb39b2 (origin/valid_move_checks) bug fixes
+| * | | | d6fc917 Now using stdlib
+| * | | | b96306e Added Knight behaviour
+* | | | |   688bc3d Game_Logic
+|\ \ \ \ \  
+| * | | | | 4ac969b (origin/Game_Logic) Swapped king and queen
+* | | | | |   c74bec1 gridlines
+|\ \ \ \ \ \  
+| * | | | | | 0c0063f (origin/gridlines) swapped king and queen
+| * | | | | | 9fd8ea9 now using stdbool
+| * | | | | | deb568b Corrected display somewhat
+| * | | | | | 0b3dd71 Added gridlines
+* | | | | | |   5490b96 coordinates
+|\ \ \ \ \ \ \  
+| * | | | | | | 94b4809 (origin/coordinates) Fixed Piece Display
+| * | | | | | | 55f898b Added Coordinate indicators
+| | |_|_|/ / /  
+| |/| | | | |   
+| * | | | | | 157d61a Changed to If Statements
+* | | | | | |   3f271a5 Merge remote-tracking branch 'origin/movement_checks'
+|\ \ \ \ \ \ \  
+| * | | | | | | cb7ebd1 (origin/movement_checks) updated queen logic
+| * | | | | | | 805aa32 Various Bugfixes
+| * | | | | | | b674897 You guessed it... more bug fixes
+| * | | | | | | 5eecf4d yet more bug fixes
+| * | | | | | | 6ed1dfa gub xif
+| * | | | | | | 7842432 bug fixes
+| * | | | | | | 024529c Added Queen's Behaviour
+| * | | | | | | ac73c02 bug fixes
+| * | | | | | | 6e0a1d5 Started Valid move logic
+| | |_|_|_|/ /  
+| |/| | | | |   
+| * | | | | | 1b1dc1b Added unsafe piece movement
+| | |_|/ / /  
+| |/| | | |   
+* | | | | |   a6ffc67 Spennys_branch
+|\ \ \ \ \ \  
+| * | | | | | df7fef0 (origin/Spennys_branch) Updated Bishop, Rook, & Pawn Behaviour
+| * | | | | | a05777a bug fixes
+| * | | | | | b67c882 Update chess.c
+| | |_|_|/ /  
+| |/| | | |   
+| * | | | | 8cad529 Added King Functionality
+| | |_|_|/  
+| |/| | |   
+| * | | | 98369eb Update chess.c
+| * | | | 1f1e1ec Added pawn behaviour
+| * | | | a1df1be Set up function
+| |/ / /  
+| * | | c09502b More Bugfixes
+| * | | df23da4 Bug fixes
+| * | | 35c6188 Initial Turn logic
+* | | | 0bec659 Update README
+* | | | c113499 Create example_output.txt
+* | | | 3489e62 Update README
+* | | | 3102677 updated Readme
+* | | | 5fbbef0 Update README
+* | | | a5806d3 swapped king and queen
+* | | | a8212a9 yet more bug fixes
+* | | | d22fda1 more bug fixes
+* | | | 3e4391f bug fixes
+* | | | d679b24 Updated Readme with piece values
+* | | | bc9f51c Added Board Initialisation
+|/ / /  
+| | | * efec8d7 (origin/Show_Board_Prettier) removed redundant newlines
+| | | * 377d987 A double lined border looks doubly nice!
+| | |/  
+| | * 4de145e Update chess.c
+| | * 7a62585 showBoard -> switch case to if statements
+| |/  
+| * e9d9041 Update chess.c
+| * 670418a Added showBoard function
+|/  
+* d800757 Create chess.c
+* ef1be0e Create makefile
+* 37a4fd8 Update README
+* edcbe2e Create README
+[maruj@pascal 1XC3_L03]$ git merge origin/Show_Board_Prettier
+Auto-merging chess.c
+CONFLICT (content): Merge conflict in chess.c
+Automatic merge failed; fix conflicts and then commit the result.
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ git add .
+[maruj@pascal 1XC3_L03]$ git commit -m "Show_Board_Prettier"
+[main 700ef96] Show_Board_Prettier
+ Committer: maruj <maruj@pascal.cas.mcmaster.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+[maruj@pascal 1XC3_L03]$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 475 bytes | 475.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:jenilmaru2004/1XC3_L03.git
+   40bb9b7..700ef96  main -> main
+[maruj@pascal 1XC3_L03]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[maruj@pascal 1XC3_L03]$ git log --graph --all --oneline
+*   700ef96 (HEAD -> main, origin/main, origin/HEAD) Show_Board_Prettier
+|\  
+| * efec8d7 (origin/Show_Board_Prettier) removed redundant newlines
+| * 377d987 A double lined border looks doubly nice!
+* |   40bb9b7 king
+|\ \  
+| * | f77386d (origin/king) bug fixes
+| * | 052b8b0 Now including stdlib
+| * | 191e675 Update chess.c
+* | |   9f6cfe0 piece_movement
+|\ \ \  
+| * | | e9faa8f (origin/piece_movement) bug flexes
+| * | | 52897c4 bug feeexes
+| * | | 01c98a1 bug fixes
+| * | | 9b7753e bug fixes
+| * | | dd801c4 Fixed turn logic
+* | | |   ff42921 Show_Board
+|\ \ \ \  
+| * | | | c84b698 (origin/Show_Board) bug fixos
+| * | | | aecee2f fixed squares
+| * | | | 8dd5b63 Added black Squares
+* | | | |   7cef3de valid_move_checks
+|\ \ \ \ \  
+| * | | | | afb39b2 (origin/valid_move_checks) bug fixes
+| * | | | | d6fc917 Now using stdlib
+| * | | | | b96306e Added Knight behaviour
+* | | | | |   688bc3d Game_Logic
+|\ \ \ \ \ \  
+| * | | | | | 4ac969b (origin/Game_Logic) Swapped king and queen
+* | | | | | |   c74bec1 gridlines
+|\ \ \ \ \ \ \  
+| * | | | | | | 0c0063f (origin/gridlines) swapped king and queen
+| * | | | | | | 9fd8ea9 now using stdbool
+| * | | | | | | deb568b Corrected display somewhat
+| * | | | | | | 0b3dd71 Added gridlines
+| | |_|_|_|_|/  
+| |/| | | | |   
+| * | | | | | 4de145e Update chess.c
+| * | | | | | 7a62585 showBoard -> switch case to if statements
+* | | | | | |   5490b96 coordinates
+|\ \ \ \ \ \ \  
+| * | | | | | | 94b4809 (origin/coordinates) Fixed Piece Display
+| * | | | | | | 55f898b Added Coordinate indicators
+| | |_|_|/ / /  
+| |/| | | | |   
+| * | | | | | 157d61a Changed to If Statements
+| |/ / / / /  
+| * | | | | e9d9041 Update chess.c
+| * | | | | 670418a Added showBoard function
+* | | | | |   3f271a5 Merge remote-tracking branch 'origin/movement_checks'
+|\ \ \ \ \ \  
+| * | | | | | cb7ebd1 (origin/movement_checks) updated queen logic
+| * | | | | | 805aa32 Various Bugfixes
+| * | | | | | b674897 You guessed it... more bug fixes
+| * | | | | | 5eecf4d yet more bug fixes
+| * | | | | | 6ed1dfa gub xif
+| * | | | | | 7842432 bug fixes
+| * | | | | | 024529c Added Queen's Behaviour
+| * | | | | | ac73c02 bug fixes
+| * | | | | | 6e0a1d5 Started Valid move logic
+| | |_|_|/ /  
+| |/| | | |   
+| * | | | | 1b1dc1b Added unsafe piece movement
+| | |/ / /  
+| |/| | |   
+* | | | |   a6ffc67 Spennys_branch
+|\ \ \ \ \  
+| * | | | | df7fef0 (origin/Spennys_branch) Updated Bishop, Rook, & Pawn Behaviour
+| * | | | | a05777a bug fixes
+| * | | | | b67c882 Update chess.c
+| | |_|/ /  
+| |/| | |   
+| * | | | 8cad529 Added King Functionality
+| | |_|/  
+| |/| |   
+| * | | 98369eb Update chess.c
+| * | | 1f1e1ec Added pawn behaviour
+| * | | a1df1be Set up function
+| |/ /  
+| * | c09502b More Bugfixes
+| * | df23da4 Bug fixes
+| * | 35c6188 Initial Turn logic
+| |/  
+* | 0bec659 Update README
+* | c113499 Create example_output.txt
+* | 3489e62 Update README
+* | 3102677 updated Readme
+* | 5fbbef0 Update README
+* | a5806d3 swapped king and queen
+* | a8212a9 yet more bug fixes
+* | d22fda1 more bug fixes
+* | 3e4391f bug fixes
+* | d679b24 Updated Readme with piece values
+* | bc9f51c Added Board Initialisation
+|/  
+* d800757 Create chess.c
+* ef1be0e Create makefile
+* 37a4fd8 Update README
+* edcbe2e Create README
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c:5:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+chess.c:66:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) ;
+      ^~~~~~~~~~~
+chess.c:53:6: note: previous definition of 'isValidMove' was here
+ bool isValidMove (char* input, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c: In function 'main':
+chess.c:90:5: warning: implicit declaration of function 'showBoard' [-Wimplicit-function-declaration]
+     showBoard(board);
+     ^~~~~~~~~
+chess.c:103:27: warning: passing argument 1 of 'isValidMove' makes integer from pointer without a cast [-Wint-conversion]
+     } while (!isValidMove(buf, board) && buf[0] != 'q' && buf[0] != 'Q');
+                           ^~~
+chess.c:66:23: note: expected 'int' but argument is of type 'char *'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) ;
+                   ~~~~^~
+chess.c:103:32: warning: passing argument 2 of 'isValidMove' makes integer from pointer without a cast [-Wint-conversion]
+     } while (!isValidMove(buf, board) && buf[0] != 'q' && buf[0] != 'Q');
+                                ^~~~~
+chess.c:66:31: note: expected 'int' but argument is of type 'int (*)[8]'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) ;
+                           ~~~~^~
+chess.c:103:15: error: too few arguments to function 'isValidMove'
+     } while (!isValidMove(buf, board) && buf[0] != 'q' && buf[0] != 'Q');
+               ^~~~~~~~~~~
+chess.c:66:6: note: declared here
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) ;
+      ^~~~~~~~~~~
+chess.c: At top level:
+chess.c:111:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c:53:6: note: previous definition of 'isValidMove' was here
+ bool isValidMove (char* input, int board[8][8]) {
+      ^~~~~~~~~~~
+[maruj@pascal 1XC3_L03]$ gcc one
+gcc: error: one: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+[maruj@pascal 1XC3_L03]$ ./ chess.c
+-bash: ./: Is a directory
+[maruj@pascal 1XC3_L03]$ ./chess.c
+-bash: ./chess.c: Permission denied
+[maruj@pascal 1XC3_L03]$ ls
+README  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[maruj@pascal 1XC3_L03]$ git log --graph --all --oneline
+*   700ef96 (HEAD -> main, origin/main, origin/HEAD) Show_Board_Prettier
+|\  
+| * efec8d7 (origin/Show_Board_Prettier) removed redundant newlines
+| * 377d987 A double lined border looks doubly nice!
+* |   40bb9b7 king
+|\ \  
+| * | f77386d (origin/king) bug fixes
+| * | 052b8b0 Now including stdlib
+| * | 191e675 Update chess.c
+* | |   9f6cfe0 piece_movement
+|\ \ \  
+| * | | e9faa8f (origin/piece_movement) bug flexes
+| * | | 52897c4 bug feeexes
+| * | | 01c98a1 bug fixes
+| * | | 9b7753e bug fixes
+| * | | dd801c4 Fixed turn logic
+* | | |   ff42921 Show_Board
+|\ \ \ \  
+| * | | | c84b698 (origin/Show_Board) bug fixos
+| * | | | aecee2f fixed squares
+| * | | | 8dd5b63 Added black Squares
+* | | | |   7cef3de valid_move_checks
+|\ \ \ \ \  
+| * | | | | afb39b2 (origin/valid_move_checks) bug fixes
+| * | | | | d6fc917 Now using stdlib
+| * | | | | b96306e Added Knight behaviour
+* | | | | |   688bc3d Game_Logic
+|\ \ \ \ \ \  
+| * | | | | | 4ac969b (origin/Game_Logic) Swapped king and queen
+* | | | | | |   c74bec1 gridlines
+|\ \ \ \ \ \ \  
+| * | | | | | | 0c0063f (origin/gridlines) swapped king and queen
+| * | | | | | | 9fd8ea9 now using stdbool
+| * | | | | | | deb568b Corrected display somewhat
+| * | | | | | | 0b3dd71 Added gridlines
+| | |_|_|_|_|/  
+| |/| | | | |   
+| * | | | | | 4de145e Update chess.c
+| * | | | | | 7a62585 showBoard -> switch case to if statements
+* | | | | | |   5490b96 coordinates
+|\ \ \ \ \ \ \  
+| * | | | | | | 94b4809 (origin/coordinates) Fixed Piece Display
+| * | | | | | | 55f898b Added Coordinate indicators
+| | |_|_|/ / /  
+| |/| | | | |   
+| * | | | | | 157d61a Changed to If Statements
+| |/ / / / /  
+| * | | | | e9d9041 Update chess.c
+| * | | | | 670418a Added showBoard function
+* | | | | |   3f271a5 Merge remote-tracking branch 'origin/movement_checks'
+|\ \ \ \ \ \  
+| * | | | | | cb7ebd1 (origin/movement_checks) updated queen logic
+| * | | | | | 805aa32 Various Bugfixes
+| * | | | | | b674897 You guessed it... more bug fixes
+| * | | | | | 5eecf4d yet more bug fixes
+| * | | | | | 6ed1dfa gub xif
+| * | | | | | 7842432 bug fixes
+| * | | | | | 024529c Added Queen's Behaviour
+| * | | | | | ac73c02 bug fixes
+| * | | | | | 6e0a1d5 Started Valid move logic
+| | |_|_|/ /  
+| |/| | | |   
+| * | | | | 1b1dc1b Added unsafe piece movement
+| | |/ / /  
+| |/| | |   
+* | | | |   a6ffc67 Spennys_branch
+|\ \ \ \ \  
+| * | | | | df7fef0 (origin/Spennys_branch) Updated Bishop, Rook, & Pawn Behaviour
+| * | | | | a05777a bug fixes
+| * | | | | b67c882 Update chess.c
+| | |_|/ /  
+| |/| | |   
+| * | | | 8cad529 Added King Functionality
+| | |_|/  
+| |/| |   
+| * | | 98369eb Update chess.c
+| * | | 1f1e1ec Added pawn behaviour
+| * | | a1df1be Set up function
+| |/ /  
+| * | c09502b More Bugfixes
+| * | df23da4 Bug fixes
+| * | 35c6188 Initial Turn logic
+| |/  
+* | 0bec659 Update README
+* | c113499 Create example_output.txt
+* | 3489e62 Update README
+* | 3102677 updated Readme
+* | 5fbbef0 Update README
+* | a5806d3 swapped king and queen
+* | a8212a9 yet more bug fixes
+* | d22fda1 more bug fixes
+* | 3e4391f bug fixes
+* | d679b24 Updated Readme with piece values
+* | bc9f51c Added Board Initialisation
+|/  
+* d800757 Create chess.c
+* ef1be0e Create makefile
+* 37a4fd8 Update README
+* edcbe2e Create README
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c:5:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+chess.c:66:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) ;
+      ^~~~~~~~~~~
+chess.c:53:6: note: previous definition of 'isValidMove' was here
+ bool isValidMove (char* input, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c: In function 'main':
+chess.c:90:5: warning: implicit declaration of function 'showBoard' [-Wimplicit-function-declaration]
+     showBoard(board);
+     ^~~~~~~~~
+chess.c:103:27: warning: passing argument 1 of 'isValidMove' makes integer from pointer without a cast [-Wint-conversion]
+     } while (!isValidMove(buf, board) && buf[0] != 'q' && buf[0] != 'Q');
+                           ^~~
+chess.c:66:23: note: expected 'int' but argument is of type 'char *'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) ;
+                   ~~~~^~
+chess.c:103:32: warning: passing argument 2 of 'isValidMove' makes integer from pointer without a cast [-Wint-conversion]
+     } while (!isValidMove(buf, board) && buf[0] != 'q' && buf[0] != 'Q');
+                                ^~~~~
+chess.c:66:31: note: expected 'int' but argument is of type 'int (*)[8]'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) ;
+                           ~~~~^~
+chess.c:103:15: error: too few arguments to function 'isValidMove'
+     } while (!isValidMove(buf, board) && buf[0] != 'q' && buf[0] != 'Q');
+               ^~~~~~~~~~~
+chess.c:66:6: note: declared here
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) ;
+      ^~~~~~~~~~~
+chess.c: At top level:
+chess.c:111:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c:53:6: note: previous definition of 'isValidMove' was here
+ bool isValidMove (char* input, int board[8][8]) {
+      ^~~~~~~~~~~
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ nano chess.c
+[maruj@pascal 1XC3_L03]$ nano chess.c
+[maruj@pascal 1XC3_L03]$ git add .
+[maruj@pascal 1XC3_L03]$ git push
+To github.com:jenilmaru2004/1XC3_L03.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:jenilmaru2004/1XC3_L03.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[maruj@pascal 1XC3_L03]$ nano chess.c
+[maruj@pascal 1XC3_L03]$ nano chess.c
+[maruj@pascal 1XC3_L03]$ nano chess.c
+[maruj@pascal 1XC3_L03]$ nano chess.c
+[maruj@pascal 1XC3_L03]$ ls
+README  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ git add .
+[maruj@pascal 1XC3_L03]$ git commit "last trial"
+error: pathspec 'last trial' did not match any file(s) known to git
+[maruj@pascal 1XC3_L03]$ git commit -m "last trial"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[maruj@pascal 1XC3_L03]$ git push
+To github.com:jenilmaru2004/1XC3_L03.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:jenilmaru2004/1XC3_L03.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[maruj@pascal 1XC3_L03]$ git pull ...
+fatal: '...' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[maruj@pascal 1XC3_L03]$ git pull chess.c
+fatal: invalid gitfile format: chess.c
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[maruj@pascal 1XC3_L03]$ ls
+README  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ git push -f chess.c
+fatal: invalid gitfile format: chess.c
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[maruj@pascal 1XC3_L03]$ ls
+README  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ git push chess.c
+fatal: invalid gitfile format: chess.c
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ git add .
+[maruj@pascal 1XC3_L03]$ git commit -m "some change"
+[main 47d0a1a] some change
+ Committer: maruj <maruj@pascal.cas.mcmaster.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 deletion(-)
+[maruj@pascal 1XC3_L03]$ git push 
+To github.com:jenilmaru2004/1XC3_L03.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:jenilmaru2004/1XC3_L03.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[maruj@pascal 1XC3_L03]$ git -f push
+unknown option: -f
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+[maruj@pascal 1XC3_L03]$ git push
+To github.com:jenilmaru2004/1XC3_L03.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:jenilmaru2004/1XC3_L03.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[maruj@pascal 1XC3_L03]$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.41 KiB | 719.00 KiB/s, done.
+From github.com:jenilmaru2004/1XC3_L03
+   700ef96..a1389d0  main       -> origin/main
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+Auto-merging chess.c
+Merge made by the 'recursive' strategy.
+ chess.c | 174 +++++++++++++++++++++++++++++++++++++++++++++-------------------------------
+ 1 file changed, 104 insertions(+), 70 deletions(-)
+[maruj@pascal 1XC3_L03]$ vim chess.c
+[maruj@pascal 1XC3_L03]$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 505 bytes | 505.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:jenilmaru2004/1XC3_L03.git
+   a1389d0..675eea3  main -> main
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ ./chess
+-bash: ./chess: No such file or directory
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ ./a,out
+-bash: ./a,out: No such file or directory
+[maruj@pascal 1XC3_L03]$ ./a.out
+Welcome to Terminal Chess!
+Initializing Board...
+Board Initialized!
+Enter `q` to quit at any time.
+Moves are entered as co-ordinate pairs, such as "13-33" 
+
+
+  01234567
+ ╔════════╗
+0║♘♗♖♕♔♖♗♘║
+1║♙♙♙♙♙♙♙♙║
+2║ ▒ ▒ ▒ ▒║
+3║▒ ▒ ▒ ▒ ║
+4║ ▒ ▒ ▒ ▒║
+5║▒ ▒ ▒ ▒ ║
+6║♙♙♙♙♙♙♙♙║
+7║♘♗♖♕♔♖♗♘║
+ ╚════════╝
+White to move.
+♔ >> q
+Terminating...
+[maruj@pascal 1XC3_L03]$ ./a.out
+Welcome to Terminal Chess!
+Initializing Board...
+Board Initialized!
+Enter `q` to quit at any time.
+Moves are entered as co-ordinate pairs, such as "13-33" 
+
+
+  01234567
+ ╔════════╗
+0║♘♗♖♕♔♖♗♘║
+1║♙♙♙♙♙♙♙♙║
+2║ ▒ ▒ ▒ ▒║
+3║▒ ▒ ▒ ▒ ║
+4║ ▒ ▒ ▒ ▒║
+5║▒ ▒ ▒ ▒ ║
+6║♙♙♙♙♙♙♙♙║
+7║♘♗♖♕♔♖♗♘║
+ ╚════════╝
+White to move.
+♔ >> 13-33
+Move Invalid! Try again!White to move.
+♔ >> 15
+Move Invalid! Try again!White to move.
+♔ >> "13-33"
+Move Invalid! Try again!White to move.
+♔ >> q
+Terminating...
+[maruj@pascal 1XC3_L03]$ nano chess.c
+[maruj@pascal 1XC3_L03]$ git commit -m "FINAL"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	a.out
+
+nothing added to commit but untracked files present (use "git add" to track)
+[maruj@pascal 1XC3_L03]$ git add .
+[maruj@pascal 1XC3_L03]$ git commit -m "FINAL"
+[main b494f8c] FINAL
+ Committer: maruj <maruj@pascal.cas.mcmaster.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100755 a.out
+[maruj@pascal 1XC3_L03]$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 4.73 KiB | 606.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:jenilmaru2004/1XC3_L03.git
+   675eea3..b494f8c  main -> main
+[maruj@pascal 1XC3_L03]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[maruj@pascal 1XC3_L03]$ git log --graph --all --oneline
+* b494f8c (HEAD -> main, origin/main, origin/HEAD) FINAL
+*   675eea3 Merge branch 'main' of github.com:jenilmaru2004/1XC3_L03
+|\  
+| * a1389d0 Update chess.c
+* | 47d0a1a some change
+|/  
+*   700ef96 Show_Board_Prettier
+|\  
+| * efec8d7 (origin/Show_Board_Prettier) removed redundant newlines
+| * 377d987 A double lined border looks doubly nice!
+* |   40bb9b7 king
+|\ \  
+| * | f77386d (origin/king) bug fixes
+| * | 052b8b0 Now including stdlib
+| * | 191e675 Update chess.c
+* | |   9f6cfe0 piece_movement
+|\ \ \  
+| * | | e9faa8f (origin/piece_movement) bug flexes
+| * | | 52897c4 bug feeexes
+| * | | 01c98a1 bug fixes
+| * | | 9b7753e bug fixes
+| * | | dd801c4 Fixed turn logic
+* | | |   ff42921 Show_Board
+|\ \ \ \  
+| * | | | c84b698 (origin/Show_Board) bug fixos
+| * | | | aecee2f fixed squares
+| * | | | 8dd5b63 Added black Squares
+* | | | |   7cef3de valid_move_checks
+|\ \ \ \ \  
+| * | | | | afb39b2 (origin/valid_move_checks) bug fixes
+| * | | | | d6fc917 Now using stdlib
+| * | | | | b96306e Added Knight behaviour
+* | | | | |   688bc3d Game_Logic
+|\ \ \ \ \ \  
+| * | | | | | 4ac969b (origin/Game_Logic) Swapped king and queen
+* | | | | | |   c74bec1 gridlines
+|\ \ \ \ \ \ \  
+| * | | | | | | 0c0063f (origin/gridlines) swapped king and queen
+| * | | | | | | 9fd8ea9 now using stdbool
+| * | | | | | | deb568b Corrected display somewhat
+| * | | | | | | 0b3dd71 Added gridlines
+| | |_|_|_|_|/  
+| |/| | | | |   
+| * | | | | | 4de145e Update chess.c
+| * | | | | | 7a62585 showBoard -> switch case to if statements
+* | | | | | |   5490b96 coordinates
+|\ \ \ \ \ \ \  
+| * | | | | | | 94b4809 (origin/coordinates) Fixed Piece Display
+| * | | | | | | 55f898b Added Coordinate indicators
+| | |_|_|/ / /  
+| |/| | | | |   
+| * | | | | | 157d61a Changed to If Statements
+| |/ / / / /  
+| * | | | | e9d9041 Update chess.c
+| * | | | | 670418a Added showBoard function
+* | | | | |   3f271a5 Merge remote-tracking branch 'origin/movement_checks'
+|\ \ \ \ \ \  
+| * | | | | | cb7ebd1 (origin/movement_checks) updated queen logic
+| * | | | | | 805aa32 Various Bugfixes
+| * | | | | | b674897 You guessed it... more bug fixes
+| * | | | | | 5eecf4d yet more bug fixes
+| * | | | | | 6ed1dfa gub xif
+| * | | | | | 7842432 bug fixes
+| * | | | | | 024529c Added Queen's Behaviour
+| * | | | | | ac73c02 bug fixes
+| * | | | | | 6e0a1d5 Started Valid move logic
+| | |_|_|/ /  
+| |/| | | |   
+| * | | | | 1b1dc1b Added unsafe piece movement
+| | |/ / /  
+| |/| | |   
+* | | | |   a6ffc67 Spennys_branch
+|\ \ \ \ \  
+| * | | | | df7fef0 (origin/Spennys_branch) Updated Bishop, Rook, & Pawn Behaviour
+| * | | | | a05777a bug fixes
+| * | | | | b67c882 Update chess.c
+| | |_|/ /  
+| |/| | |   
+| * | | | 8cad529 Added King Functionality
+| | |_|/  
+| |/| |   
+| * | | 98369eb Update chess.c
+| * | | 1f1e1ec Added pawn behaviour
+| * | | a1df1be Set up function
+| |/ /  
+| * | c09502b More Bugfixes
+| * | df23da4 Bug fixes
+| * | 35c6188 Initial Turn logic
+| |/  
+* | 0bec659 Update README
+* | c113499 Create example_output.txt
+* | 3489e62 Update README
+* | 3102677 updated Readme
+* | 5fbbef0 Update README
+* | a5806d3 swapped king and queen
+* | a8212a9 yet more bug fixes
+* | d22fda1 more bug fixes
+* | 3e4391f bug fixes
+* | d679b24 Updated Readme with piece values
+* | bc9f51c Added Board Initialisation
+|/  
+* d800757 Create chess.c
+* ef1be0e Create makefile
+* 37a4fd8 Update README
+* edcbe2e Create README
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ nano example_output.txt 
+[maruj@pascal 1XC3_L03]$ cd ..
+[maruj@pascal ~]$ ls
+1XC3_L03  CS1XC3  L03.git  public_html  rough.txt  topic2
+[maruj@pascal ~]$ cd L03.git/
+[maruj@pascal L03.git]$ ls
+HEAD  branches  config  description  hooks  info  objects  packed-refs  refs
+[maruj@pascal L03.git]$ cd branches/
+[maruj@pascal branches]$ ls
+[maruj@pascal branches]$ cd
+[maruj@pascal ~]$ ls
+1XC3_L03  CS1XC3  L03.git  public_html  rough.txt  topic2
+[maruj@pascal ~]$ rm 0r L03.git/
+rm: cannot remove '0r': No such file or directory
+rm: cannot remove 'L03.git/': Is a directory
+[maruj@pascal ~]$ y
+-bash: y: command not found
+[maruj@pascal ~]$ rm -r L03.git/
+rm: remove write-protected regular file 'L03.git/objects/pack/pack-2fec189d42e3742495251a96816af5b41111e23c.pack'? y
+rm: remove write-protected regular file 'L03.git/objects/pack/pack-2fec189d42e3742495251a96816af5b41111e23c.idx'? y
+[maruj@pascal ~]$ y
+-bash: y: command not found
+[maruj@pascal ~]$ y
+-bash: y: command not found
+[maruj@pascal ~]$ ls
+1XC3_L03  CS1XC3  public_html  rough.txt  topic2
+[maruj@pascal ~]$ cd 1XC3_L03/
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ cat example_output.txt 
+Welcome to Terminal Chess!
+Initializing Board...
+Board Initialized!
+Enter `q` to quit at any time.
+Moves are entered as co-ordinate pairs, such as "13-33" 
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+White to move.
+♔ >> 46-44
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│ │▒│♙│▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+Black to move.
+♔ >> 67-55
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│ │▒│♙│▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │▒│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│♘│♗│♕│♔│♗│▒│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+White to move.
+♔ >> 17-25
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│ │▒│♙│▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │♗│♕│♔│♗│▒│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+Black to move.
+♔ >> 57-24
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│♗│▒│♙│▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │♗│♕│♔│ │▒│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+White to move.
+♔ >> 27-54
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│♗│▒│♙│♗│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│♙│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │▒│♕│♔│ │▒│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+Black to move.
+♔ >> 36-34
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│♗│♙│♙│♗│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│▒│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │▒│♕│♔│ │▒│♖║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+White to move.
+♔ >> 77-57
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│♗│♙│♙│♗│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│ │▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│▒│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │▒│♕│♔│♖│▒│ ║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+Black to move.
+♔ >> 37-35
+   0 1 2 3 4 5 6 7
+  ╔═╤═╤═╤═╤═╤═╤═╤═╗
+0 ║♖│♘│♗│♕│♔│♗│♘│♖║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+1 ║♙│♙│♙│♙│♙│♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+2 ║ │▒│ │▒│ │▒│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+3 ║▒│ │▒│ │▒│ │▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+4 ║ │▒│♗│♙│♙│♗│ │▒║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+5 ║▒│ │♘│♕│▒│♘│▒│ ║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+6 ║♙│♙│♙│▒│ │♙│♙│♙║
+  ╟─┼─┼─┼─┼─┼─┼─┼─╢
+7 ║♖│ │▒│ │♔│♖│▒│ ║
+  ╚═╧═╧═╧═╧═╧═╧═╧═╝
+White to move.
+♔ >> q
+Terminating...
+[maruj@pascal 1XC3_L03]$ gcc a.out
+a.out: file not recognized: File truncated
+collect2: error: ld returned 1 exit status
+[maruj@pascal 1XC3_L03]$ ./a.out
+-bash: ./a.out: No such file or directory
+[maruj@pascal 1XC3_L03]$ ls
+README  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ ./a.out
+Welcome to Terminal Chess!
+Initializing Board...
+Board Initialized!
+Enter `q` to quit at any time.
+Moves are entered as co-ordinate pairs, such as "13-33" 
+
+
+  01234567
+ ╔════════╗
+0║♘♗♖♕♔♖♗♘║
+1║♙♙♙♙♙♙♙♙║
+2║ ▒ ▒ ▒ ▒║
+3║▒ ▒ ▒ ▒ ║
+4║ ▒ ▒ ▒ ▒║
+5║▒ ▒ ▒ ▒ ║
+6║♙♙♙♙♙♙♙♙║
+7║♘♗♖♕♔♖♗♘║
+ ╚════════╝
+White to move.
+♔ >> 46-44
+
+
+  01234567
+ ╔════════╗
+0║♘♗♖♕♔♖♗♘║
+1║♙♙♙♙♙♙♙♙║
+2║ ▒ ▒ ▒ ▒║
+3║▒ ▒ ▒ ▒ ║
+4║ ▒ ▒♙▒ ▒║
+5║▒ ▒ ▒ ▒ ║
+6║♙♙♙♙ ♙♙♙║
+7║♘♗♖♕♔♖♗♘║
+ ╚════════╝
+Black to move.
+♔ >> q
+Terminating...
+[maruj@pascal 1XC3_L03]$ cd
+[maruj@pascal ~]$ ls
+1XC3_L03  CS1XC3  public_html  rough.txt  topic2
+[maruj@pascal ~]$ cd CS1XC3/
+[maruj@pascal CS1XC3]$ ls
+L01  L02  L03  README.md
+[maruj@pascal CS1XC3]$ cd L03
+[maruj@pascal L03]$ ls
+[maruj@pascal L03]$ cd ..
+[maruj@pascal CS1XC3]$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+[maruj@pascal CS1XC3]$ git add .
+[maruj@pascal CS1XC3]$ git commit -m "new dir"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[maruj@pascal CS1XC3]$ git push
+Everything up-to-date
+[maruj@pascal CS1XC3]$ ls
+L01  L02  L03  README.md
+[maruj@pascal CS1XC3]$ 

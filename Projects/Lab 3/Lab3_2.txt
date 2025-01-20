@@ -1,0 +1,2080 @@
+Last login: Tue Feb  7 20:37:09 on ttys000
+(base) jenil@Jenils-MacBook-Pro ~ % ssh maruj@pascal.cas.mcmaster.ca
+maruj@pascal.cas.mcmaster.ca's password: 
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last login: Tue Feb  7 20:37:50 2023 from 172.18.45.64
+[maruj@pascal ~]$ ls
+CS1XC3  L03.git  public_html  rough.txt  topic2
+[maruj@pascal ~]$ cd CS1XC3/
+[maruj@pascal CS1XC3]$ ls
+L01  L02  README.md
+[maruj@pascal CS1XC3]$ cd
+[maruj@pascal ~]$ cd L03.git/
+[maruj@pascal L03.git]$ ls
+1XC3_L03  branches  description  info     packed-refs
+HEAD      config    hooks        objects  refs
+[maruj@pascal L03.git]$ cd 1XC3_L03/
+[maruj@pascal 1XC3_L03]$ ls
+ README   chess.c   example_output.txt   executable   makefile  's.c ]'
+[maruj@pascal 1XC3_L03]$ less ex
+example_output.txt  executable          
+[maruj@pascal 1XC3_L03]$ less ex
+example_output.txt  executable          
+[maruj@pascal 1XC3_L03]$ less makefile 
+[maruj@pascal 1XC3_L03]$ less 's.c ]' 
+[maruj@pascal 1XC3_L03]$ git log --graph --all --oneline
+* 0bec659 (origin/main, origin/HEAD, main) Update README
+* c113499 Create example_output.txt
+* 3489e62 Update README
+* 3102677 updated Readme
+* 5fbbef0 (HEAD) Update README
+* a5806d3 swapped king and queen
+* a8212a9 yet more bug fixes
+* d22fda1 more bug fixes
+* 3e4391f bug fixes
+* d679b24 Updated Readme with piece values
+* bc9f51c Added Board Initialisation
+| * df7fef0 (origin/Spennys_branch) Updated Bishop, Rook, & Pawn Behaviour
+| * a05777a bug fixes
+| * b67c882 Update chess.c
+| | * cb7ebd1 (origin/movement_checks) updated queen logic
+| | * 805aa32 Various Bugfixes
+| | * b674897 You guessed it... more bug fixes
+| | * 5eecf4d yet more bug fixes
+| | * 6ed1dfa gub xif
+| | * 7842432 bug fixes
+| | * 024529c Added Queen's Behaviour
+| | * ac73c02 bug fixes
+| | * 6e0a1d5 Started Valid move logic
+| | | * 94b4809 (origin/coordinates) Fixed Piece Display
+| | | * 55f898b Added Coordinate indicators
+| | | | * 0c0063f (origin/gridlines) swapped king and queen
+| | | | * 9fd8ea9 now using stdbool
+| | | | * deb568b Corrected display somewhat
+| | | | * 0b3dd71 Added gridlines
+| | | | | * 4ac969b (origin/Game_Logic) Swapped king and queen
+| | | | | | * afb39b2 (origin/valid_move_checks) bug fixes
+| | | | | | * d6fc917 Now using stdlib
+| | | | | | * b96306e Added Knight behaviour
+| | |_|_|_|/  
+| |/| | | |   
+| * | | | | 8cad529 Added King Functionality
+| | | | | | * c84b698 (origin/Show_Board) bug fixos
+| | | | | | * aecee2f fixed squares
+| | | | | | * 8dd5b63 Added black Squares
+| | | | |_|/  
+| | | |/| |   
+| | | * | | 157d61a Changed to If Statements
+| | | | | | * e9faa8f (origin/piece_movement) bug flexes
+| | | | | | * 52897c4 bug feeexes
+| | | | | | * 01c98a1 bug fixes
+| | | | | | * 9b7753e bug fixes
+| | | | | | * dd801c4 Fixed turn logic
+| | | |_|_|/  
+| | |/| | |   
+| | * | | | 1b1dc1b Added unsafe piece movement
+| | | |_|/  
+| | |/| |   
+| | | | | * f77386d (origin/king) bug fixes
+| | | | | * 052b8b0 Now including stdlib
+| | | | | * 191e675 Update chess.c
+| | |_|_|/  
+| |/| | |   
+| * | | | 98369eb Update chess.c
+| * | | | 1f1e1ec Added pawn behaviour
+| * | | | a1df1be Set up function
+| |/ / /  
+| * | | c09502b More Bugfixes
+| * | | df23da4 Bug fixes
+| * | | 35c6188 Initial Turn logic
+|/ / /  
+| | | * efec8d7 (origin/Show_Board_Prettier) removed redundant newlines
+| | | * 377d987 A double lined border looks doubly nice!
+| | |/  
+| | * 4de145e Update chess.c
+| | * 7a62585 showBoard -> switch case to if statements
+| |/  
+| * e9d9041 Update chess.c
+| * 670418a Added showBoard function
+|/  
+* d800757 Create chess.c
+* ef1be0e Create makefile
+* 37a4fd8 Update README
+* edcbe2e Create README
+[maruj@pascal 1XC3_L03]$ git merge df7fef0
+error: Your local changes to the following files would be overwritten by merge:
+  example_output.txt
+[maruj@pascal 1XC3_L03]$ git merge a05777a
+error: Your local changes to the following files would be overwritten by merge:
+  example_output.txt
+[maruj@pascal 1XC3_L03]$ git merge b67c882
+error: Your local changes to the following files would be overwritten by merge:
+  example_output.txt
+[maruj@pascal 1XC3_L03]$ ls
+ README   chess.c   example_output.txt   executable   makefile  's.c ]'
+[maruj@pascal 1XC3_L03]$ git reset --hard
+HEAD is now at 5fbbef0 Update README
+[maruj@pascal 1XC3_L03]$ ls
+ README   chess.c   executable   makefile  's.c ]'
+[maruj@pascal 1XC3_L03]$ git merge df7fef0
+Auto-merging chess.c
+CONFLICT (content): Merge conflict in chess.c
+Automatic merge failed; fix conflicts and then commit the result.
+[maruj@pascal 1XC3_L03]$ ls
+ README   chess.c   executable   makefile  's.c ]'
+[maruj@pascal 1XC3_L03]$ less chess.c
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c:2:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+[maruj@pascal 1XC3_L03]$ git merge 0bec659
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[maruj@pascal 1XC3_L03]$ git reset --hard
+HEAD is now at 5fbbef0 Update README
+[maruj@pascal 1XC3_L03]$ ls
+ README   chess.c   executable   makefile  's.c ]'
+[maruj@pascal 1XC3_L03]$ less README 
+[maruj@pascal 1XC3_L03]$ git merge 0bec659
+Updating 5fbbef0..0bec659
+Fast-forward
+ README             |   4 +-
+ example_output.txt | 186 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 187 insertions(+), 3 deletions(-)
+ create mode 100644 example_output.txt
+[maruj@pascal 1XC3_L03]$ git merge c113499
+Already up to date.
+[maruj@pascal 1XC3_L03]$ ls
+ README   chess.c   example_output.txt   executable   makefile  's.c ]'
+[maruj@pascal 1XC3_L03]$ less example_output.txt
+"example_output.txt" may be a binary file.  See it anyway? 
+[maruj@pascal 1XC3_L03]$ ls
+ README   chess.c   example_output.txt   executable   makefile  's.c ]'
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c: In function 'main':
+chess.c:14:8: warning: excess elements in array initializer
+      , {5, 4, 3, 2, 1, 3, 4, 5}
+        ^
+chess.c:14:8: note: (near initialization for 'board')
+[maruj@pascal 1XC3_L03]$ git merge 3489e62
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge 3102677 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge 5fbbef0 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge a5806d3 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge 3e4391f 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge bc9f51c 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge df7fef0 
+Auto-merging chess.c
+CONFLICT (content): Merge conflict in chess.c
+Automatic merge failed; fix conflicts and then commit the result.
+[maruj@pascal 1XC3_L03]$ less chess.c
+[maruj@pascal 1XC3_L03]$ git merge a05777a 
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[maruj@pascal 1XC3_L03]$ git merge b67c882 
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[maruj@pascal 1XC3_L03]$ git merge 9b7753e 
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[maruj@pascal 1XC3_L03]$ tree
+.
+|-- a.out
+|-- chess.c
+|-- example_output.txt
+|-- executable
+|-- makefile
+|-- README
+`-- s.c\ ]
+
+0 directories, 7 files
+[maruj@pascal 1XC3_L03]$ ls
+ README   a.out   chess.c   example_output.txt   executable   makefile  's.c ]'
+[maruj@pascal 1XC3_L03]$ less a.out
+"a.out" may be a binary file.  See it anyway? 
+[maruj@pascal 1XC3_L03]$ rm a.out
+[maruj@pascal 1XC3_L03]$ ls
+ README   chess.c   example_output.txt   executable   makefile  's.c ]'
+[maruj@pascal 1XC3_L03]$ rm 's.c ]' 
+[maruj@pascal 1XC3_L03]$ ls
+README  chess.c  example_output.txt  executable  makefile
+[maruj@pascal 1XC3_L03]$ rm executable 
+[maruj@pascal 1XC3_L03]$ ls
+README  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ git checkout df7fef0 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ ls
+README  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ less makefile 
+[maruj@pascal 1XC3_L03]$ git merge df7fef0 
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c:2:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+[maruj@pascal 1XC3_L03]$ git checkout b67c882 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ git merge b67c882 
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[maruj@pascal 1XC3_L03]$ git checkout a8212a9 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ git merge a8212a9 
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[maruj@pascal 1XC3_L03]$ git merge 0bec659 
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[maruj@pascal 1XC3_L03]$ git reset --hard
+HEAD is now at 0bec659 Update README
+[maruj@pascal 1XC3_L03]$ ls
+README  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ git checkout a8212a9 
+Previous HEAD position was 0bec659 Update README
+HEAD is now at a8212a9 yet more bug fixes
+[maruj@pascal 1XC3_L03]$ ls
+README  chess.c  makefile
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c: In function 'main':
+chess.c:14:8: warning: excess elements in array initializer
+      , {5, 4, 3, 1, 2, 3, 4, 5}
+        ^
+chess.c:14:8: note: (near initialization for 'board')
+[maruj@pascal 1XC3_L03]$ less chess.c
+[maruj@pascal 1XC3_L03]$ git checkout c113499 
+Previous HEAD position was a8212a9 yet more bug fixes
+HEAD is now at c113499 Create example_output.txt
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ less example_output.txt 
+"example_output.txt" may be a binary file.  See it anyway? 
+[maruj@pascal 1XC3_L03]$ less a.out 
+"a.out" may be a binary file.  See it anyway? 
+[maruj@pascal 1XC3_L03]$ git checkout 3489e62 
+Previous HEAD position was c113499 Create example_output.txt
+HEAD is now at 3489e62 Update README
+[maruj@pascal 1XC3_L03]$ git checkout 3102677 
+Previous HEAD position was 3489e62 Update README
+HEAD is now at 3102677 updated Readme
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  makefile
+[maruj@pascal 1XC3_L03]$ git merge c113499 
+Updating 3102677..c113499
+Fast-forward
+ README             |   2 -
+ example_output.txt | 186 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 186 insertions(+), 2 deletions(-)
+ create mode 100644 example_output.txt
+[maruj@pascal 1XC3_L03]$ git merge 3489e62 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge 3102677 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 5fbbef0 
+Previous HEAD position was c113499 Create example_output.txt
+HEAD is now at 5fbbef0 Update README
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  makefile
+[maruj@pascal 1XC3_L03]$ git merge 5fbbef0 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  makefile
+[maruj@pascal 1XC3_L03]$ git checkout a5806d3 
+Previous HEAD position was 5fbbef0 Update README
+HEAD is now at a5806d3 swapped king and queen
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  makefile
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c: In function 'main':
+chess.c:14:8: warning: excess elements in array initializer
+      , {5, 4, 3, 2, 1, 3, 4, 5}
+        ^
+chess.c:14:8: note: (near initialization for 'board')
+[maruj@pascal 1XC3_L03]$ git merge a5806d3 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge a8212a9 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge d22fda1 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout d679b24 
+Previous HEAD position was a5806d3 swapped king and queen
+HEAD is now at d679b24 Updated Readme with piece values
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  makefile
+[maruj@pascal 1XC3_L03]$ less README 
+[maruj@pascal 1XC3_L03]$ git merge d679b24 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout bc9f51c 
+Previous HEAD position was d679b24 Updated Readme with piece values
+HEAD is now at bc9f51c Added Board Initialisation
+[maruj@pascal 1XC3_L03]$ git merge bc9f51c 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout df7fef0 
+Previous HEAD position was bc9f51c Added Board Initialisation
+HEAD is now at df7fef0 Updated Bishop, Rook, & Pawn Behaviour
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  makefile
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ git merge df7fef0 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout a05777a 
+Previous HEAD position was df7fef0 Updated Bishop, Rook, & Pawn Behaviour
+HEAD is now at a05777a bug fixes
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ git merge a05777a 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout b67c882 
+Previous HEAD position was a05777a bug fixes
+HEAD is now at b67c882 Update chess.c
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c:39:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c:4:6: note: previous declaration of 'isValidMove' was here
+ bool isValidMove (int x1, int x2, int y1, int y2) ;
+      ^~~~~~~~~~~
+chess.c: In function 'isValidMove':
+chess.c:46:7: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+       ^~~
+chess.c:46:24: error: expected ')' before 'and'
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+      ~                 ^~~~
+                        )
+[maruj@pascal 1XC3_L03]$ git checkout a05777a 
+Previous HEAD position was b67c882 Update chess.c
+HEAD is now at a05777a bug fixes
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ git checkout cb7ebd1 
+Previous HEAD position was a05777a bug fixes
+HEAD is now at cb7ebd1 updated queen logic
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ git merge cb7ebd1 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ git checkout 805aa32 
+Previous HEAD position was cb7ebd1 updated queen logic
+HEAD is now at 805aa32 Various Bugfixes
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ git merge 805aa32 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout b674897 
+Previous HEAD position was 805aa32 Various Bugfixes
+HEAD is now at b674897 You guessed it... more bug fixes
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ git merge  b674897 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  makefile
+[maruj@pascal 1XC3_L03]$ git merge c113499 
+Auto-merging chess.c
+CONFLICT (content): Merge conflict in chess.c
+Automatic merge failed; fix conflicts and then commit the result.
+[maruj@pascal 1XC3_L03]$ git checkout c113499 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ git checkout 0bec659 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ git reflog
+b674897 (HEAD) HEAD@{0}: checkout: moving from 805aa322711f228c8b545bca27e668c17a59badb to b674897
+805aa32 HEAD@{1}: checkout: moving from cb7ebd19f97c3fa806c38757d1da24b3ec2aa704 to 805aa32
+cb7ebd1 (origin/movement_checks) HEAD@{2}: checkout: moving from a05777ab6b66a3ed6008823481a642b5d4475157 to cb7ebd1
+a05777a HEAD@{3}: checkout: moving from b67c8823a7d25dee87376419efff1f0ad52a3ee9 to a05777a
+b67c882 HEAD@{4}: checkout: moving from a05777ab6b66a3ed6008823481a642b5d4475157 to b67c882
+a05777a HEAD@{5}: checkout: moving from df7fef099870c7229c1c932dbea539f22d67932b to a05777a
+df7fef0 (origin/Spennys_branch) HEAD@{6}: checkout: moving from bc9f51c645a938fad2385b634981f53008d5c3d2 to df7fef0
+bc9f51c HEAD@{7}: checkout: moving from d679b2427ab37018849bffa860e991e679b0a8cc to bc9f51c
+d679b24 HEAD@{8}: checkout: moving from a5806d3e211e054cbedcd9cdc35e59cff01c4e87 to d679b24
+a5806d3 HEAD@{9}: checkout: moving from 5fbbef04f7da002c06fea00042c0acb72b9b9d8e to a5806d3
+5fbbef0 HEAD@{10}: checkout: moving from c1134997eea7fb567b9b505ce7f5f1cca0387796 to 5fbbef0
+c113499 HEAD@{11}: merge c113499: Fast-forward
+3102677 HEAD@{12}: checkout: moving from 3489e6255f535261a9bd803e9b043401561b4fe6 t[maruj@pascal 1XC3_L03]$ git checkout 5eecf4d 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c:2:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+chess.c: In function 'main':
+chess.c:132:15: warning: implicit declaration of function 'isValidMove' [-Wimplicit-function-declaration]
+     } while (!isValidMove(buf, board));
+               ^~~~~~~~~~~
+chess.c:137:1: error: version control conflict marker in file
+ =======
+ ^~~~~~~
+chess.c:159:1: error: expected declaration or statement at end of input
+ }
+ ^
+[maruj@pascal 1XC3_L03]$ git checkout 0bec659 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ git checkout b674897 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c:2:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+chess.c: In function 'main':
+chess.c:132:15: warning: implicit declaration of function 'isValidMove' [-Wimplicit-function-declaration]
+     } while (!isValidMove(buf, board));
+               ^~~~~~~~~~~
+chess.c:137:1: error: version control conflict marker in file
+ =======
+ ^~~~~~~
+chess.c:159:1: error: expected declaration or statement at end of input
+ }
+ ^
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ less chess.c
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c:2:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+chess.c: In function 'main':
+chess.c:132:15: warning: implicit declaration of function 'isValidMove' [-Wimplicit-function-declaration]
+     } while (!isValidMove(buf, board));
+               ^~~~~~~~~~~
+chess.c:137:1: error: version control conflict marker in file
+ =======
+ ^~~~~~~
+chess.c:159:1: error: expected declaration or statement at end of input
+ }
+ ^
+[maruj@pascal 1XC3_L03]$ git checkout cb7ebd1 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ git merge cb7ebd1 
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[maruj@pascal 1XC3_L03]$ git checkout 0bec659 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ git reset --hard 0bec659 
+HEAD is now at 0bec659 Update README
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c: In function 'main':
+chess.c:14:8: warning: excess elements in array initializer
+      , {5, 4, 3, 2, 1, 3, 4, 5}
+        ^
+chess.c:14:8: note: (near initialization for 'board')
+[maruj@pascal 1XC3_L03]$ less chess.c
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ git checkout c113499
+Previous HEAD position was 0bec659 Update README
+HEAD is now at c113499 Create example_output.txt
+[maruj@pascal 1XC3_L03]$ git merge c113499
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 670418a 
+Previous HEAD position was c113499 Create example_output.txt
+HEAD is now at 670418a Added showBoard function
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c: In function 'showBoard':
+chess.c:7:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf(" ");
+      ^~~~~~
+chess.c:7:6: warning: incompatible implicit declaration of built-in function 'printf'
+chess.c:7:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+chess.c:1:1:
++#include <stdio.h>
+ // ♔ ♕ ♖ ♗ ♘ ♙
+chess.c:7:6:
+      printf(" ");
+      ^~~~~~
+chess.c:20:3: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+   print("\n")
+   ^~~~~
+chess.c:20:14: error: expected ';' before '}' token
+   print("\n")
+              ^
+              ;
+  }
+  ~            
+chess.c: In function 'main':
+chess.c:25:2: warning: incompatible implicit declaration of built-in function 'printf'
+  printf("Welcome to Terminal Chess!\n");
+  ^~~~~~
+chess.c:25:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+chess.c:26:33: error: expected ';' before 'int'
+  printf("Initializing Board...")
+                                 ^
+                                 ;
+  int [8][8] board = { {5, 4, 3, 1, 2, 3, 4, 5}
+  ~~~                             
+chess.c:43:26: error: expected ';' before '}' token
+  printf("Terminating...")
+                          ^
+                          ;
+ }
+ ~                         
+[maruj@pascal 1XC3_L03]$ git merge c113499
+Auto-merging chess.c
+CONFLICT (content): Merge conflict in chess.c
+Automatic merge failed; fix conflicts and then commit the result.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c:1:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+chess.c: In function 'main':
+chess.c:26:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("Welcome to Terminal Chess!\n");
+  ^~~~~~
+chess.c:26:2: warning: incompatible implicit declaration of built-in function 'printf'
+chess.c:26:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+chess.c:1:1:
++#include <stdio.h>
+ <<<<<<< HEAD
+chess.c:26:2:
+  printf("Welcome to Terminal Chess!\n");
+  ^~~~~~
+chess.c:27:33: error: expected ';' before 'int'
+  printf("Initializing Board...")
+                                 ^
+                                 ;
+  int [8][8] board = { {5, 4, 3, 1, 2, 3, 4, 5}
+  ~~~                             
+chess.c:45:3: error: expected expression before '==' token
+ =======
+   ^~
+In file included from /usr/include/stdio.h:43,
+                 from chess.c:46:
+/usr/include/bits/types/struct_FILE.h:95:3: error: unknown type name 'size_t'
+   size_t __pad5;
+   ^~~~~~
+/usr/include/bits/types/struct_FILE.h:98:67: error: 'size_t' undeclared (first use in this function)
+   char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
+                                                                   ^~~~~~
+/usr/include/bits/types/struct_FILE.h:98:67: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+/usr/include/bits/types/struct_FILE.h:1:1:
++#include <stddef.h>
+ /* Copyright (C) 1991-2018 Free Software Foundation, Inc.
+/usr/include/bits/types/struct_FILE.h:98:67:
+   char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
+                                                                   ^~~~~~
+/usr/include/bits/types/struct_FILE.h:98:67: note: each undeclared identifier is reported only once for each function it appears in
+In file included from chess.c:46:
+/usr/include/stdio.h:292:35: error: expected declaration specifiers or '...' before 'size_t'
+ extern FILE *fmemopen (void *__s, size_t __len, const char *__modes)
+                                   ^~~~~~
+/usr/include/stdio.h:298:47: error: expected declaration specifiers or '...' before 'size_t'
+ extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) __THROW __wur;
+                                               ^~~~~~
+/usr/include/stdio.h:309:20: error: expected declaration specifiers or '...' before 'size_t'
+       int __modes, size_t __n) __THROW;
+                    ^~~~~~
+/usr/include/stdio.h:315:10: error: expected declaration specifiers or '...' before 'size_t'
+          size_t __size) __THROW;
+          ^~~~~~
+/usr/include/stdio.h:354:44: error: expected declaration specifiers or '...' before 'size_t'
+ extern int snprintf (char *__restrict __s, size_t __maxlen,
+                                            ^~~~~~
+/usr/include/stdio.h:358:45: error: expected declaration specifiers or '...' before 'size_t'
+ extern int vsnprintf (char *__restrict __s, size_t __maxlen,
+                                             ^~~~~~
+/usr/include/stdio.h:610:30: error: expected declaration specifiers or '...' before 'size_t'
+                              size_t *__restrict __n, int __delimiter,
+                              ^~~~~~
+/usr/include/stdio.h:613:28: error: expected declaration specifiers or '...' before 'size_t'
+                            size_t *__restrict __n, int __delimiter,
+                            ^~~~~~
+/usr/include/stdio.h:623:27: error: expected declaration specifiers or '...' before 'size_t'
+                           size_t *__restrict __n,
+                           ^~~~~~
+/usr/include/stdio.h:652:15: error: expected '=', ',', ';', 'asm' or '__attribute_' before 'fread'
+ extern size_t fread (void *__restrict __ptr, size_t __size,
+               ^~~~~
+/usr/include/stdio.h:652:22: error: expected expression before 'void'
+ extern size_t fread (void *__restrict __ptr, size_t __size,
+                      ^~~~
+/usr/include/stdio.h:658:15: error: expected '=', ',', ';', 'asm' or '__attribute_' before 'fwrite'
+ extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+               ^~~~~~
+/usr/include/stdio.h:658:23: error: expected expression before 'const'
+ extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+                       ^~~~~
+/usr/include/stdio.h:658:15: error: too few arguments to function 'fwrite'
+ extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+               ^~~~~~
+/usr/include/stdio.h:679:15: error: expected '=', ',', ';', 'asm' or '__attribute_' before 'fread_unlocked'
+ extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
+               ^~~~~~~~~~~~~~
+/usr/include/stdio.h:679:31: error: expected expression before 'void'
+ extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
+                               ^~~~
+/usr/include/stdio.h:681:15: error: expected '=', ',', ';', 'asm' or '__attribute_' before 'fwrite_unlocked'
+ extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+               ^~~~~~~~~~~~~~~
+/usr/include/stdio.h:681:32: error: expected expression before 'const'
+ extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+                                ^~~~~
+/usr/include/stdio.h:681:15: error: too few arguments to function 'fwrite_unlocked'
+ extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+               ^~~~~~~~~~~~~~~
+chess.c: In function 'main':
+chess.c:59:8: warning: excess elements in array initializer
+      , {5, 4, 3, 2, 1, 3, 4, 5}
+        ^
+chess.c:59:8: note: (near initialization for 'board')
+chess.c:67:1: error: version control conflict marker in file
+ >>>>>>> c113499
+ ^~~~~~~
+chess.c: In function 'main':
+chess.c:68:1: error: expected declaration or statement at end of input
+ }
+ ^
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ less chess.c
+"chess.c" may be a binary file.  See it anyway? 
+[maruj@pascal 1XC3_L03]$ 
+[maruj@pascal 1XC3_L03]$ git checkout d800757 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ git reset --hard
+HEAD is now at 670418a Added showBoard function
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  makefile
+[maruj@pascal 1XC3_L03]$ git checkout edcbe2e 
+Previous HEAD position was 670418a Added showBoard function
+HEAD is now at edcbe2e Create README
+[maruj@pascal 1XC3_L03]$ git merge edcbe2e 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out
+[maruj@pascal 1XC3_L03]$ less README 
+[maruj@pascal 1XC3_L03]$ git merge 37a4fd8 
+Updating edcbe2e..37a4fd8
+Fast-forward
+ README | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+[maruj@pascal 1XC3_L03]$ less a.out
+"a.out" may be a binary file.  See it anyway? 
+[maruj@pascal 1XC3_L03]$ git merge ef1be0e 
+Updating 37a4fd8..ef1be0e
+Fast-forward
+ makefile | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 makefile
+[maruj@pascal 1XC3_L03]$ git merge d800757 
+Updating ef1be0e..d800757
+Fast-forward
+ chess.c | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 chess.c
+[maruj@pascal 1XC3_L03]$ git merge 670418a 
+Updating d800757..670418a
+Fast-forward
+ chess.c | 43 +++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 43 insertions(+)
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  makefile
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c: In function 'showBoard':
+chess.c:7:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf(" ");
+      ^~~~~~
+chess.c:7:6: warning: incompatible implicit declaration of built-in function 'printf'
+chess.c:7:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+chess.c:1:1:
++#include <stdio.h>
+ // ♔ ♕ ♖ ♗ ♘ ♙
+chess.c:7:6:
+      printf(" ");
+      ^~~~~~
+chess.c:20:3: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+   print("\n")
+   ^~~~~
+chess.c:20:14: error: expected ';' before '}' token
+   print("\n")
+              ^
+              ;
+  }
+  ~            
+chess.c: In function 'main':
+chess.c:25:2: warning: incompatible implicit declaration of built-in function 'printf'
+  printf("Welcome to Terminal Chess!\n");
+  ^~~~~~
+chess.c:25:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+chess.c:26:33: error: expected ';' before 'int'
+  printf("Initializing Board...")
+                                 ^
+                                 ;
+  int [8][8] board = { {5, 4, 3, 1, 2, 3, 4, 5}
+  ~~~                             
+chess.c:43:26: error: expected ';' before '}' token
+  printf("Terminating...")
+                          ^
+                          ;
+ }
+ ~                         
+[maruj@pascal 1XC3_L03]$ less chess.c 
+"chess.c" may be a binary file.  See it anyway? 
+[maruj@pascal 1XC3_L03]$ git checkout e9d9041 
+Previous HEAD position was 670418a Added showBoard function
+HEAD is now at e9d9041 Update chess.c
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c:1:2: error: invalid preprocessing directive #inlcude; did you mean #include?
+ #inlcude<stdio.h>
+  ^~~~~~~
+  include
+chess.c: In function 'showBoard':
+chess.c:9:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf(" ");
+      ^~~~~~
+chess.c:9:6: warning: incompatible implicit declaration of built-in function 'printf'
+chess.c:9:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+chess.c:1:1:
++#include <stdio.h>
+ #inlcude<stdio.h>
+chess.c:9:6:
+      printf(" ");
+      ^~~~~~
+chess.c:22:3: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+   print("\n")
+   ^~~~~
+chess.c:22:14: error: expected ';' before '}' token
+   print("\n")
+              ^
+              ;
+  }
+  ~            
+chess.c: In function 'main':
+chess.c:27:2: warning: incompatible implicit declaration of built-in function 'printf'
+  printf("Welcome to Terminal Chess!\n");
+  ^~~~~~
+chess.c:27:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+chess.c:28:33: error: expected ';' before 'int'
+  printf("Initializing Board...")
+                                 ^
+                                 ;
+  int [8][8] board = { {5, 4, 3, 1, 2, 3, 4, 5}
+  ~~~                             
+chess.c:45:26: error: expected ';' before '}' token
+  printf("Terminating...")
+                          ^
+                          ;
+ }
+ ~                         
+[maruj@pascal 1XC3_L03]$ git merge e9d9041 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge 0bec659 
+Auto-merging chess.c
+CONFLICT (content): Merge conflict in chess.c
+Automatic merge failed; fix conflicts and then commit the result.
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ git checkout 7a62585 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ git checkout df23da4 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ git checkout a5806d3 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c:1:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+chess.c:2:2: error: invalid preprocessing directive #inlcude; did you mean #include?
+ #inlcude<stdio.h>
+  ^~~~~~~
+  include
+chess.c: In function 'main':
+chess.c:28:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("Welcome to Terminal Chess!\n");
+  ^~~~~~
+chess.c:28:2: warning: incompatible implicit declaration of built-in function 'printf'
+chess.c:28:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+chess.c:1:1:
++#include <stdio.h>
+ <<<<<<< HEAD
+chess.c:28:2:
+  printf("Welcome to Terminal Chess!\n");
+  ^~~~~~
+chess.c:29:33: error: expected ';' before 'int'
+  printf("Initializing Board...")
+                                 ^
+                                 ;
+  int [8][8] board = { {5, 4, 3, 1, 2, 3, 4, 5}
+  ~~~                             
+chess.c:47:3: error: expected expression before '==' token
+ =======
+   ^~
+In file included from /usr/include/stdio.h:43,
+                 from chess.c:48:
+/usr/include/bits/types/struct_FILE.h:95:3: error: unknown type name 'size_t'
+   size_t __pad5;
+   ^~~~~~
+/usr/include/bits/types/struct_FILE.h:98:67: error: 'size_t' undeclared (first use in this function)
+   char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
+                                                                   ^~~~~~
+/usr/include/bits/types/struct_FILE.h:98:67: note: 'size_t' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+/usr/include/bits/types/struct_FILE.h:1:1:
++#include <stddef.h>
+ /* Copyright (C) 1991-2018 Free Software Foundation, Inc.
+/usr/include/bits/types/struct_FILE.h:98:67:
+   char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
+                                                                   ^~~~~~
+/usr/include/bits/types/struct_FILE.h:98:67: note: each undeclared identifier is reported only once for each function it appears in
+In file included from chess.c:48:
+/usr/include/stdio.h:292:35: error: expected declaration specifiers or '...' before 'size_t'
+ extern FILE *fmemopen (void *__s, size_t __len, const char *__modes)
+                                   ^~~~~~
+/usr/include/stdio.h:298:47: error: expected declaration specifiers or '...' before 'size_t'
+ extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) __THROW __wur;
+                                               ^~~~~~
+/usr/include/stdio.h:309:20: error: expected declaration specifiers or '...' before 'size_t'
+       int __modes, size_t __n) __THROW;
+                    ^~~~~~
+/usr/include/stdio.h:315:10: error: expected declaration specifiers or '...' before 'size_t'
+          size_t __size) __THROW;
+          ^~~~~~
+/usr/include/stdio.h:354:44: error: expected declaration specifiers or '...' before 'size_t'
+ extern int snprintf (char *__restrict __s, size_t __maxlen,
+                                            ^~~~~~
+/usr/include/stdio.h:358:45: error: expected declaration specifiers or '...' before 'size_t'
+ extern int vsnprintf (char *__restrict __s, size_t __maxlen,
+                                             ^~~~~~
+/usr/include/stdio.h:610:30: error: expected declaration specifiers or '...' before 'size_t'
+                              size_t *__restrict __n, int __delimiter,
+                              ^~~~~~
+/usr/include/stdio.h:613:28: error: expected declaration specifiers or '...' before 'size_t'
+                            size_t *__restrict __n, int __delimiter,
+                            ^~~~~~
+/usr/include/stdio.h:623:27: error: expected declaration specifiers or '...' before 'size_t'
+                           size_t *__restrict __n,
+                           ^~~~~~
+/usr/include/stdio.h:652:15: error: expected '=', ',', ';', 'asm' or '__attribute_' before 'fread'
+ extern size_t fread (void *__restrict __ptr, size_t __size,
+               ^~~~~
+/usr/include/stdio.h:652:22: error: expected expression before 'void'
+ extern size_t fread (void *__restrict __ptr, size_t __size,
+                      ^~~~
+/usr/include/stdio.h:658:15: error: expected '=', ',', ';', 'asm' or '__attribute_' before 'fwrite'
+ extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+               ^~~~~~
+/usr/include/stdio.h:658:23: error: expected expression before 'const'
+ extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+                       ^~~~~
+/usr/include/stdio.h:658:15: error: too few arguments to function 'fwrite'
+ extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+               ^~~~~~
+/usr/include/stdio.h:679:15: error: expected '=', ',', ';', 'asm' or '__attribute_' before 'fread_unlocked'
+ extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
+               ^~~~~~~~~~~~~~
+/usr/include/stdio.h:679:31: error: expected expression before 'void'
+ extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
+                               ^~~~
+/usr/include/stdio.h:681:15: error: expected '=', ',', ';', 'asm' or '__attribute_' before 'fwrite_unlocked'
+ extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+               ^~~~~~~~~~~~~~~
+/usr/include/stdio.h:681:32: error: expected expression before 'const'
+ extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+                                ^~~~~
+/usr/include/stdio.h:681:15: error: too few arguments to function 'fwrite_unlocked'
+ extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+               ^~~~~~~~~~~~~~~
+chess.c: In function 'main':
+chess.c:61:8: warning: excess elements in array initializer
+      , {5, 4, 3, 2, 1, 3, 4, 5}
+        ^
+chess.c:61:8: note: (near initialization for 'board')
+chess.c:69:1: error: version control conflict marker in file
+ >>>>>>> 0bec659
+ ^~~~~~~
+chess.c:69:9: error: invalid suffix "bec659" on integer constant
+ >>>>>>> 0bec659
+         ^~~~~~~
+chess.c: In function 'main':
+chess.c:70:1: error: expected declaration or statement at end of input
+ }
+ ^
+[maruj@pascal 1XC3_L03]$ less chess.c 
+"chess.c" may be a binary file.  See it anyway? 
+[maruj@pascal 1XC3_L03]$ git checkout e9d9041 
+chess.c: needs merge
+error: you need to resolve your current index first
+[maruj@pascal 1XC3_L03]$ git reset --hard e9d9041 
+HEAD is now at e9d9041 Update chess.c
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c:1:2: error: invalid preprocessing directive #inlcude; did you mean #include?
+ #inlcude<stdio.h>
+  ^~~~~~~
+  include
+chess.c: In function 'showBoard':
+chess.c:9:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf(" ");
+      ^~~~~~
+chess.c:9:6: warning: incompatible implicit declaration of built-in function 'printf'
+chess.c:9:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+chess.c:1:1:
++#include <stdio.h>
+ #inlcude<stdio.h>
+chess.c:9:6:
+      printf(" ");
+      ^~~~~~
+chess.c:22:3: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+   print("\n")
+   ^~~~~
+chess.c:22:14: error: expected ';' before '}' token
+   print("\n")
+              ^
+              ;
+  }
+  ~            
+chess.c: In function 'main':
+chess.c:27:2: warning: incompatible implicit declaration of built-in function 'printf'
+  printf("Welcome to Terminal Chess!\n");
+  ^~~~~~
+chess.c:27:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+chess.c:28:33: error: expected ';' before 'int'
+  printf("Initializing Board...")
+                                 ^
+                                 ;
+  int [8][8] board = { {5, 4, 3, 1, 2, 3, 4, 5}
+  ~~~                             
+chess.c:45:26: error: expected ';' before '}' token
+  printf("Terminating...")
+                          ^
+                          ;
+ }
+ ~                         
+[maruj@pascal 1XC3_L03]$ git checkout 7a62585 
+Previous HEAD position was e9d9041 Update chess.c
+HEAD is now at 7a62585 showBoard -> switch case to if statements
+[maruj@pascal 1XC3_L03]$ git checkout e9d9041 
+Previous HEAD position was 7a62585 showBoard -> switch case to if statements
+HEAD is now at e9d9041 Update chess.c
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c:1:2: error: invalid preprocessing directive #inlcude; did you mean #include?
+ #inlcude<stdio.h>
+  ^~~~~~~
+  include
+chess.c: In function 'showBoard':
+chess.c:9:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf(" ");
+      ^~~~~~
+chess.c:9:6: warning: incompatible implicit declaration of built-in function 'printf'
+chess.c:9:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+chess.c:1:1:
++#include <stdio.h>
+ #inlcude<stdio.h>
+chess.c:9:6:
+      printf(" ");
+      ^~~~~~
+chess.c:22:3: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+   print("\n")
+   ^~~~~
+chess.c:22:14: error: expected ';' before '}' token
+   print("\n")
+              ^
+              ;
+  }
+  ~            
+chess.c: In function 'main':
+chess.c:27:2: warning: incompatible implicit declaration of built-in function 'printf'
+  printf("Welcome to Terminal Chess!\n");
+  ^~~~~~
+chess.c:27:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+chess.c:28:33: error: expected ';' before 'int'
+  printf("Initializing Board...")
+                                 ^
+                                 ;
+  int [8][8] board = { {5, 4, 3, 1, 2, 3, 4, 5}
+  ~~~                             
+chess.c:45:26: error: expected ';' before '}' token
+  printf("Terminating...")
+                          ^
+                          ;
+ }
+ ~                         
+[maruj@pascal 1XC3_L03]$ git checkout 4de145e 
+Previous HEAD position was e9d9041 Update chess.c
+HEAD is now at 4de145e Update chess.c
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ git merge 4de145e 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git checkout 670418a 
+Previous HEAD position was 4de145e Update chess.c
+HEAD is now at 670418a Added showBoard function
+[maruj@pascal 1XC3_L03]$ git merge 670418a 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 7a62585 
+Previous HEAD position was 670418a Added showBoard function
+HEAD is now at 7a62585 showBoard -> switch case to if statements
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ git merge 7a62585 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 377d987 
+Previous HEAD position was 7a62585 showBoard -> switch case to if statements
+HEAD is now at 377d987 A double lined border looks doubly nice!
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ git merge 377d987 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout efec8d7 
+Previous HEAD position was 377d987 A double lined border looks doubly nice!
+HEAD is now at efec8d7 removed redundant newlines
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ git merge efec8d7 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git status
+HEAD detached at efec8d7
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	a.out
+
+nothing added to commit but untracked files present (use "git add" to track)
+[maruj@pascal 1XC3_L03]$ git add a.out
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  makefile
+[maruj@pascal 1XC3_L03]$ git commit
+[detached HEAD 0f78f58] 1st commit
+ Committer: maruj <maruj@pascal.cas.mcmaster.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100755 a.out
+[maruj@pascal 1XC3_L03]$ git checkout efec8d7 
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  0f78f58 1st commit
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 0f78f58
+
+HEAD is now at efec8d7 removed redundant newlines
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge efec8d7 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 35c6188 
+Previous HEAD position was efec8d7 removed redundant newlines
+HEAD is now at 35c6188 Initial Turn logic
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:17:21: error: 'True' undeclared (first use in this function); did you mean 'true'?
+   bool whitesMove = True;
+                     ^~~~
+                     true
+chess.c:17:21: note: each undeclared identifier is reported only once for each function it appears in
+chess.c:20:2: warning: implicit declaration of function 'showBoard' [-Wimplicit-function-declaration]
+  showBoard(board);
+  ^~~~~~~~~
+chess.c:25:3: warning: implicit declaration of function 'prinf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   prinf("Please enter horizontal coordinate of piece to move >> ");
+   ^~~~~
+   printf
+chess.c:33:22: error: expected ';' before 'scanf'
+     printf("♔ >> ")
+                      ^
+                      ;
+     scanf("%s", buf);
+     ~~~~~             
+chess.c:35:22: error: stray '`' in program
+   } while (buf[0] != `q` && buf[0] != `Q`)
+                      ^
+chess.c:35:24: error: stray '`' in program
+   } while (buf[0] != `q` && buf[0] != `Q`)
+                        ^
+chess.c:35:23: error: 'q' undeclared (first use in this function)
+   } while (buf[0] != `q` && buf[0] != `Q`)
+                       ^
+chess.c:35:39: error: stray '`' in program
+   } while (buf[0] != `q` && buf[0] != `Q`)
+                                       ^
+chess.c:35:41: error: stray '`' in program
+   } while (buf[0] != `q` && buf[0] != `Q`)
+                                         ^
+chess.c:35:40: error: 'Q' undeclared (first use in this function)
+   } while (buf[0] != `q` && buf[0] != `Q`)
+                                        ^
+chess.c:35:43: error: expected ';' before 'printf'
+   } while (buf[0] != `q` && buf[0] != `Q`)
+                                           ^
+                                           ;
+chess.c:37:2:
+  printf("Terminating...\n") ;
+  ~~~~~~                                    
+[maruj@pascal 1XC3_L03]$ git merge 35c6188 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout df23da4 
+Previous HEAD position was 35c6188 Initial Turn logic
+HEAD is now at df23da4 Bug fixes
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge df23da4 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout c09502b 
+Previous HEAD position was df23da4 Bug fixes
+HEAD is now at c09502b More Bugfixes
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge c09502b 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout a1df1be 
+Previous HEAD position was c09502b More Bugfixes
+HEAD is now at a1df1be Set up function
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge a1df1be 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 1f1e1ec 
+Previous HEAD position was a1df1be Set up function
+HEAD is now at 1f1e1ec Added pawn behaviour
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c:39:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c:4:6: note: previous declaration of 'isValidMove' was here
+ bool isValidMove (int x1, int x2, int y1, int y2) ;
+      ^~~~~~~~~~~
+chess.c: In function 'isValidMove':
+chess.c:56:14: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+   } else if (abs(x1 - x2) == 1 && y1-y2 == 1) { // capture left or right
+              ^~~
+[maruj@pascal 1XC3_L03]$ git merge 1f1e1ec 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c:39:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c:4:6: note: previous declaration of 'isValidMove' was here
+ bool isValidMove (int x1, int x2, int y1, int y2) ;
+      ^~~~~~~~~~~
+chess.c: In function 'isValidMove':
+chess.c:56:14: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+   } else if (abs(x1 - x2) == 1 && y1-y2 == 1) { // capture left or right
+              ^~~
+[maruj@pascal 1XC3_L03]$ git checkout 98369eb 
+Previous HEAD position was 1f1e1ec Added pawn behaviour
+HEAD is now at 98369eb Update chess.c
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c:39:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c:4:6: note: previous declaration of 'isValidMove' was here
+ bool isValidMove (int x1, int x2, int y1, int y2) ;
+      ^~~~~~~~~~~
+chess.c: In function 'isValidMove':
+chess.c:61:14: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+   } else if (abs(x1 - x2) == 1 && y1-y2 == 1) { // capture left or right
+              ^~~
+[maruj@pascal 1XC3_L03]$ git merge 98369eb 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 191e675 
+Previous HEAD position was 98369eb Update chess.c
+HEAD is now at 191e675 Update chess.c
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c:39:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c:4:6: note: previous declaration of 'isValidMove' was here
+ bool isValidMove (int x1, int x2, int y1, int y2) ;
+      ^~~~~~~~~~~
+chess.c: In function 'isValidMove':
+chess.c:43:7: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+       ^~~
+chess.c:43:24: error: expected ')' before 'and'
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+      ~                 ^~~~
+                        )
+[maruj@pascal 1XC3_L03]$ git merge 191e675 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c:39:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c:4:6: note: previous declaration of 'isValidMove' was here
+ bool isValidMove (int x1, int x2, int y1, int y2) ;
+      ^~~~~~~~~~~
+chess.c: In function 'isValidMove':
+chess.c:43:7: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+       ^~~
+chess.c:43:24: error: expected ')' before 'and'
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+      ~                 ^~~~
+                        )
+[maruj@pascal 1XC3_L03]$ git checkout 052b8b0 
+Previous HEAD position was 191e675 Update chess.c
+HEAD is now at 052b8b0 Now including stdlib
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c:40:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c:5:6: note: previous declaration of 'isValidMove' was here
+ bool isValidMove (int x1, int x2, int y1, int y2) ;
+      ^~~~~~~~~~~
+chess.c: In function 'isValidMove':
+chess.c:44:24: error: expected ')' before 'and'
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+      ~                 ^~~~
+                        )
+[maruj@pascal 1XC3_L03]$ git merge 052b8b0 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout f77386d 
+Previous HEAD position was 052b8b0 Now including stdlib
+HEAD is now at f77386d bug fixes
+[maruj@pascal 1XC3_L03]$ git merge f77386d 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  makefile
+[maruj@pascal 1XC3_L03]$ git checkout 1b1dc1b 
+Previous HEAD position was f77386d bug fixes
+HEAD is now at 1b1dc1b Added unsafe piece movement
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'validMove':
+chess.c:6:9: error: 'True' undeclared (first use in this function); did you mean 'true'?
+  return True;
+         ^~~~
+         true
+chess.c:6:9: note: each undeclared identifier is reported only once for each function it appears in
+chess.c: In function 'makeMove':
+chess.c:10:2: error: 'start_x' undeclared (first use in this function)
+  start_x = input[0] - 48;
+  ^~~~~~~
+chess.c:11:2: error: 'start_y' undeclared (first use in this function)
+  start_y = input[1] - 48;
+  ^~~~~~~
+chess.c:12:2: error: 'end_x' undeclared (first use in this function)
+  end_x = input[3] - 48;
+  ^~~~~
+chess.c:13:2: error: 'end_y' undeclared (first use in this function)
+  end_y = input[4] - 48;
+  ^~~~~
+chess.c: In function 'main':
+chess.c:42:37: error: expected ';' before '}' token
+   printf("Move Invalid! Try again!")
+                                     ^
+                                     ;
+  }
+  ~                                   
+chess.c:53:19: warning: passing argument 2 of 'makeMove' from incompatible pointer type [-Wincompatible-pointer-types]
+     makeMove(buf, &board);
+                   ^~~~~~
+chess.c:9:34: note: expected 'int * (*)[8]' but argument is of type 'int (*)[8][8]'
+ void makeMove (char* input, int* board[8][8]) {
+                             ~~~~~^~~~~~~~~~~
+[maruj@pascal 1XC3_L03]$ git merge 1b1dc1b 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'validMove':
+chess.c:6:9: error: 'True' undeclared (first use in this function); did you mean 'true'?
+  return True;
+         ^~~~
+         true
+chess.c:6:9: note: each undeclared identifier is reported only once for each function it appears in
+chess.c: In function 'makeMove':
+chess.c:10:2: error: 'start_x' undeclared (first use in this function)
+  start_x = input[0] - 48;
+  ^~~~~~~
+chess.c:11:2: error: 'start_y' undeclared (first use in this function)
+  start_y = input[1] - 48;
+  ^~~~~~~
+chess.c:12:2: error: 'end_x' undeclared (first use in this function)
+  end_x = input[3] - 48;
+  ^~~~~
+chess.c:13:2: error: 'end_y' undeclared (first use in this function)
+  end_y = input[4] - 48;
+  ^~~~~
+chess.c: In function 'main':
+chess.c:42:37: error: expected ';' before '}' token
+   printf("Move Invalid! Try again!")
+                                     ^
+                                     ;
+  }
+  ~                                   
+chess.c:53:19: warning: passing argument 2 of 'makeMove' from incompatible pointer type [-Wincompatible-pointer-types]
+     makeMove(buf, &board);
+                   ^~~~~~
+chess.c:9:34: note: expected 'int * (*)[8]' but argument is of type 'int (*)[8][8]'
+ void makeMove (char* input, int* board[8][8]) {
+                             ~~~~~^~~~~~~~~~~
+[maruj@pascal 1XC3_L03]$ git checkout dd801c4 
+Previous HEAD position was 1b1dc1b Added unsafe piece movement
+HEAD is now at dd801c4 Fixed turn logic
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'validMove':
+chess.c:8:9: error: 'True' undeclared (first use in this function); did you mean 'true'?
+  return True;
+         ^~~~
+         true
+chess.c:8:9: note: each undeclared identifier is reported only once for each function it appears in
+chess.c: In function 'makeMove':
+chess.c:12:2: error: 'start_x' undeclared (first use in this function)
+  start_x = input[0] - 48;
+  ^~~~~~~
+chess.c:13:2: error: 'start_y' undeclared (first use in this function)
+  start_y = input[1] - 48;
+  ^~~~~~~
+chess.c:14:2: error: 'end_x' undeclared (first use in this function)
+  end_x = input[3] - 48;
+  ^~~~~
+chess.c:15:2: error: 'end_y' undeclared (first use in this function)
+  end_y = input[4] - 48;
+  ^~~~~
+chess.c: In function 'main':
+chess.c:45:37: error: expected ';' before '}' token
+   printf("Move Invalid! Try again!")
+                                     ^
+                                     ;
+  }
+  ~                                   
+chess.c:55:15: warning: implicit declaration of function 'isValidMove'; did you mean 'validMove'? [-Wimplicit-function-declaration]
+     } while (!isValidMove(buf, board) && buf[0] != 'q' && buf[0] != 'Q');
+               ^~~~~~~~~~~
+               validMove
+chess.c:56:19: warning: passing argument 2 of 'makeMove' from incompatible pointer type [-Wincompatible-pointer-types]
+     makeMove(buf, &board);
+                   ^~~~~~
+chess.c:11:34: note: expected 'int * (*)[8]' but argument is of type 'int (*)[8][8'
+ void makeMove (char* input, int* board[8][8]) {
+                             ~~~~~^~~~~~~~~~~
+[maruj@pascal 1XC3_L03]$ git merge dd801c4 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 9b7753e 
+Previous HEAD position was dd801c4 Fixed turn logic
+HEAD is now at 9b7753e bug fixes
+[maruj@pascal 1XC3_L03]$ git merge 9b7753e 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c
+chess.c: In function 'main':
+chess.c:56:19: warning: passing argument 2 of 'makeMove' from incompatible pointer type [-Wincompatible-pointer-types]
+     makeMove(buf, &board);
+                   ^~~~~~
+chess.c:11:34: note: expected 'int * (*)[8]' but argument is of type 'int (*)[8][8'
+ void makeMove (char* input, int* board[8][8]) {
+                             ~~~~~^~~~~~~~~~~
+/tmp/ccHQalJG.o: In function `main':
+chess.c:(.text+0x326): undefined reference to `showBoard'
+collect2: error: ld returned 1 exit status
+[maruj@pascal 1XC3_L03]$ git checkout 01c98a1 
+Previous HEAD position was 9b7753e bug fixes
+HEAD is now at 01c98a1 bug fixes
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'showBoard':
+chess.c:5:2: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  print ("Added on another branch...\n");
+  ^~~~~
+  printf
+chess.c: In function 'main':
+chess.c:58:19: warning: passing argument 2 of 'makeMove' from incompatible pointer type [-Wincompatible-pointer-types]
+     makeMove(buf, board);
+                   ^~~~~
+chess.c:13:34: note: expected 'int * (*)[8]' but argument is of type 'int (*)[8]'
+ void makeMove (char* input, int* board[8][8]) {
+                             ~~~~~^~~~~~~~~~~
+/tmp/ccpEinTm.o: In function `showBoard':
+chess.c:(.text+0x17): undefined reference to `print'
+collect2: error: ld returned 1 exit status
+[maruj@pascal 1XC3_L03]$ git merge 01c98a1 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 52897c4 
+Previous HEAD position was 01c98a1 bug fixes
+HEAD is now at 52897c4 bug feeexes
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'makeMove':
+chess.c:19:2: error: invalid type argument of unary '*' (have 'int')
+  *board[end_x][end_y] = *board[start_x][start_y];
+  ^~~~~~~~~~~~~~~~~~~~
+chess.c:19:25: error: invalid type argument of unary '*' (have 'int')
+  *board[end_x][end_y] = *board[start_x][start_y];
+                         ^~~~~~~~~~~~~~~~~~~~~~~~
+[maruj@pascal 1XC3_L03]$ git merge 52897c4 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout e9faa8f 
+Previous HEAD position was 52897c4 bug feeexes
+HEAD is now at e9faa8f bug flexes
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge e9faa8f 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 157d61a 
+Previous HEAD position was e9faa8f bug flexes
+HEAD is now at 157d61a Changed to If Statements
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:38:14: warning: excess elements in array initializer
+            , {5, 4, 3, 1, 2, 3, 4, 5}
+              ^
+chess.c:38:14: note: (near initialization for 'board')
+chess.c: In function 'showBoard':
+chess.c:48:1: error: expected declaration or statement at end of input
+ }
+ ^
+[maruj@pascal 1XC3_L03]$ git merge 157d61a 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 8dd5b63 
+Previous HEAD position was 157d61a Changed to If Statements
+HEAD is now at 8dd5b63 Added black Squares
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'showBoard':
+chess.c:11:5: error: expected '}' before 'else'
+     else {
+     ^~~~
+chess.c: In function 'main':
+chess.c:42:14: warning: excess elements in array initializer
+            , {5, 4, 3, 1, 2, 3, 4, 5}
+              ^
+chess.c:42:14: note: (near initialization for 'board')
+chess.c: In function 'showBoard':
+chess.c:52:1: error: expected declaration or statement at end of input
+ }
+ ^
+[maruj@pascal 1XC3_L03]$ git merge 8dd5b63 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout aecee2f 
+Previous HEAD position was 8dd5b63 Added black Squares
+HEAD is now at aecee2f fixed squares
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'showBoard':
+chess.c:11:5: error: expected '}' before 'else'
+     else {
+     ^~~~
+chess.c: In function 'main':
+chess.c:42:14: warning: excess elements in array initializer
+            , {5, 4, 3, 1, 2, 3, 4, 5}
+              ^
+chess.c:42:14: note: (near initialization for 'board')
+chess.c: In function 'showBoard':
+chess.c:52:1: error: expected declaration or statement at end of input
+ }
+ ^
+[maruj@pascal 1XC3_L03]$ git merge aecee2f 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout c84b698 
+Previous HEAD position was aecee2f fixed squares
+HEAD is now at c84b698 bug fixos
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:43:10: warning: excess elements in array initializer
+        , {5, 4, 3, 1, 2, 3, 4, 5}
+          ^
+chess.c:43:10: note: (near initialization for 'board')
+[maruj@pascal 1XC3_L03]$ git merge c84b698 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 8cad529 
+Previous HEAD position was c84b698 bug fixos
+HEAD is now at 8cad529 Added King Functionality
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c:39:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c:4:6: note: previous declaration of 'isValidMove' was here
+ bool isValidMove (int x1, int x2, int y1, int y2) ;
+      ^~~~~~~~~~~
+chess.c: In function 'isValidMove':
+chess.c:43:7: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+       ^~~
+chess.c:43:24: error: expected ')' before 'and'
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+      ~                 ^~~~
+                        )
+[maruj@pascal 1XC3_L03]$ git merge 8cad529 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c:39:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c:4:6: note: previous declaration of 'isValidMove' was here
+ bool isValidMove (int x1, int x2, int y1, int y2) ;
+      ^~~~~~~~~~~
+chess.c: In function 'isValidMove':
+chess.c:43:7: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+       ^~~
+chess.c:43:24: error: expected ')' before 'and'
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+      ~                 ^~~~
+                        )
+[maruj@pascal 1XC3_L03]$ git checkout b96306e 
+Previous HEAD position was 8cad529 Added King Functionality
+HEAD is now at b96306e Added Knight behaviour
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c:39:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c:4:6: note: previous declaration of 'isValidMove' was here
+ bool isValidMove (int x1, int x2, int y1, int y2) ;
+      ^~~~~~~~~~~
+chess.c: In function 'isValidMove':
+chess.c:43:7: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+       ^~~
+chess.c:43:24: error: expected ')' before 'and'
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+      ~                 ^~~~
+                        )
+[maruj@pascal 1XC3_L03]$ git merge b96306e 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git chekout d6fc917 
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c:39:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c:4:6: note: previous declaration of 'isValidMove' was here
+ bool isValidMove (int x1, int x2, int y1, int y2) ;
+      ^~~~~~~~~~~
+chess.c: In function 'isValidMove':
+chess.c:43:7: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+       ^~~
+chess.c:43:24: error: expected ')' before 'and'
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+      ~                 ^~~~
+                        )
+[maruj@pascal 1XC3_L03]$ git merge d6fc917 
+Updating b96306e..d6fc917
+Fast-forward
+ chess.c | 1 +
+ 1 file changed, 1 insertion(+)
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c:40:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c:5:6: note: previous declaration of 'isValidMove' was here
+ bool isValidMove (int x1, int x2, int y1, int y2) ;
+      ^~~~~~~~~~~
+chess.c: In function 'isValidMove':
+chess.c:44:24: error: expected ')' before 'and'
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+      ~                 ^~~~
+                        )
+[maruj@pascal 1XC3_L03]$ git checkout afb39b2 
+Previous HEAD position was d6fc917 Now using stdlib
+HEAD is now at afb39b2 bug fixes
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge afb39b2 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 4ac969b 
+Previous HEAD position was afb39b2 bug fixes
+HEAD is now at 4ac969b Swapped king and queen
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge 4ac969b 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 0b3dd71 
+Previous HEAD position was 4ac969b Swapped king and queen
+HEAD is now at 0b3dd71 Added gridlines
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge 0b3dd71 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout deb568b 
+Previous HEAD position was 0b3dd71 Added gridlines
+HEAD is now at deb568b Corrected display somewhat
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'showBoard':
+chess.c:17:3: error: unknown type name 'bool'; did you mean '_Bool'?
+   bool flag = true;
+   ^~~~
+   _Bool
+chess.c:17:15: error: 'true' undeclared (first use in this function)
+   bool flag = true;
+               ^~~~
+chess.c:17:15: note: each undeclared identifier is reported only once for each function it appears in
+chess.c:22:11: error: 'false' undeclared (first use in this function); did you mean 'fclose'?
+    flag = false;
+           ^~~~~
+           fclose
+[maruj@pascal 1XC3_L03]$ git merge deb568b 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 9fd8ea9 
+Previous HEAD position was deb568b Corrected display somewhat
+HEAD is now at 9fd8ea9 now using stdbool
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge 9fd8ea9 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 0c0063f 
+Previous HEAD position was 9fd8ea9 now using stdbool
+HEAD is now at 0c0063f swapped king and queen
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge 0c0063f 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 55f898b 
+Previous HEAD position was 0c0063f swapped king and queen
+HEAD is now at 55f898b Added Coordinate indicators
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge 55f898b 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 94b4809 
+Previous HEAD position was 55f898b Added Coordinate indicators
+HEAD is now at 94b4809 Fixed Piece Display
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge 94b4809 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 6e0a1d5 
+Previous HEAD position was 94b4809 Fixed Piece Display
+HEAD is now at 6e0a1d5 Started Valid move logic
+[maruj@pascal 1XC3_L03]$ gcc c§
+gcc: error: c§: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'validMove':
+chess.c:15:12: error: expected '(' before 'start_y'
+  } else if start_y > 7 || start_y < 0) {
+            ^~~~~~~
+            (
+chess.c:15:38: error: expected statement before ')' token
+  } else if start_y > 7 || start_y < 0) {
+                                      ^
+chess.c:17:4: error: 'else' without a previous 'if'
+  } else if end_x > 7 || end_x < 0) {
+    ^~~~
+chess.c:17:12: error: expected '(' before 'end_x'
+  } else if end_x > 7 || end_x < 0) {
+            ^~~~~
+            (
+chess.c:17:34: error: expected statement before ')' token
+  } else if end_x > 7 || end_x < 0) {
+                                  ^
+chess.c:19:4: error: 'else' without a previous 'if'
+  } else if end_y > 7 || end_y < 0) {
+    ^~~~
+chess.c:19:12: error: expected '(' before 'end_y'
+  } else if end_y > 7 || end_y < 0) {
+            ^~~~~
+            (
+chess.c:19:34: error: expected statement before ')' token
+  } else if end_y > 7 || end_y < 0) {
+                                  ^
+chess.c:42:16: error: 'validMoves' undeclared (first use in this function); did you mean 'validMove'?
+  if (!memberOf(validMoves, end_x, end_y)) {
+                ^~~~~~~~~~
+                validMove
+chess.c:42:16: note: each undeclared identifier is reported only once for each function it appears in
+chess.c: In function 'makeMove':
+chess.c:50:2: error: 'start_x' undeclared (first use in this function)
+  start_x = input[0] - 48;
+  ^~~~~~~
+chess.c:51:2: error: 'start_y' undeclared (first use in this function)
+  start_y = input[1] - 48;
+  ^~~~~~~
+chess.c:52:2: error: 'end_x' undeclared (first use in this function)
+  end_x = input[3] - 48;
+  ^~~~~
+chess.c:53:2: error: 'end_y' undeclared (first use in this function)
+  end_y = input[4] - 48;
+  ^~~~~
+chess.c: In function 'main':
+chess.c:82:37: error: expected ';' before '}' token
+   printf("Move Invalid! Try again!")
+                                     ^
+                                     ;
+  }
+  ~                                   
+chess.c:92:15: error: too few arguments to function 'validMove'
+     } while (!validMove(buf));
+               ^~~~~~~~~
+chess.c:6:6: note: declared here
+ bool validMove (char* input, int* board[8][8]) {
+      ^~~~~~~~~
+chess.c:93:19: warning: passing argument 2 of 'makeMove' from incompatible pointer type [-Wincompatible-pointer-types]
+     makeMove(buf, &board);
+                   ^~~~~~
+chess.c:49:34: note: expected 'int * (*)[8]' but argument is of type 'int (*)[8][8'
+ void makeMove (char* input, int* board[8][8]) {
+                             ~~~~~^~~~~~~~~~~
+[maruj@pascal 1XC3_L03]$ git merge 6e0a1d5 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout ac73c02 
+Previous HEAD position was 6e0a1d5 Started Valid move logic
+HEAD is now at ac73c02 bug fixes
+[maruj@pascal 1XC3_L03]$ gcc c
+gcc: error: c: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:82:37: error: expected ';' before '}' token
+   printf("Move Invalid! Try again!")
+                                     ^
+                                     ;
+  }
+  ~                                   
+chess.c:92:15: error: too few arguments to function 'validMove'
+     } while (!validMove(buf));
+               ^~~~~~~~~
+chess.c:6:6: note: declared here
+ bool validMove (char* input, int* board[8][8]) {
+      ^~~~~~~~~
+chess.c:93:19: warning: passing argument 2 of 'makeMove' from incompatible pointer type [-Wincompatible-pointer-types]
+     makeMove(buf, &board);
+                   ^~~~~~
+chess.c:49:34: note: expected 'int * (*)[8]' but argument is of type 'int (*)[8][8'
+ void makeMove (char* input, int* board[8][8]) {
+                             ~~~~~^~~~~~~~~~~
+[maruj@pascal 1XC3_L03]$ git merge ac73c02 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 024529c 
+Previous HEAD position was ac73c02 bug fixes
+HEAD is now at 024529c Added Queen's Behaviour
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'validMove':
+chess.c:31:4: error: a label can only be part of a statement and a declaration is not a statement
+    int xcheck = start_x;
+    ^~~
+chess.c:32:4: error: expected expression before 'int'
+    int ycheck = start_y;
+    ^~~
+chess.c:36:5: error: 'ycheck' undeclared (first use in this function); did you mean 'xcheck'?
+     ycheck += (start_y > end_y)? -1 : 1;
+     ^~~~~~
+     xcheck
+chess.c:36:5: note: each undeclared identifier is reported only once for each function it appears in
+chess.c:41:6: error: 'piecesInWay' undeclared (first use in this function)
+      piecesInWay += 1;
+      ^~~~~~~~~~~
+chess.c: In function 'main':
+chess.c:121:37: error: expected ';' before '}' token
+   printf("Move Invalid! Try again!")
+                                     ^
+                                     ;
+  }
+  ~                                   
+chess.c:131:15: error: too few arguments to function 'validMove'
+     } while (!validMove(buf));
+               ^~~~~~~~~
+chess.c:6:6: note: declared here
+ bool validMove (char* input, int* board[8][8]) {
+      ^~~~~~~~~
+chess.c:132:19: warning: passing argument 2 of 'makeMove' from incompatible pointer type [-Wincompatible-pointer-types]
+     makeMove(buf, &board);
+                   ^~~~~~
+chess.c:88:34: note: expected 'int * (*)[8]' but argument is of type 'int (*)[8][8'
+ void makeMove (char* input, int* board[8][8]) {
+                             ~~~~~^~~~~~~~~~~
+[maruj@pascal 1XC3_L03]$ git merge 024529c 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 7842432 
+Previous HEAD position was 024529c Added Queen's Behaviour
+HEAD is now at 7842432 bug fixes
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:121:37: error: expected ';' before '}' token
+   printf("Move Invalid! Try again!")
+                                     ^
+                                     ;
+  }
+  ~                                   
+chess.c:131:15: error: too few arguments to function 'validMove'
+     } while (!validMove(buf));
+               ^~~~~~~~~
+chess.c:6:6: note: declared here
+ bool validMove (char* input, int* board[8][8]) {
+      ^~~~~~~~~
+chess.c:132:19: warning: passing argument 2 of 'makeMove' from incompatible pointer type [-Wincompatible-pointer-types]
+     makeMove(buf, &board);
+                   ^~~~~~
+chess.c:88:34: note: expected 'int * (*)[8]' but argument is of type 'int (*)[8][8'
+ void makeMove (char* input, int* board[8][8]) {
+                             ~~~~~^~~~~~~~~~~
+[maruj@pascal 1XC3_L03]$ git merge 7842432 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 6ed1dfa 
+Previous HEAD position was 7842432 bug fixes
+HEAD is now at 6ed1dfa gub xif
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:131:32: warning: passing argument 2 of 'isValidMove' from incompatible pointer type [-Wincompatible-pointer-types]
+     } while (!isValidMove(buf, board));
+                                ^~~~~
+chess.c:6:37: note: expected 'int * (*)[8]' but argument is of type 'int (*)[8]'
+ bool isValidMove (char* input, int* board[8][8]) {
+                                ~~~~~^~~~~~~~~~~
+/tmp/ccmGoTFj.o: In function `isValidMove':
+chess.c:(.text+0x24d): undefined reference to `memberOf'
+collect2: error: ld returned 1 exit status
+[maruj@pascal 1XC3_L03]$ git merge 6ed1dfa 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 5eecf4d 
+Previous HEAD position was 6ed1dfa gub xif
+HEAD is now at 5eecf4d yet more bug fixes
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'isValidMove':
+chess.c:28:10: error: invalid type argument of unary '*' (have 'int')
+  switch (*board[start_x][start_y]) {
+          ^~~~~~~~~~~~~~~~~~~~~~~~
+[maruj@pascal 1XC3_L03]$ git merge 5eecf4d 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout b674897 
+Previous HEAD position was 5eecf4d yet more bug fixes
+HEAD is now at b674897 You guessed it... more bug fixes
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge b674897 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 805aa32 
+Previous HEAD position was b674897 You guessed it... more bug fixes
+HEAD is now at 805aa32 Various Bugfixes
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge 805aa32 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout cb7ebd1 
+Previous HEAD position was 805aa32 Various Bugfixes
+HEAD is now at cb7ebd1 updated queen logic
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge cb7ebd1 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout b67c882 
+Previous HEAD position was cb7ebd1 updated queen logic
+HEAD is now at b67c882 Update chess.c
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c:39:6: error: conflicting types for 'isValidMove'
+ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
+      ^~~~~~~~~~~
+chess.c:4:6: note: previous declaration of 'isValidMove' was here
+ bool isValidMove (int x1, int x2, int y1, int y2) ;
+      ^~~~~~~~~~~
+chess.c: In function 'isValidMove':
+chess.c:46:7: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+       ^~~
+chess.c:46:24: error: expected ')' before 'and'
+   if (abs(x1 - x2) <= 1 and abs(y1-y2) <= 1) {
+      ~                 ^~~~
+                        )
+[maruj@pascal 1XC3_L03]$ git merge b67c882 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout a05777a 
+Previous HEAD position was b67c882 Update chess.c
+HEAD is now at a05777a bug fixes
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge a05777a 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout df7fef0 
+Previous HEAD position was a05777a bug fixes
+HEAD is now at df7fef0 Updated Bishop, Rook, & Pawn Behaviour
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+[maruj@pascal 1XC3_L03]$ git merge df7fef0 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout bc9f51c 
+Previous HEAD position was df7fef0 Updated Bishop, Rook, & Pawn Behaviour
+HEAD is now at bc9f51c Added Board Initialisation
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:5:33: error: expected ';' before 'int'
+  printf("Initializing Board...")
+                                 ^
+                                 ;
+  int [8][8] = { {5, 4, 3, 1, 2, 3, 4, 5}
+  ~~~                             
+[maruj@pascal 1XC3_L03]$ git merge bc9f51c 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout d679b24 
+Previous HEAD position was bc9f51c Added Board Initialisation
+HEAD is now at d679b24 Updated Readme with piece values
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:5:33: error: expected ';' before 'int'
+  printf("Initializing Board...")
+                                 ^
+                                 ;
+  int [8][8] = { {5, 4, 3, 1, 2, 3, 4, 5}
+  ~~~                             
+[maruj@pascal 1XC3_L03]$ git merge d679b24 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 3e4391f 
+Previous HEAD position was d679b24 Updated Readme with piece values
+HEAD is now at 3e4391f bug fixes
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:6:6: error: expected identifier or '(' before '[' token
+  int [8][8] = { {5, 4, 3, 1, 2, 3, 4, 5}
+      ^
+[maruj@pascal 1XC3_L03]$ git merge 3e4391f 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout d22fda1 
+Previous HEAD position was 3e4391f bug fixes
+HEAD is now at d22fda1 more bug fixes
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:14:8: warning: excess elements in array initializer
+      , {5, 4, 3, 1, 2, 3, 4, 5}
+        ^
+chess.c:14:8: note: (near initialization for 'board')
+chess.c:16:2: error: expected ',' or ';' before 'printf'
+  printf("Board Initialized!");
+  ^~~~~~
+[maruj@pascal 1XC3_L03]$ git merge d22fda1 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout a8212a9 
+Previous HEAD position was d22fda1 more bug fixes
+HEAD is now at a8212a9 yet more bug fixes
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:14:8: warning: excess elements in array initializer
+      , {5, 4, 3, 1, 2, 3, 4, 5}
+        ^
+chess.c:14:8: note: (near initialization for 'board')
+[maruj@pascal 1XC3_L03]$ git merge a8212a9 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout a5806d3 
+Previous HEAD position was a8212a9 yet more bug fixes
+HEAD is now at a5806d3 swapped king and queen
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:14:8: warning: excess elements in array initializer
+      , {5, 4, 3, 2, 1, 3, 4, 5}
+        ^
+chess.c:14:8: note: (near initialization for 'board')
+[maruj@pascal 1XC3_L03]$ git merge a5806d3 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 5fbbef0 
+Previous HEAD position was a5806d3 swapped king and queen
+HEAD is now at 5fbbef0 Update README
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:14:8: warning: excess elements in array initializer
+      , {5, 4, 3, 2, 1, 3, 4, 5}
+        ^
+chess.c:14:8: note: (near initialization for 'board')
+[maruj@pascal 1XC3_L03]$ git merge 5fbbef0 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge 3102677 
+Updating 5fbbef0..3102677
+Fast-forward
+ README | 2 ++
+ 1 file changed, 2 insertions(+)
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:14:8: warning: excess elements in array initializer
+      , {5, 4, 3, 2, 1, 3, 4, 5}
+        ^
+chess.c:14:8: note: (near initialization for 'board')
+[maruj@pascal 1XC3_L03]$ git merge bc9f51c 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:14:8: warning: excess elements in array initializer
+      , {5, 4, 3, 2, 1, 3, 4, 5}
+        ^
+chess.c:14:8: note: (near initialization for 'board')
+[maruj@pascal 1XC3_L03]$ git merge 3489e62 
+Updating 3102677..3489e62
+Fast-forward
+ README | 2 --
+ 1 file changed, 2 deletions(-)
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:14:8: warning: excess elements in array initializer
+      , {5, 4, 3, 2, 1, 3, 4, 5}
+        ^
+chess.c:14:8: note: (near initialization for 'board')
+[maruj@pascal 1XC3_L03]$ git checkout c113499 
+Previous HEAD position was 3489e62 Update README
+HEAD is now at c113499 Create example_output.txt
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:14:8: warning: excess elements in array initializer
+      , {5, 4, 3, 2, 1, 3, 4, 5}
+        ^
+chess.c:14:8: note: (near initialization for 'board')
+[maruj@pascal 1XC3_L03]$ git merge c113499 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git checkout 0bec659 
+Previous HEAD position was c113499 Create example_output.txt
+HEAD is now at 0bec659 Update README
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:14:8: warning: excess elements in array initializer
+      , {5, 4, 3, 2, 1, 3, 4, 5}
+        ^
+chess.c:14:8: note: (near initialization for 'board')
+[maruj@pascal 1XC3_L03]$ git merge 0bec659 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge 3e4391f 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge d22fda1 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git merge a8212a9 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git commit 
+HEAD detached at 0bec659
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	a.out
+
+nothing added to commit but untracked files present (use "git add" to track)
+[maruj@pascal 1XC3_L03]$ ls
+README  a.out  chess.c  example_output.txt  makefile
+[maruj@pascal 1XC3_L03]$ gcc chess.c 
+chess.c: In function 'main':
+chess.c:14:8: warning: excess elements in array initializer
+      , {5, 4, 3, 2, 1, 3, 4, 5}
+        ^
+chess.c:14:8: note: (near initialization for 'board')
+[maruj@pascal 1XC3_L03]$ less chess.c 
+[maruj@pascal 1XC3_L03]$ less example_output.txt 
+"example_output.txt" may be a binary file.  See it anyway? 
+[maruj@pascal 1XC3_L03]$ git merge 5fbbef0 
+Already up to date.
+[maruj@pascal 1XC3_L03]$ git commit
+HEAD detached at 0bec659
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	a.out
+
+nothing added to commit but untracked files present (use "git add" to track)
+[maruj@pascal 1XC3_L03]$ git status
+HEAD detached at 0bec659
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	a.out
+
+nothing added to commit but untracked files present (use "git add" to track)
+[maruj@pascal 1XC3_L03]$ client_loop: send disconnect: Broken pipe
+(base) jenil@Jenils-MacBook-Pro ~ % 

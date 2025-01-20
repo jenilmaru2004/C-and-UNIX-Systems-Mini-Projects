@@ -1,0 +1,1269 @@
+Last login: Sun Jan 29 12:56:32 on console
+(base) jenil@Jenils-MacBook-Pro ~ % bash
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+bash-3.2$ ssh maruj@pascal.cas.mcmaster.ca
+maruj@pascal.cas.mcmaster.ca's password: 
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last login: Thu Jan 19 11:42:56 2023 from 172.17.90.82
+[maruj@pascal ~]$ git clone git@github.com:jenilmaru2004/CS1XC3.git
+Cloning into 'CS1XC3'...
+The authenticity of host 'github.com (140.82.112.3)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[maruj@pascal ~]$ ls
+public_html  topic2
+[maruj@pascal ~]$ mkdir lab2
+[maruj@pascal ~]$ ls
+lab2  public_html  topic2
+[maruj@pascal ~]$ cd lab2
+[maruj@pascal lab2]$ ls
+[maruj@pascal lab2]$ git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+[maruj@pascal lab2]$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/maruj/lab2/.git/
+[maruj@pascal lab2]$ ls
+[maruj@pascal lab2]$ ls -a
+.  ..  .git
+[maruj@pascal lab2]$ git clone git@github.com:jenilmaru2004/CS1XC3.git
+Cloning into 'CS1XC3'...
+The authenticity of host 'github.com (140.82.114.3)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[maruj@pascal lab2]$ git clone git@github.com:jenilmaru2004/CS1XC3.git
+Cloning into 'CS1XC3'...
+The authenticity of host 'github.com (140.82.112.3)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,140.82.112.3' (ECDSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[maruj@pascal lab2]$ $ ssh-keygen -t ed25519 -C maruj@mcmaster.ca
+-bash: $: command not found
+[maruj@pascal lab2]$ ssh-keygen -t ed25519 -C maruj@mcmaster.ca
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/maruj/.ssh/id_ed25519): lab2
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in lab2.
+Your public key has been saved in lab2.pub.
+The key fingerprint is:
+SHA256:D1pi4BiLPd261MsIyHM7gzu5g9Up1RFuoz85pvxC/3M maruj@mcmaster.ca
+The key's randomart image is:
++--[ED25519 256]--+
+|      ..         |
+|     ..          |
+|  . ..+.         |
+| o *.=..         |
+|. =o+.+ S        |
+|..o.+= = o       |
+|o+++o.O   .      |
+|.=o*o*.+. E      |
+| o=.Bo+..o       |
++----[SHA256]-----+
+[maruj@pascal lab2]$ cd.ssh
+-bash: cd.ssh: command not found
+[maruj@pascal lab2]$ cd.ssh
+-bash: cd.ssh: command not found
+[maruj@pascal lab2]$ ls
+lab2  lab2.pub
+[maruj@pascal lab2]$ ls
+lab2  lab2.pub
+[maruj@pascal lab2]$ pbcopy <~/.ssh/lab2.pub
+-bash: /home/maruj/.ssh/lab2.pub: No such file or directory
+[maruj@pascal lab2]$ ls
+lab2  lab2.pub
+[maruj@pascal lab2]$ cd lab2.pub
+-bash: cd: lab2.pub: Not a directory
+[maruj@pascal lab2]$ cat lab2.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOpn7SYa5HF3oxBe/+SzPpFwNhtuiWm5M3kohD7eoCqP maruj@mcmaster.ca
+[maruj@pascal lab2]$ cat ~/.ssh/lab2.pub
+cat: /home/maruj/.ssh/lab2.pub: No such file or directory
+[maruj@pascal lab2]$ ls ~/.ssh/*.pub
+ls: cannot access '/home/maruj/.ssh/*.pub': No such file or directory
+[maruj@pascal lab2]$ pbcopy < ~/.ssh/lab2.pub
+-bash: /home/maruj/.ssh/lab2.pub: No such file or directory
+[maruj@pascal lab2]$ ls
+lab2  lab2.pub
+[maruj@pascal lab2]$ ls lab2.pub
+lab2.pub
+[maruj@pascal lab2]$ cd .ssh
+-bash: cd: .ssh: No such file or directory
+[maruj@pascal lab2]$ cat ~/.ssh/id_dsa.pub
+cat: /home/maruj/.ssh/id_dsa.pub: No such file or directory
+[maruj@pascal lab2]$ cat id 
+.git/     lab2      lab2.pub  
+[maruj@pascal lab2]$ ls
+lab2  lab2.pub
+[maruj@pascal lab2]$ cat lab2.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOpn7SYa5HF3oxBe/+SzPpFwNhtuiWm5M3kohD7eoCqP maruj@mcmaster.ca
+[maruj@pascal lab2]$ git clone git@github.com:jenilmaru2004/CS1XC3.git
+Cloning into 'CS1XC3'...
+Warning: Permanently added the ECDSA host key for IP address '140.82.112.4' to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[maruj@pascal lab2]$ git clone git@github.com:jenilmaru2004/CS1XC3.git
+Cloning into 'CS1XC3'...
+Warning: Permanently added the ECDSA host key for IP address '140.82.113.4' to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[maruj@pascal lab2]$ ls
+lab2  lab2.pub
+[maruj@pascal lab2]$ cat lab2.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOpn7SYa5HF3oxBe/+SzPpFwNhtuiWm5M3kohD7eoCqP maruj@mcmaster.ca
+[maruj@pascal lab2]$ ls
+lab2  lab2.pub
+[maruj@pascal lab2]$ cd lab2
+-bash: cd: lab2: Not a directory
+[maruj@pascal lab2]$ cat lab2
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACDqZ+0mGuRxd6MQXv/ksz6RcDYbbolpuTN5KIQ+3qAqjwAAAJghN5zeITec
+3gAAAAtzc2gtZWQyNTUxOQAAACDqZ+0mGuRxd6MQXv/ksz6RcDYbbolpuTN5KIQ+3qAqjw
+AAAECvZH3pk5lDV3nYPNCp4xSTXFmfh7qsQG+YmfvUrbqTp+pn7SYa5HF3oxBe/+SzPpFw
+NhtuiWm5M3kohD7eoCqPAAAAEW1hcnVqQG1jbWFzdGVyLmNhAQIDBA==
+-----END OPENSSH PRIVATE KEY-----
+[maruj@pascal lab2]$ git clone git@github.com:jenilmaru2004/CS1XC3.git
+Cloning into 'CS1XC3'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[maruj@pascal lab2]$ cd .ssh
+-bash: cd: .ssh: No such file or directory
+[maruj@pascal lab2]$ cd .ssh
+-bash: cd: .ssh: No such file or directory
+[maruj@pascal lab2]$ cd .ssh
+-bash: cd: .ssh: No such file or directory
+[maruj@pascal lab2]$ cd ..
+[maruj@pascal ~]$ ls
+lab2  public_html  topic2
+[maruj@pascal ~]$ git clone b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+fatal: repository 'b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW' does not exist
+[maruj@pascal ~]$ QyNTUxOQAAACDqZ+0mGuRxd6MQXv/ksz6RcDYbbolpuTN5KIQ+3qAqjwAAAJghN5zeITec
+-bash: QyNTUxOQAAACDqZ+0mGuRxd6MQXv/ksz6RcDYbbolpuTN5KIQ+3qAqjwAAAJghN5zeITec: No such file or directory
+[maruj@pascal ~]$ 3gAAAAtzc2gtZWQyNTUxOQAAACDqZ+0mGuRxd6MQXv/ksz6RcDYbbolpuTN5KIQ+3qAqjw
+-bash: 3gAAAAtzc2gtZWQyNTUxOQAAACDqZ+0mGuRxd6MQXv/ksz6RcDYbbolpuTN5KIQ+3qAqjw: No such file or directory
+[maruj@pascal ~]$ AAAECvZH3pk5lDV3nYPNCp4xSTXFmfh7qsQG+YmfvUrbqTp+pn7SYa5HF3oxBe/+SzPpFw
+-bash: AAAECvZH3pk5lDV3nYPNCp4xSTXFmfh7qsQG+YmfvUrbqTp+pn7SYa5HF3oxBe/+SzPpFw: No such file or directory
+[maruj@pascal ~]$ NhtuiWm5M3kohD7eoCqPAAAAEW1hcnVqQG1jbWFzdGVyLmNhAQIDBA==
+[maruj@pascal ~]$ git clone git@github.com:jenilmaru2004/CS1XC3.git
+Cloning into 'CS1XC3'...
+Warning: Permanently added the ECDSA host key for IP address '140.82.113.3' to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[maruj@pascal ~]$ cd lab2/
+[maruj@pascal lab2]$ ls
+lab2  lab2.pub
+[maruj@pascal lab2]$ pbcopy < ~/.ssh/lab2.pub
+-bash: /home/maruj/.ssh/lab2.pub: No such file or directory
+[maruj@pascal lab2]$ pbcopy < ~/lab2/.ssh/lab2.pub
+-bash: /home/maruj/lab2/.ssh/lab2.pub: No such file or directory
+[maruj@pascal lab2]$ ssh-add ~/.ssh/ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOpn7SYa5HF3oxBe/+SzPpFwNhtuiWm5M3kohD7eoCqP maruj@mcmaster.ca
+Could not open a connection to your authentication agent.
+[maruj@pascal lab2]$ ssh-keygen -lf ~/.ssh/lab2.pub
+ssh-keygen: /home/maruj/.ssh/lab2.pub: No such file or directory
+[maruj@pascal lab2]$ ls
+lab2  lab2.pub
+[maruj@pascal lab2]$ cd ..
+[maruj@pascal ~]$ ls
+lab2  public_html  topic2
+[maruj@pascal ~]$ mkdir L02
+[maruj@pascal ~]$ cd L02
+[maruj@pascal L02]$ ssh-keygen -t ed25519-sk -C maruj@mcmaster.ca
+unknown key type ed25519-sk
+[maruj@pascal L02]$ ssh-keygen -t ed25519-sk -C maruj@mcmaster.ca
+unknown key type ed25519-sk
+[maruj@pascal L02]$ ssh-keygen -t ecdsa-sk -C maruj@mcmaster.ca
+unknown key type ecdsa-sk
+[maruj@pascal L02]$ ssh-keygen -t ed25519 -C maruj@mcmaster.ca
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/maruj/.ssh/id_ed25519): L02
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in L02.
+Your public key has been saved in L02.pub.
+The key fingerprint is:
+SHA256:IlkCCpTRyym8T9oR/r1Eavwne2II1qTRQ4vNAY5k5wY maruj@mcmaster.ca
+The key's randomart image is:
++--[ED25519 256]--+
+|oE=o.            |
+|+o*o o           |
+|o..+X +          |
+| o.B @           |
+|  + O o.S        |
+| . B.oo.         |
+|  * ++o.         |
+| . o.oo= o       |
+|      .+B        |
++----[SHA256]-----+
+[maruj@pascal L02]$ ls
+L02  L02.pub
+[maruj@pascal L02]$ cat L02.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPF+PP9uTh97qir2gsdfEIin0C6zyrHQb53bsaTnLImE maruj@mcmaster.ca
+[maruj@pascal L02]$ git clone git@github.com:jenilmaru2004/CS1XC3.git
+Cloning into 'CS1XC3'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[maruj@pascal L02]$ ls
+L02  L02.pub
+[maruj@pascal L02]$ cd ..
+[maruj@pascal ~]$ ls
+L02  lab2  public_html  topic2
+[maruj@pascal ~]$ ls -la
+total 40
+drwx-----x.   7 maruj domain users   181 Jan 30 16:55 .
+drwxr-xr-x. 304 root  root         12288 Jan 30 16:25 ..
+-rw-------.   1 maruj domain users   497 Jan 19 14:15 .bash_history
+-rw-------.   1 maruj domain users    18 Jan 12 11:46 .bash_logout
+-rw-------.   1 maruj domain users   141 Jan 12 11:46 .bash_profile
+-rw-------.   1 maruj domain users   376 Jan 12 11:46 .bashrc
+-rw-------.   1 maruj domain users   334 Jan 12 11:46 .emacs
+drwx------.   2 maruj domain users    25 Jan 30 16:10 .ssh
+-rw-------.   1 maruj domain users  1402 Jan 17 12:07 .viminfo
+drwxr-xr-x.   2 maruj domain users    32 Jan 30 16:59 L02
+drwxr-xr-x.   3 maruj domain users    46 Jan 30 16:35 lab2
+drwxr-xr-x.   2 maruj domain users    23 Jan 12 11:56 public_html
+drwxr-xr-x.   4 maruj domain users    48 Jan 17 12:07 topic2
+[maruj@pascal ~]$ cd .ssh/
+[maruj@pascal .ssh]$ ls
+known_hosts
+[maruj@pascal .ssh]$ cd ..
+[maruj@pascal ~]$ history 
+    1  ls
+    2  mkdir public_html
+    3  ls
+    4  vi text.txt
+    5  ls
+    6  pwd
+    7  cat public_html
+    8  cd public_html
+    9  cat file1.txt
+   10  cat > sales.txt
+   11  ls
+   12  mkdir topic 2
+   13  ls
+   14  del topic
+   15  rm topic
+   16  -d topic
+   17  --topic
+   18  rmdir topic
+   19  ls
+   20  rmdir 2
+   21  mkdir topic2
+   22  cd topic2
+   23  git init
+   24  git --version
+   25  ls
+   26  ls -a
+   27  cd .git
+   28  ls
+   29  cd hooks
+   30  ls
+   31  cd ..
+   32  ls
+   33  cd object
+   34  cd objects
+   35  ls
+   36  cd ..
+   37  mkdir test
+   38  cd test
+   39  vi star.txt
+   40  ls
+   41  cat star.txt
+   42  ls
+   43  cd ..
+   44  ls
+   45  vi second.txt
+   46  ls
+   47  cat second.txt
+   48  git commit 
+   49  git add second.txt
+   50  git commit 
+   51  clear
+   52  ls
+   53  git log
+   54  cd topic2/
+   55  ls
+   56  git log
+   57  git branch dev
+   58  ls
+   59  ls -a
+   60  git clone git@github.com:jenilmaru2004/CS1XC3.git
+   61  ls
+   62  mkdir lab2
+   63  ls
+   64  cd lab2
+   65  ls
+   66  git
+   67  git init
+   68  ls
+   69  ls -a
+   70  git clone git@github.com:jenilmaru2004/CS1XC3.git
+   71  $ ssh-keygen -t ed25519 -C maruj@mcmaster.ca
+   72  ssh-keygen -t ed25519 -C maruj@mcmaster.ca
+   73  cd.ssh
+   74  ls
+   75  pbcopy <~/.ssh/lab2.pub
+   76  ls
+   77  cd lab2.pub
+   78  cat lab2.pub
+   79  cat ~/.ssh/lab2.pub
+   80  ls ~/.ssh/*.pub
+   81  pbcopy < ~/.ssh/lab2.pub
+   82  ls
+   83  ls lab2.pub
+   84  cd .ssh
+   85  cat ~/.ssh/id_dsa.pub
+   86  ls
+   87  cat lab2.pub
+   88  git clone git@github.com:jenilmaru2004/CS1XC3.git
+   89  ls
+   90  cat lab2.pub
+   91  ls
+   92  cd lab2
+   93  cat lab2
+   94  git clone git@github.com:jenilmaru2004/CS1XC3.git
+   95  cd .ssh
+   96  cd ..
+   97  ls
+   98  git clone b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+   99  QyNTUxOQAAACDqZ+0mGuRxd6MQXv/ksz6RcDYbbolpuTN5KIQ+3qAqjwAAAJghN5zeITec
+  100  3gAAAAtzc2gtZWQyNTUxOQAAACDqZ+0mGuRxd6MQXv/ksz6RcDYbbolpuTN5KIQ+3qAqjw
+  101  AAAECvZH3pk5lDV3nYPNCp4xSTXFmfh7qsQG+YmfvUrbqTp+pn7SYa5HF3oxBe/+SzPpFw
+  102  NhtuiWm5M3kohD7eoCqPAAAAEW1hcnVqQG1jbWFzdGVyLmNhAQIDBA==
+  103  git clone git@github.com:jenilmaru2004/CS1XC3.git
+  104  cd lab2/
+  105  ls
+  106  pbcopy < ~/.ssh/lab2.pub
+  107  pbcopy < ~/lab2/.ssh/lab2.pub
+  108  ssh-add ~/.ssh/ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOpn7SYa5HF3oxBe/+SzPpFwNhtuiWm5M3kohD7eoCqP maruj@mcmaster.ca
+  109  ssh-keygen -lf ~/.ssh/lab2.pub
+  110  ls
+  111  cd ..
+  112  ls
+  113  mkdir L02
+  114  cd L02
+  115  ssh-keygen -t ed25519-sk -C maruj@mcmaster.ca
+  116  ssh-keygen -t ecdsa-sk -C maruj@mcmaster.ca
+  117  ssh-keygen -t ed25519 -C maruj@mcmaster.ca
+  118  ls
+  119  cat L02.pub
+  120  git clone git@github.com:jenilmaru2004/CS1XC3.git
+  121  ls
+  122  cd ..
+  123  ls
+  124  ls -la
+  125  cd .ssh/
+  126  ls
+  127  cd ..
+  128  history 
+[maruj@pascal ~]$ ssh-keygen -t ed25519-sk -C maruj@mcmaster.ca
+unknown key type ed25519-sk
+[maruj@pascal ~]$ ssh-keygen -t ed25519-sk -C maruj@mcmaster.ca
+unknown key type ed25519-sk
+[maruj@pascal ~]$ 
+[maruj@pascal ~]$ 
+[maruj@pascal ~]$ 
+[maruj@pascal ~]$ ssh-keygen -t ed25519 -C "maruj@mcmaster.ca""
+> ^C
+[maruj@pascal ~]$ ssh-keygen -t ed25519 -C "maruj@mcmaster.ca"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/maruj/.ssh/id_ed25519): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/maruj/.ssh/id_ed25519.
+Your public key has been saved in /home/maruj/.ssh/id_ed25519.pub.
+The key fingerprint is:
+SHA256:fGkHmmhKJNJTRfv8UHDlOiIhFscaFxxvP5Ws2eGj8E0 maruj@mcmaster.ca
+The key's randomart image is:
++--[ED25519 256]--+
+|    o=*o. ...    |
+| . ..o+o o o .   |
+|. + ++o o o *    |
+| . =.. B = X .   |
+|    . + S @ E    |
+|   . o . O B .   |
+|    .     + .    |
+|                 |
+|                 |
++----[SHA256]-----+
+[maruj@pascal ~]$ cd .ssh/
+[maruj@pascal .ssh]$ ls
+id_ed25519  id_ed25519.pub  known_hosts
+[maruj@pascal .ssh]$ cat id_ed25519.pub 
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICWPflupJqL+QpXoR/vNB+IgMNxBQgaGFHTI44C77SXy maruj@mcmaster.ca
+[maruj@pascal .ssh]$ git clone git@github.com:jenilmaru2004/CS1XC3.git
+Cloning into 'CS1XC3'...
+remote: Enumerating objects: 43, done.
+remote: Counting objects: 100% (43/43), done.
+remote: Compressing objects: 100% (28/28), done.
+remote: Total 43 (delta 3), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (43/43), 717.15 KiB | 1.63 MiB/s, done.
+Resolving deltas: 100% (3/3), done.
+[maruj@pascal .ssh]$ ls
+CS1XC3  id_ed25519  id_ed25519.pub  known_hosts
+[maruj@pascal .ssh]$ cd ..
+[maruj@pascal ~]$ ls
+L02  lab2  public_html  topic2
+[maruj@pascal ~]$ rm L02
+rm: cannot remove 'L02': Is a directory
+[maruj@pascal ~]$ del L02
+-bash: del: command not found
+[maruj@pascal ~]$ -r L02
+-bash: -r: command not found
+[maruj@pascal ~]$ rmdir L02
+rmdir: failed to remove 'L02': Directory not empty
+[maruj@pascal ~]$ rm -r L02
+[maruj@pascal ~]$ ls
+lab2  public_html  topic2
+[maruj@pascal ~]$ rm -r lab2
+[maruj@pascal ~]$ cd .ssh/
+[maruj@pascal .ssh]$ ls
+CS1XC3  id_ed25519  id_ed25519.pub  known_hosts
+[maruj@pascal .ssh]$ git add
+fatal: not a git repository (or any of the parent directories): .git
+[maruj@pascal .ssh]$ cd CS1XC3/
+[maruj@pascal CS1XC3]$ ls
+L01  README.md
+[maruj@pascal CS1XC3]$ mkdir L02
+[maruj@pascal CS1XC3]$ ls
+L01  L02  README.md
+[maruj@pascal CS1XC3]$ cd /
+[maruj@pascal /]$ cd bin/
+[maruj@pascal bin]$ ls
+ VGAuthService                        nl-classid-lookup
+ WebKitWebDriver                      nl-cls-add
+'['                                   nl-cls-delete
+ a2x                                  nl-cls-list
+ a2x.py                               nl-fib-lookup
+ ab                                   nl-link-enslave
+ ac                                   nl-link-ifindex2name
+ aclocal                              nl-link-list
+ aclocal-1.16                         nl-link-name2ifindex
+ acyclic                              nl-link-release
+ addr2line                            nl-link-set
+ afm2tfm                              nl-link-stats
+ alias                                nl-list-caches
+ allcm                                nl-list-sockets
+ allec                                nl-monitor
+ allneeded                            nl-neigh-add
+ alt-java                             nl-neigh-delete
+ appstream-compose                    nl-neigh-list
+ appstream-util                       nl-neightbl-list
+ apropos                              nl-pktloc-lookup
+ ar                                   nl-qdisc-add
+ arch                                 nl-qdisc-delete
+ arpaname                             nl-qdisc-list
+ as                                   nl-route-add
+ asciidoc                             nl-route-delete
+ asciidoc.py                          nl-route-get
+ aserver                              nl-route-list
+ aspell                               nl-rule-list
+ at                                   nl-tctree-list
+ atq                                  nl-util-addr
+ atrm                                 nm
+ attr                                 nm-online
+ audit2allow                          nmcli
+ audit2why                            nmtui
+ aulast                               nmtui-connect
+ aulastlog                            nmtui-edit
+ ausyscall                            nmtui-hostname
+ authselect                           nohup
+ authvar                              nop
+ autoconf                             notify-send
+ autoheader                           nproc
+ autom4te                             nroff
+ automake                             nsenter
+ automake-1.16                        nslookup
+ autopoint                            nss-policy-check
+ autoreconf                           nsupdate
+ autoscan                             numfmt
+ autoupdate                           objcopy
+ auvirt                               objdump
+ awk                                  od
+ b2sum                                oddjob_request
+ base32                               open
+ base64                               openssl
+ basename                             openvt
+ bash                                 orbd
+ bashbug                              orc-bugreport
+ bashbug-64                           os-prober
+ batch                                osage
+ bc                                   otfdump
+ bcomps                               otflist
+ bdftopcf                             otftobdf
+ bg                                   otfview
+ bibtex                               p11-kit
+ bison                                pack200
+ blkiomon                             page_owner_sort
+ blkparse                             panelctl
+ blkrawverify                         pango-list
+ blktrace                             pango-view
+ bno_plot.py                          paperconf
+ boltctl                              passwd
+ bond2team                            paste
+ bootctl                              patch
+ broadwayd                            patchwork
+ brotli                               pathchk
+ btrace                               pchrt
+ btrecord                             pdf2dsc
+ btreplay                             pdf2ps
+ btt                                  pdfetex
+ buildah                              pdflatex
+ bunzip2                              pdftex
+ busctl                               peekfd
+ bwrap                                perl
+ byacc                                perl5.26.3
+ bzcat                                perldoc
+ bzcmp                                pesigcheck
+ bzdiff                               pesign
+ bzegrep                              pesign-client
+ bzfgrep                              pflags
+ bzgrep                               pgrep
+ bzip2                                pic
+ bzip2recover                         piconv
+ bzless                               pidof
+ bzmore                               pigz
+ c++                                  pinentry
+ c++filt                              pinentry-curses
+ c89                                  pinfo
+ c99                                  ping
+ ca-legacy                            pinky
+ cairo-sphinx                         pk12util
+ cal                                  pkaction
+ callgrind_annotate                   pkcheck
+ callgrind_control                    pkcon
+ captoinfo                            pkexec
+ cat                                  pkg-config
+ catchsegv                            pkgconf
+ catman                               pkill
+ cc                                   pkla-admin-identities
+ ccomps                               pkla-check-authorization
+ cd                                   pkmon
+ centrino-decode                      pktogf
+ certutil                             pkttyagent
+ cg_annotate                          pktype
+ cg_diff                              pldd
+ cg_merge                             plymouth
+ chacl                                pmap
+ chage                                pod2man
+ chardetect                           pod2text
+ chattr                               pod2usage
+ chcat                                podman
+ chcon                                policytool
+ check-regexp                         post-grohtml
+ checkmodule                          powernow-k8-decode
+ checkpolicy                          pr
+ checksctp                            pre-grohtml
+ chfn                                 precat
+ chgrp                                preconv
+ chmem                                preunzip
+ chmod                                prezip
+ chown                                prezip-bin
+ chronyc                              printenv
+ chrt                                 printf
+ chsh                                 prlimit
+ chvt                                 prtstat
+ circo                                prune
+ cksum                                ps
+ clear                                ps2ascii
+ clevis                               ps2epsi
+ clevis-decrypt                       ps2pdf
+ clevis-decrypt-null                  ps2pdf12
+ clevis-decrypt-sss                   ps2pdf13
+ clevis-decrypt-tang                  ps2pdf14
+ clevis-decrypt-tpm2                  ps2pdfwr
+ clevis-encrypt-null                  ps2ps
+ clevis-encrypt-sss                   ps2ps2
+ clevis-encrypt-tang                  psfaddtable
+ clevis-encrypt-tpm2                  psfgettable
+ clevis-luks-bind                     psfstriptable
+ clevis-luks-common-functions         psfxtable
+ clevis-luks-edit                     pslog
+ clevis-luks-list                     pstack
+ clevis-luks-pass                     pstree
+ clevis-luks-regen                    pstree.x11
+ clevis-luks-report                   ptaskset
+ clevis-luks-unbind                   ptked
+ clevis-luks-unlock                   ptksh
+ cluster                              ptx
+ cmp                                  pwd
+ cmsutil                              pwdx
+ cockpit-bridge                       pwmake
+ col                                  pwscore
+ colcrt                               pydoc3.6
+ colrm                                pyinotify
+ column                               pyvenv-3.6
+ combinediff                          pzstd
+ comm                                 quota
+ command                              quotasync
+ conmon                               ranlib
+ consolehelper                        raw
+ context                              rct
+ contextjit                           read
+ coredumpctl                          readelf
+ cp                                   readlink
+ cpio                                 realpath
+ cpp                                  recode-sr-latin
+ cpp2html                             recountdiff
+ cppcheck                             red
+ cppcheck_de.qm                       redhat-access-insights
+ cppcheck_es.qm                       rediff
+ cppcheck_fi.qm                       rename
+ cppcheck_fr.qm                       renew-dummy-cert
+ cppcheck_it.qm                       renice
+ cppcheck_ja.qm                       repstopdf
+ cppcheck_ko.qm                       rescan-scsi-bus.sh
+ cppcheck_nl.qm                       reset
+ cppcheck_ru.qm                       resizecons
+ cppcheck_sr.qm                       resolvectl
+ cppcheck_sv.qm                       rev
+ cppcheck_zh_CN.qm                    rhsm-debug
+ cpupower                             rhsmcertd
+ crb                                  rm
+ crlutil                              rmdir
+ cronnext                             rmid
+ crontab                              rmiregistry
+ crun                                 rnano
+ csplit                               rngtest
+ csslint-0.6                          rpm
+ ctags                                rpm2archive
+ curl                                 rpm2cpio
+ cut                                  rpmbuild
+ cvtsudoers                           rpmdb
+ date                                 rpmkeys
+ db_archive                           rpmquery
+ db_checkpoint                        rpmsign
+ db_deadlock                          rpmspec
+ db_dump                              rpmverify
+ db_dump185                           rsync
+ db_hotbackup                         rsyslog-recover-qi.pl
+ db_load                              run-parts
+ db_log_verify                        run-with-aspell
+ db_printlog                          runc
+ db_recover                           runcon
+ db_replicate                         rvi
+ db_stat                              rview
+ db_tuner                             rvim
+ db_upgrade                           sandbox
+ db_verify                            sccmap
+ dbus-binding-tool                    scp
+ dbus-cleanup-sockets                 script
+ dbus-daemon                          scriptreplay
+ dbus-monitor                         scsi-rescan
+ dbus-run-session                     scsi_logging_level
+ dbus-send                            scsi_mandat
+ dbus-test-tool                       scsi_readcap
+ dbus-update-activation-environment   scsi_ready
+ dbus-uuidgen                         scsi_satl
+ dbxtool                              scsi_start
+ dc                                   scsi_stop
+ dconf                                scsi_temperature
+ dd                                   sctp_darn
+ deallocvt                            sctp_status
+ debuginfod-find                      sctp_test
+ dehtmldiff                           sdiff
+ delv                                 sealert
+ desktop-file-edit                    secon
+ desktop-file-install                 secret-tool
+ desktop-file-validate                sed
+ df                                   sedismod
+ dfu-tool                             sedispol
+ diff                                 semodule_expand
+ diff3                                semodule_link
+ diffimg                              semodule_package
+ diffstat                             semodule_unpackage
+ dig                                  sendiso
+ dijkstra                             seq
+ dir                                  servertool
+ dircolors                            sessreg
+ dirmngr                              setarch
+ dirmngr-client                       setfacl
+ dirname                              setfattr
+ dmesg                                setfont
+ dnf                                  setkeycodes
+ dnf-3                                setleds
+ dnsdomainname                        setmetamode
+ dnstap-read                          setpriv
+ domainname                           setsid
+ dos2unix                             setterm
+ dot                                  setup-nsssysinit
+ dot2gxl                              setup-nsssysinit.sh
+ dotlockfile                          setvtrgb
+ dotty                                sfconv
+ doxygen                              sfdp
+ dracut                               sftp
+ du                                   sg
+ dumpiso                              sg_bg_ctl
+ dumpkeys                             sg_compare_and_write
+ dvcont                               sg_copy_results
+ dvi2fax                              sg_dd
+ dvilualatex                          sg_decode_sense
+ dviluatex                            sg_emc_trespass
+ dvipdfm                              sg_format
+ dvipdfmx                             sg_get_config
+ dvipdft                              sg_get_lba_status
+ dvips                                sg_ident
+ dvired                               sg_inq
+ dvitomp                              sg_logs
+ dwp                                  sg_luns
+ dwz                                  sg_map
+ easy_install-3.6                     sg_map26
+ ebb                                  sg_modes
+ ebrowse                              sg_opcodes
+ echo                                 sg_persist
+ ed                                   sg_prevent
+ edgepaint                            sg_raw
+ editdiff                             sg_rbuf
+ efikeygen                            sg_rdac
+ efisiglist                           sg_read
+ efivar                               sg_read_attr
+ egrep                                sg_read_block_limits
+ eject                                sg_read_buffer
+ elfedit                              sg_read_long
+ emacs                                sg_readcap
+ emacs-26.1                           sg_reassign
+ emacsclient                          sg_referrals
+ encguess                             sg_rep_zones
+ enchant-2                            sg_requests
+ enchant-lsmod-2                      sg_reset
+ env                                  sg_reset_wp
+ envsubst                             sg_rmsn
+ eps2eps                              sg_rtpg
+ epstopdf                             sg_safte
+ eqn                                  sg_sanitize
+ espdiff                              sg_sat_identify
+ etags                                sg_sat_phy_event
+ etags.emacs                          sg_sat_read_gplog
+ etex                                 sg_sat_set_features
+ eu-addr2line                         sg_scan
+ eu-ar                                sg_seek
+ eu-elfclassify                       sg_senddiag
+ eu-elfcmp                            sg_ses
+ eu-elfcompress                       sg_ses_microcode
+ eu-elflint                           sg_start
+ eu-findtextrel                       sg_stpg
+ eu-make-debug-archive                sg_stream_ctl
+ eu-nm                                sg_sync
+ eu-objdump                           sg_test_rwbuf
+ eu-ranlib                            sg_timestamp
+ eu-readelf                           sg_turs
+ eu-size                              sg_unmap
+ eu-stack                             sg_verify
+ eu-strings                           sg_vpd
+ eu-strip                             sg_wr_mode
+ eu-unstrip                           sg_write_buffer
+ evmctl                               sg_write_long
+ ex                                   sg_write_same
+ expand                               sg_write_verify
+ expr                                 sg_write_x
+ extractbb                            sg_xcopy
+ factor                               sg_zone
+ fallocate                            sginfo
+ false                                sgm_dd
+ fc                                   sgmlwhich
+ fc-cache                             sgp_dd
+ fc-cache-64                          sh
+ fc-cat                               sha1hmac
+ fc-conflist                          sha1sum
+ fc-list                              sha224hmac
+ fc-match                             sha224sum
+ fc-pattern                           sha256hmac
+ fc-query                             sha256sum
+ fc-scan                              sha384hmac
+ fc-validate                          sha384sum
+ fdp                                  sha512hmac
+ fg                                   sha512sum
+ fgconsole                            showconsolefont
+ fgrep                                showkey
+ file                                 showrgb
+ filterdiff                           shred
+ fincore                              shuf
+ find                                 signver
+ findmnt                              sim_lsmplugin
+ fips-finish-install                  simc_lsmplugin
+ fips-mode-setup                      simpdftex
+ firewall-cmd                         size
+ firewall-offline-cmd                 skill
+ fixcvsdiff                           slabinfo
+ flex                                 slabtop
+ flex++                               sleep
+ flipdiff                             slirp4netns
+ flock                                snice
+ fmt                                  soelim
+ fmtutil                              sort
+ fmtutil-sys                          sotruss
+ fmtutil-user                         soundstretch
+ fold                                 source-highlight
+ fonttosfnt                           source-highlight-esc.sh
+ fprintd-delete                       source-highlight-settings
+ fprintd-enroll                       spell
+ fprintd-list                         split
+ fprintd-verify                       splitdiff
+ free                                 sprof
+ fribidi                              sqlite3
+ funzip                               src-hilite-lesspipe.sh
+ fuse-overlayfs                       sscg
+ fusermount                           ssh
+ fusermount3                          ssh-add
+ fwupdagent                           ssh-agent
+ fwupdate                             ssh-copy-id
+ fwupdmgr                             ssh-keygen
+ fwupdtool                            ssh-keyscan
+ g++                                  ssltap
+ g13                                  sss_ssh_authorizedkeys
+ gapplication                         sss_ssh_knownhostsproxy
+ gawk                                 stap
+ gc                                   stap-merge
+ gcc                                  stap-prep
+ gcc-ar                               stap-profile-annotate
+ gcc-nm                               stap-report
+ gcc-ranlib                           stapbpf
+ gcore                                stapdyn
+ gcov                                 staprun
+ gcov-dump                            stapsh
+ gcov-tool                            stat
+ gctags                               stdbuf
+ gdb                                  strace
+ gdb-add-index                        strace-log-merge
+ gdbm_dump                            strings
+ gdbm_load                            strip
+ gdbmtool                             stty
+ gdbus                                su
+ gdk-pixbuf-query-loaders-64          subscription-manager
+ gdk-pixbuf-thumbnailer               sudo
+ gencat                               sudoedit
+ gendiff                              sudoreplay
+ genl-ctrl-list                       sum
+ geqn                                 symlinks
+ getconf                              sync
+ getent                               systemctl
+ getfacl                              systemd-analyze
+ getfattr                             systemd-ask-password
+ getkeycodes                          systemd-cat
+ getopt                               systemd-cgls
+ getopts                              systemd-cgtop
+ getsubids                            systemd-delta
+ gettext                              systemd-detect-virt
+ gettext.sh                           systemd-escape
+ gettextize                           systemd-firstboot
+ gftodvi                              systemd-hwdb
+ gftopk                               systemd-inhibit
+ gftype                               systemd-machine-id-setup
+ ghostscript                          systemd-mount
+ gio                                  systemd-notify
+ gio-querymodules-64                  systemd-path
+ git                                  systemd-resolve
+ git-receive-pack                     systemd-run
+ git-shell                            systemd-socket-activate
+ git-upload-archive                   systemd-stdio-bridge
+ git-upload-pack                      systemd-sysusers
+ glib-compile-schemas                 systemd-tmpfiles
+ gmake                                systemd-tty-ask-password-agent
+ gml2gv                               systemd-umount
+ gneqn                                tabs
+ gnroff                               tac
+ gpasswd                              tail
+ gpg                                  tar
+ gpg-agent                            taskset
+ gpg-connect-agent                    tbl
+ gpg-error                            teamd
+ gpg-wks-server                       teamdctl
+ gpg-zip                              teamnl
+ gpg2                                 teckit_compile
+ gpgconf                              tee
+ gpgme-json                           test
+ gpgparsemail                         testlibraw
+ gpgsm                                tex
+ gpgsplit                             texconfig
+ gpgv                                 texconfig-dialog
+ gpgv2                                texconfig-sys
+ gpic                                 texexec
+ gpio-event-mon                       texhash
+ gpio-hammer                          texlinks
+ gprof                                texlua
+ gr2fonttest                          texlua53
+ graphml2gv                           texluac
+ grep                                 texluajit
+ grepdiff                             texluajitc
+ groff                                thumbpdf
+ grops                                tic
+ grotty                               time
+ groups                               timedatectl
+ grub2-editenv                        timeout
+ grub2-file                           tkjpeg
+ grub2-fstest                         tlmgr
+ grub2-glue-efi                       tload
+ grub2-kbdcomp                        tmon
+ grub2-menulst2cfg                    tnameserv
+ grub2-mkfont                         toe
+ grub2-mkimage                        top
+ grub2-mklayout                       touch
+ grub2-mknetdir                       tpm2_activatecredential
+ grub2-mkpasswd-pbkdf2                tpm2_certify
+ grub2-mkrelpath                      tpm2_certifycreation
+ grub2-mkrescue                       tpm2_changeauth
+ grub2-mkstandalone                   tpm2_changeeps
+ grub2-render-label                   tpm2_changepps
+ grub2-script-check                   tpm2_checkquote
+ grub2-syslinux2cfg                   tpm2_clear
+ gs                                   tpm2_clearcontrol
+ gsettings                            tpm2_clockrateadjust
+ gsftopk                              tpm2_create
+ gsnd                                 tpm2_createak
+ gsoelim                              tpm2_createek
+ gst-inspect-1.0                      tpm2_createpolicy
+ gst-launch-1.0                       tpm2_createprimary
+ gst-stats-1.0                        tpm2_dictionarylockout
+ gst-typefind-1.0                     tpm2_duplicate
+ gstack                               tpm2_encryptdecrypt
+ gtar                                 tpm2_evictcontrol
+ gtbl                                 tpm2_flushcontext
+ gtk-launch                           tpm2_getcap
+ gtk-query-immodules-2.0-64           tpm2_getekcertificate
+ gtk-query-immodules-3.0-64           tpm2_getrandom
+ gtk-update-icon-cache                tpm2_gettestresult
+ gtroff                               tpm2_gettime
+ guild                                tpm2_hash
+ guile                                tpm2_hierarchycontrol
+ guile-tools                          tpm2_hmac
+ guile2                               tpm2_import
+ guile2-tools                         tpm2_incrementalselftest
+ gunzip                               tpm2_load
+ gv2gml                               tpm2_loadexternal
+ gv2gxl                               tpm2_makecredential
+ gvcolor                              tpm2_nvcertify
+ gvgen                                tpm2_nvdefine
+ gvmap                                tpm2_nvextend
+ gvmap.sh                             tpm2_nvincrement
+ gvpack                               tpm2_nvread
+ gvpr                                 tpm2_nvreadlock
+ gxl2dot                              tpm2_nvreadpublic
+ gxl2gv                               tpm2_nvsetbits
+ gzexe                                tpm2_nvundefine
+ gzip                                 tpm2_nvwrite
+ hash                                 tpm2_nvwritelock
+ head                                 tpm2_pcrallocate
+ hexdump                              tpm2_pcrevent
+ host                                 tpm2_pcrextend
+ hostid                               tpm2_pcrread
+ hostname                             tpm2_pcrreset
+ hostnamectl                          tpm2_policyauthorize
+ htdbm                                tpm2_policyauthorizenv
+ htdigest                             tpm2_policyauthvalue
+ htop                                 tpm2_policycommandcode
+ htpasswd                             tpm2_policycountertimer
+ httxt2dbm                            tpm2_policyduplicationselect
+ hunspell                             tpm2_policylocality
+ i386                                 tpm2_policynamehash
+ ibdev2netdev                         tpm2_policynv
+ iceauth                              tpm2_policynvwritten
+ iconv                                tpm2_policyor
+ id                                   tpm2_policypassword
+ idiag-socket-details                 tpm2_policypcr
+ idn                                  tpm2_policyrestart
+ ifnames                              tpm2_policysecret
+ iio_event_monitor                    tpm2_policysigned
+ iio_generic_buffer                   tpm2_policytemplate
+ info                                 tpm2_policyticket
+ infocmp                              tpm2_print
+ infotocap                            tpm2_quote
+ inimf                                tpm2_rc_decode
+ initex                               tpm2_readclock
+ insights-client                      tpm2_readpublic
+ install                              tpm2_rsadecrypt
+ install-catalog                      tpm2_rsaencrypt
+ intel-speed-select                   tpm2_selftest
+ interdiff                            tpm2_send
+ intltool-extract                     tpm2_setclock
+ intltool-merge                       tpm2_setprimarypolicy
+ intltool-prepare                     tpm2_shutdown
+ intltool-update                      tpm2_sign
+ intltoolize                          tpm2_startauthsession
+ ionice                               tpm2_startup
+ ipcalc                               tpm2_stirrandom
+ ipcmk                                tpm2_testparms
+ ipcrm                                tpm2_unseal
+ ipcs                                 tpm2_verifysignature
+ isosize                              tput
+ ispell                               tr
+ java                                 tracepath
+ java2html                            tracer
+ jcat-tool                            tred
+ jimsh                                tree
+ jjs                                  troff
+ jobs                                 true
+ join                                 truncate
+ jose                                 trust
+ journalctl                           tset
+ jq                                   tsort
+ json_reformat                        tty
+ json_verify                          turbostat
+ kbd_mode                             twopi
+ kbdinfo                              txtconv
+ kbdrate                              type
+ kbxutil                              tzselect
+ kdumpctl                             ucs2any
+ kernel-install                       udevadm
+ keytool                              udisksctl
+ kill                                 ul
+ killall                              ulimit
+ kmod                                 ulockmgr_server
+ kpseaccess                           umask
+ kpsepath                             umount
+ kpsereadlink                         unalias
+ kpsestat                             uname
+ kpsetool                             uname26
+ kpsewhere                            unexpand
+ kpsewhich                            unflatten
+ kpsexpand                            unicode_start
+ kvm_stat                             unicode_stop
+ last                                 uniq
+ lastb                                unix2dos
+ lastcomm                             unix2mac
+ lastlog                              unlink
+ latex                                unpack200
+ lchfn                                unpigz
+ lchsh                                unshare
+ ld                                   unversioned-python
+ ld.bfd                               unwrapdiff
+ ld.gold                              unxz
+ ld.so                                unzip
+ ldd                                  unzipsfx
+ lefty                                unzstd
+ less                                 update-ca-trust
+ lessecho                             update-crypto-policies
+ lesskey                              update-desktop-database
+ lesspipe.sh                          update-gtk-immodules
+ lex                                  update-mime-database
+ lexgrog                              updatedb
+ libtool                              updmap
+ libtoolize                           updmap-sys
+ link                                 updmap-user
+ linux-boot-prober                    uptime
+ linux32                              usb-devices
+ linux64                              usbhid-dump
+ ln                                   users
+ lneato                               usleep
+ loadkeys                             utmpdump
+ loadunimap                           uuidgen
+ locale                               uuidparse
+ localectl                            valgrind
+ localedef                            valgrind-di-server
+ locate                               valgrind-listener
+ logger                               vdir
+ login                                vdo
+ loginctl                             vdo-by-dev
+ logname                              vdodmeventd
+ logresolve                           vdodumpconfig
+ look                                 vdoforcerebuild
+ ls                                   vdoformat
+ lsattr                               vdosetuuid
+ lsblk                                vdostats
+ lscpu                                verify_blkparse
+ lsdiff                               vgdb
+ lsgpio                               vi
+ lsiio                                view
+ lsinitrd                             vim
+ lsipc                                vimdiff
+ lslocks                              vimdot
+ lslogins                             vimtutor
+ lsmcli                               vlock
+ lsmd                                 vm-support
+ lsmem                                vmhgfs-fuse
+ lsns                                 vmstat
+ lsof                                 vmtoolsd
+ lsscsi                               vmware-alias-import
+ lsusb                                vmware-checkvm
+ lsusb.py                             vmware-hgfsclient
+ ltrace                               vmware-namespace-cmd
+ lua                                  vmware-rpctool
+ luac                                 vmware-toolbox-cmd
+ luajittex                            vmware-vgauth-cmd
+ lualatex                             vmware-xferlogs
+ luaotfload-tool                      w
+ luatex                               wait
+ luatex53                             wall
+ luatools                             watch
+ luksmeta                             watchgnupg
+ m17n-conv                            wavpack
+ m4                                   wc
+ mac2unix                             wdctl
+ make                                 wget
+ make-dummy-cert                      whatis
+ makedb                               whereis
+ makeindex                            which
+ man                                  whiptail
+ mandb                                who
+ manpath                              whoami
+ mapscrn                              withsctp
+ mcookie                              word-list-compress
+ mcpp                                 write
+ md5sum                               wvgain
+ memstrack                            wvtag
+ mesg                                 wvunpack
+ mf                                   x86_64
+ mf-nowin                             x86_64-redhat-linux-c++
+ mfplain                              x86_64-redhat-linux-g++
+ mft                                  x86_64-redhat-linux-gcc
+ mkdir                                x86_64-redhat-linux-gcc-8
+ mkfifo                               x86_64-redhat-linux-gnu-pkg-config
+ mkfontdir                            x86_energy_perf_policy
+ mkfontscale                          xargs
+ mkindex                              xdg-desktop-icon
+ mkinitrd                             xdg-desktop-menu
+ mknod                                xdg-email
+ mkocp                                xdg-icon-resource
+ mkofm                                xdg-mime
+ mkrfc2734                            xdg-open
+ mktemp                               xdg-screensaver
+ mktexfmt                             xdg-settings
+ mktexlsr                             xdvi
+ mktexmf                              xdvi-xaw
+ mktexpk                              xdvipdfmx
+ mktextfm                             xelatex
+ mm2gv                                xetex
+ mmdblookup                           xgamma
+ modulemd-validator                   xgettext
+ modutil                              xhost
+ mokutil                              xinput
+ more                                 xkill
+ mount                                xmlcatalog
+ mountpoint                           xmllint
+ mpost                                xmlsec1
+ mptopdf                              xmlwf
+ ms_print                             xmodmap
+ msgattrib                            xorg-x11-fonts-update-dirs
+ msgcat                               xpath
+ msgcmp                               xrandr
+ msgcomm                              xrdb
+ msgconv                              xrefresh
+ msgen                                xset
+ msgexec                              xsetpointer
+ msgfilter                            xsetroot
+ msgfmt                               xsltproc
+ msggrep                              xstdcmap
+ msginit                              xxd
+ msgmerge                             xz
+ msgunfmt                             xzcat
+ msguniq                              xzcmp
+ mtxrun                               xzdec
+ mtxrunjit                            xzdiff
+ mv                                   xzegrep
+ namei                                xzfgrep
+ nano                                 xzgrep
+ nc                                   xzless
+ ncat                                 xzmore
+ ndptool                              yacc
+ neato                                yes
+ neqn                                 ypdomainname
+ netstat                              yum
+ newgidmap                            zcat
+ newgrp                               zcmp
+ newuidmap                            zdiff
+ nf-ct-add                            zegrep
+ nf-ct-events                         zfgrep
+ nf-ct-list                           zforce
+ nf-exp-add                           zgrep
+ nf-exp-delete                        zip
+ nf-exp-list                          zipcloak
+ nf-log                               zipgrep
+ nf-monitor                           zipinfo
+ nf-queue                             zipnote
+ ngettext                             zipsplit
+ nice                                 zless
+ nisdomainname                        zmore
+ nl                                   znew
+ nl-addr-add                          zsoelim
+ nl-addr-delete                       zstd
+ nl-addr-list                         zstdcat
+ nl-class-add                         zstdgrep
+ nl-class-delete                      zstdless
+ nl-class-list                        zstdmt
+[maruj@pascal bin]$ client_loop: send disconnect: Broken pipe
+bash-3.2$ 

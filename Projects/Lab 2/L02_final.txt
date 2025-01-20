@@ -1,0 +1,1225 @@
+                                             ?%3}??qv?ٮb/?,?ͥ;E??f??W?L#???~?<???6@???KE.??}?`bQd5?*??ja?vE??'?ɘ??3???k֠?QJ????/??R?
+                                                 ?%?Ub3-??v????`???٨0⠛aw?.&??Z??y
+                                                                                z??nb?????3H??????dR???ہ? `|?Q??Zw??Ei?9ه~??>??VB?B7?uI??????A?#?׋?]??!W?k???c???W?tY??z?????!?-p?x?L?p?9????JG????X?????Na????Z???I?
+=+?F)xo?f?bvA??%??t??V?f	?-F1??ڤ???$?]1??2e
+uQJ?`mK,???#-??2͙쑙??8AIc?????|#%?P??|?%??bPe?a?)?|z?6gh?I7?L?u?????^??4??????CC0`?
+ %I????qN?-?Ɲv,l????J7??p??N????Q4D?W?#?w????9nF ?A(???h+p??1n4??D??L??rC?
+                                                                          F?^?׃q40?T??:????ߥp??[?g+Z?@]??3e(?8??
+{?[?ڠo ?????`o??C?9???g?YZ.shstrtab.interp.note.gnu.property.note.ABI-tag.note.gnu.build-id.gnu.hash.dynsym.dynstr.gnu.version.gnu.version_r.rela.dyn.rela.plt.init.plt.sec.text.fini.rodata.eh_frame_hdr.eh_frame.init_array.fini_array.data.rel.ro.dynamic.got.data.bss.gnu.build.attributes.gnu_debuglink.gnu_debugdata
+                                                                       ????&??$G???o0Q
+     Y`
+       `
+????, ?,4,4?8??P??P??P!?P?B? ? ?`'`'?'?'?? , ,???0?0???TT
+ ?X[!X[?H]!H?`!`??`!?`? 
+8ba?`0 ?e$/?e?n>[maruj@pascal bin]$ clear
+
+[maruj@pascal bin]$ cd /
+[maruj@pascal /]$ cp /bin/touch CS1XC3/L02/bin
+cp: cannot create regular file 'CS1XC3/L02/bin': No such file or directory
+[maruj@pascal /]$ cd 
+[maruj@pascal ~]$ cd CS1XC3/L02/bin
+[maruj@pascal bin]$ cwd
+-bash: cwd: command not found
+[maruj@pascal bin]$ pwd
+/home/maruj/CS1XC3/L02/bin
+[maruj@pascal bin]$ cp /bin/touch /home/maruj/CS1XC3/L02/bin
+[maruj@pascal bin]$ cp /bin/pwd /home/maruj/CS1XC3/L02/bin
+[maruj@pascal bin]$ ls
+pwd  touch
+[maruj@pascal bin]$ cd ..
+[maruj@pascal L02]$ cd /
+[maruj@pascal /]$ touch unzip
+touch: cannot touch 'unzip': Permission denied
+[maruj@pascal /]$ which unzip
+/usr/bin/unzip
+[maruj@pascal /]$ cd
+[maruj@pascal ~]$ cp /usr/bin/unzip /home/maruj/CS1XC3/L02/usr/bin
+[maruj@pascal ~]$ cd /home/maruj/CS1XC3/L02/usr/bin
+[maruj@pascal bin]$ ls
+unzip
+[maruj@pascal bin]$ cd ..
+[maruj@pascal usr]$ cd ..
+[maruj@pascal L02]$ cd home
+[maruj@pascal home]$ mkdir maruj
+[maruj@pascal home]$ 
+[maruj@pascal home]$ ls
+maruj
+[maruj@pascal home]$ cd ..
+[maruj@pascal L02]$ cd home
+[maruj@pascal home]$ ls
+maruj
+[maruj@pascal home]$ touch .bash_history
+[maruj@pascal home]$ ls
+maruj
+[maruj@pascal home]$ cd /
+[maruj@pascal /]$ ls
+bin   dev  home  lib64  mnt  proc  run   srv  tmp  var
+boot  etc  lib   media  opt  root  sbin  sys  usr
+[maruj@pascal /]$ cd home/
+[maruj@pascal home]$ ls -a
+.         caoj89    goyalv3   kim506    mathud4   pates205  siddim93  wakyendj
+..        capuanog  grafj1    kime46    mayere4   petrasej  sikdart   walkel16
+.old      carrog1   grooteno  kimm101   menegoj   pohlj     simiones  wang65
+abdulm55  cartez1   guo99     koenin1   metcac5   pranomms  singa274  wanga121
+abtahib   cassij2   guow42    kongy17   miletid   pys       singg36   wangb168
+abughr1   chalilr   guptae6   kosuria   modyd1    quans6    singh41   wangg97
+abushr1   chanv21   guz38     kothandv  mohaa143  quanv     singhd80  wangq180
+abushr2   chena157  gyorgypn  krishk17  mohas31   quyumr    singht48  wangq198
+aguadoa   chengl26  gyoria    kulkarn   mokasank  racharls  singj93   wardelp
+ahmadina  chenh270  hamada12  kunovaa   moone1    rastogig  singk17   wenc15
+ahmedf67  chenm184  han39     lahira2   moonemal  rastom1   siracusm  wiatrp
+ahmes127  chent147  hartn3    lee752    moorenc   reyesj12  sivakr6   wongj171
+alikhank  chiua12   hashmik   leer72    moucattv  rezkallb  songh65   wu509
+allabada  choih44   hasibih   li1494    muravun   robina46  sorokinn  xied15
+almudara  ciccig    hirak     li2129    nadeem22  robins46  sounda    xiongc9
+alvarr5   clears2   hobincan  liangk17  nadong    roghanim  spurgeor  xur86
+ansars23  corradic  holstd    lidgeyc   naganobc  roodhara  stefani   xut75
+armstj37  courtems  houw10    lig71     nairs22   rothk4    stepakb   xxxxh
+arorag12  daeijava  howarr2   linc94    najaftos  rozarim   subrap6   yangm98
+asaadh    daudb     huanc10   linx45    nakamurs  sahnia3   sukhadid  yangt66
+asrans1   desaik21  huanl9    lisowskk  nambyarm  sajjaa7   suks2     yaol16
+atelieyt  dodss     jeonj10   liu1690   narewalk  sajua     sullia8   yashikay
+awwadm2   dongw17   jic15     liu854    nassem10  samplj    sun250    zabtiaa
+balajv1   duh27     johalg11  lodhia8   nazariac  sandhk20  sun273    zajkeskn
+balasim   eastonh   johalh8   lu120     nguyd10   sanghana  sunc44    zenge3
+balm4     ebrahp2   johalj11  luor19    nguyer22  saturnij  sungk5    zhanr169
+bandarm   faisat2   joshim20  luz98     nickolij  sauroc    suthas2   zhant34
+baoy41    fengf10   kabashis  ma132     obriec20  saxenp4   talasilu  zhaoa32
+bashal1   fongj13   kakark2   macfarlf  ofeknale  serapioc  tangc61   zhaok31
+benmessn  fullec6   karunath  madhus2   paid      seton2    tayloe26  zhengz13
+bhattv11  fuzailm   kasamr    majmudaj  pamukcua  shahb20   taylon17  zhoua39
+bijon     gaffena   kaura69   maliks54  pandheh   shahim46  tengj7    zhoue5
+birgerf   galuszkm  kaurm57   mana4     parikh5   shahr73   trimbln   zhouz229
+borrele   gaos74    kaurs83   manaria   parikr7   shahrour  tsangy2   zhu232
+bosmanb   gaurs5    kayr2     mannj22   parke22   shaikl3   ukaegbuc  zhu37
+brinka    geradag   ker       manomaib  patea202  shants5   vassalm   zouj37
+brzustoj  giancm1   khakhulm  maricm7   patelo14  sharmk66  velshiz
+buchae5   goetza3   khana389  markm4    patem148  shi31     ventresv
+buham     gonidist  kheraa6   martinoe  patem190  shiz40    vok9
+cai6      gouvitce  khokhs5   martm10   patem196  shoteria  vuongk3
+cao51     gowlandr  kim370    maruj     pater137  siddelej  wadehrak
+[maruj@pascal home]$ head .bash_history
+head: cannot open '.bash_history' for reading: No such file or directory
+[maruj@pascal home]$ which .bash_history
+/usr/bin/which: no .bash_history in (/home/maruj/.local/bin:/home/maruj/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin)
+[maruj@pascal home]$ cd
+[maruj@pascal ~]$ which .bash_history
+/usr/bin/which: no .bash_history in (/home/maruj/.local/bin:/home/maruj/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin)
+[maruj@pascal ~]$ ls
+CS1XC3  public_html  topic2
+[maruj@pascal ~]$ cd CS1XC3/
+[maruj@pascal CS1XC3]$ ls
+L01  L02  README.md
+[maruj@pascal CS1XC3]$ cd /
+[maruj@pascal /]$ ls
+bin   dev  home  lib64  mnt  proc  run   srv  tmp  var
+boot  etc  lib   media  opt  root  sbin  sys  usr
+[maruj@pascal /]$ ls home
+abdulm55  carrog1   grafj1    kim506    maruj     patem196  shiz40    ventresv
+abtahib   cartez1   grooteno  kime46    mathud4   pater137  shoteria  vok9
+abughr1   cassij2   guo99     kimm101   mayere4   pates205  siddelej  vuongk3
+abushr1   chalilr   guow42    koenin1   menegoj   petrasej  siddim93  wadehrak
+abushr2   chanv21   guptae6   kongy17   metcac5   pohlj     sikdart   wakyendj
+aguadoa   chena157  guz38     kosuria   miletid   pranomms  simiones  walkel16
+ahmadina  chengl26  gyorgypn  kothandv  modyd1    pys       singa274  wang65
+ahmedf67  chenh270  gyoria    krishk17  mohaa143  quans6    singg36   wanga121
+ahmes127  chenm184  hamada12  kulkarn   mohas31   quanv     singh41   wangb168
+alikhank  chent147  han39     kunovaa   mokasank  quyumr    singhd80  wangg97
+allabada  chiua12   hartn3    lahira2   moone1    racharls  singht48  wangq180
+almudara  choih44   hashmik   lee752    moonemal  rastogig  singj93   wangq198
+alvarr5   ciccig    hasibih   leer72    moorenc   rastom1   singk17   wardelp
+ansars23  clears2   hirak     li1494    moucattv  reyesj12  siracusm  wenc15
+armstj37  corradic  hobincan  li2129    muravun   rezkallb  sivakr6   wiatrp
+arorag12  courtems  holstd    liangk17  nadeem22  robina46  songh65   wongj171
+asaadh    daeijava  houw10    lidgeyc   nadong    robins46  sorokinn  wu509
+asrans1   daudb     howarr2   lig71     naganobc  roghanim  sounda    xied15
+atelieyt  desaik21  huanc10   linc94    nairs22   roodhara  spurgeor  xiongc9
+awwadm2   dodss     huanl9    linx45    najaftos  rothk4    stefani   xur86
+balajv1   dongw17   jeonj10   lisowskk  nakamurs  rozarim   stepakb   xut75
+balasim   duh27     jic15     liu1690   nambyarm  sahnia3   subrap6   xxxxh
+balm4     eastonh   johalg11  liu854    narewalk  sajjaa7   sukhadid  yangm98
+bandarm   ebrahp2   johalh8   lodhia8   nassem10  sajua     suks2     yangt66
+baoy41    faisat2   johalj11  lu120     nazariac  samplj    sullia8   yaol16
+bashal1   fengf10   joshim20  luor19    nguyd10   sandhk20  sun250    yashikay
+benmessn  fongj13   kabashis  luz98     nguyer22  sanghana  sun273    zabtiaa
+bhattv11  fullec6   kakark2   ma132     nickolij  saturnij  sunc44    zajkeskn
+bijon     fuzailm   karunath  macfarlf  obriec20  sauroc    sungk5    zenge3
+birgerf   gaffena   kasamr    madhus2   ofeknale  saxenp4   suthas2   zhanr169
+borrele   galuszkm  kaura69   majmudaj  paid      serapioc  talasilu  zhant34
+bosmanb   gaos74    kaurm57   maliks54  pamukcua  seton2    tangc61   zhaoa32
+brinka    gaurs5    kaurs83   mana4     pandheh   shahb20   tayloe26  zhaok31
+brzustoj  geradag   kayr2     manaria   parikh5   shahim46  taylon17  zhengz13
+buchae5   giancm1   ker       mannj22   parikr7   shahr73   tengj7    zhoua39
+buham     goetza3   khakhulm  manomaib  parke22   shahrour  trimbln   zhoue5
+cai6      gonidist  khana389  maricm7   patea202  shaikl3   tsangy2   zhouz229
+cao51     gouvitce  kheraa6   markm4    patelo14  shants5   ukaegbuc  zhu232
+caoj89    gowlandr  khokhs5   martinoe  patem148  sharmk66  vassalm   zhu37
+capuanog  goyalv3   kim370    martm10   patem190  shi31     velshiz   zouj37
+[maruj@pascal /]$ cd home
+[maruj@pascal home]$ ls -a
+.         caoj89    goyalv3   kim506    mathud4   pates205  siddim93  wakyendj
+..        capuanog  grafj1    kime46    mayere4   petrasej  sikdart   walkel16
+.old      carrog1   grooteno  kimm101   menegoj   pohlj     simiones  wang65
+abdulm55  cartez1   guo99     koenin1   metcac5   pranomms  singa274  wanga121
+abtahib   cassij2   guow42    kongy17   miletid   pys       singg36   wangb168
+abughr1   chalilr   guptae6   kosuria   modyd1    quans6    singh41   wangg97
+abushr1   chanv21   guz38     kothandv  mohaa143  quanv     singhd80  wangq180
+abushr2   chena157  gyorgypn  krishk17  mohas31   quyumr    singht48  wangq198
+aguadoa   chengl26  gyoria    kulkarn   mokasank  racharls  singj93   wardelp
+ahmadina  chenh270  hamada12  kunovaa   moone1    rastogig  singk17   wenc15
+ahmedf67  chenm184  han39     lahira2   moonemal  rastom1   siracusm  wiatrp
+ahmes127  chent147  hartn3    lee752    moorenc   reyesj12  sivakr6   wongj171
+alikhank  chiua12   hashmik   leer72    moucattv  rezkallb  songh65   wu509
+allabada  choih44   hasibih   li1494    muravun   robina46  sorokinn  xied15
+almudara  ciccig    hirak     li2129    nadeem22  robins46  sounda    xiongc9
+alvarr5   clears2   hobincan  liangk17  nadong    roghanim  spurgeor  xur86
+ansars23  corradic  holstd    lidgeyc   naganobc  roodhara  stefani   xut75
+armstj37  courtems  houw10    lig71     nairs22   rothk4    stepakb   xxxxh
+arorag12  daeijava  howarr2   linc94    najaftos  rozarim   subrap6   yangm98
+asaadh    daudb     huanc10   linx45    nakamurs  sahnia3   sukhadid  yangt66
+asrans1   desaik21  huanl9    lisowskk  nambyarm  sajjaa7   suks2     yaol16
+atelieyt  dodss     jeonj10   liu1690   narewalk  sajua     sullia8   yashikay
+awwadm2   dongw17   jic15     liu854    nassem10  samplj    sun250    zabtiaa
+balajv1   duh27     johalg11  lodhia8   nazariac  sandhk20  sun273    zajkeskn
+balasim   eastonh   johalh8   lu120     nguyd10   sanghana  sunc44    zenge3
+balm4     ebrahp2   johalj11  luor19    nguyer22  saturnij  sungk5    zhanr169
+bandarm   faisat2   joshim20  luz98     nickolij  sauroc    suthas2   zhant34
+baoy41    fengf10   kabashis  ma132     obriec20  saxenp4   talasilu  zhaoa32
+bashal1   fongj13   kakark2   macfarlf  ofeknale  serapioc  tangc61   zhaok31
+benmessn  fullec6   karunath  madhus2   paid      seton2    tayloe26  zhengz13
+bhattv11  fuzailm   kasamr    majmudaj  pamukcua  shahb20   taylon17  zhoua39
+bijon     gaffena   kaura69   maliks54  pandheh   shahim46  tengj7    zhoue5
+birgerf   galuszkm  kaurm57   mana4     parikh5   shahr73   trimbln   zhouz229
+borrele   gaos74    kaurs83   manaria   parikr7   shahrour  tsangy2   zhu232
+bosmanb   gaurs5    kayr2     mannj22   parke22   shaikl3   ukaegbuc  zhu37
+brinka    geradag   ker       manomaib  patea202  shants5   vassalm   zouj37
+brzustoj  giancm1   khakhulm  maricm7   patelo14  sharmk66  velshiz
+buchae5   goetza3   khana389  markm4    patem148  shi31     ventresv
+buham     gonidist  kheraa6   martinoe  patem190  shiz40    vok9
+cai6      gouvitce  khokhs5   martm10   patem196  shoteria  vuongk3
+cao51     gowlandr  kim370    maruj     pater137  siddelej  wadehrak
+[maruj@pascal home]$ cd .old
+[maruj@pascal .old]$ ls
+[maruj@pascal .old]$ ls -a
+.  ..
+[maruj@pascal .old]$ cd 
+[maruj@pascal ~]$ cd `
+> q
+> :q
+> clear
+> qq
+> 
+.bash_history  .bash_profile  CS1XC3/        public_html/   topic2/
+.bash_logout   .bashrc        .emacs         .ssh/          .viminfo
+> 
+.bash_history  .bash_profile  CS1XC3/        public_html/   topic2/
+.bash_logout   .bashrc        .emacs         .ssh/          .viminfo
+> :wq
+> cd 
+> cd CS1XC3/
+> cd
+> 
+.bash_history  .bash_profile  CS1XC3/        public_html/   topic2/
+.bash_logout   .bashrc        .emacs         .ssh/          .viminfo
+> 
+.bash_history  .bash_profile  CS1XC3/        public_html/   topic2/
+.bash_logout   .bashrc        .emacs         .ssh/          .viminfo
+> .bash_history
+> cat .bash_history
+> 
+.bash_history  .bash_profile  CS1XC3/        public_html/   topic2/
+.bash_logout   .bashrc        .emacs         .ssh/          .viminfo
+> 
+.bash_history  .bash_profile  CS1XC3/        public_html/   topic2/
+.bash_logout   .bashrc        .emacs         .ssh/          .viminfo
+> 
+> 
+> '
+> ^C
+[maruj@pascal ~]$ cd ~
+[maruj@pascal ~]$ ls
+CS1XC3  public_html  topic2
+[maruj@pascal ~]$ ls -a
+.   .bash_history  .bash_profile  .emacs  .viminfo  public_html
+..  .bash_logout   .bashrc        .ssh    CS1XC3    topic2
+[maruj@pascal ~]$ heat .bash_history
+-bash: heat: command not found
+[maruj@pascal ~]$ head .bash_history
+ls
+mkdir public_html
+ls
+vi text.txt
+ls
+pwd
+cat public_html
+cd public_html
+cat file1.txt
+cat > sales.txt
+[maruj@pascal ~]$ cat .bash_history
+ls
+mkdir public_html
+ls
+vi text.txt
+ls
+pwd
+cat public_html
+cd public_html
+cat file1.txt
+cat > sales.txt
+ls
+mkdir topic 2
+ls
+del topic
+rm topic
+-d topic
+--topic
+rmdir topic
+ls
+rmdir 2
+mkdir topic2
+cd topic2
+git init
+git --version
+ls
+ls -a
+cd .git
+ls
+cd hooks
+ls
+cd ..
+ls
+cd object
+cd objects
+ls
+cd ..
+mkdir test
+cd test
+vi star.txt
+ls
+cat star.txt
+ls
+cd ..
+ls
+vi second.txt
+ls
+cat second.txt
+git commit 
+git add second.txt
+git commit 
+clear
+ls
+git log
+cd topic2/
+ls
+git log
+git branch dev
+ls
+ls -a
+git clone git@github.com:jenilmaru2004/CS1XC3.git
+ls
+mkdir lab2
+ls
+cd lab2
+ls
+git
+git init
+ls
+ls -a
+git clone git@github.com:jenilmaru2004/CS1XC3.git
+$ ssh-keygen -t ed25519 -C maruj@mcmaster.ca
+ssh-keygen -t ed25519 -C maruj@mcmaster.ca
+cd.ssh
+ls
+pbcopy <~/.ssh/lab2.pub
+ls
+cd lab2.pub
+cat lab2.pub
+cat ~/.ssh/lab2.pub
+ls ~/.ssh/*.pub
+pbcopy < ~/.ssh/lab2.pub
+ls
+ls lab2.pub
+cd .ssh
+cat ~/.ssh/id_dsa.pub
+ls
+cat lab2.pub
+git clone git@github.com:jenilmaru2004/CS1XC3.git
+ls
+cat lab2.pub
+ls
+cd lab2
+cat lab2
+git clone git@github.com:jenilmaru2004/CS1XC3.git
+cd .ssh
+cd ..
+ls
+git clone b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACDqZ+0mGuRxd6MQXv/ksz6RcDYbbolpuTN5KIQ+3qAqjwAAAJghN5zeITec
+3gAAAAtzc2gtZWQyNTUxOQAAACDqZ+0mGuRxd6MQXv/ksz6RcDYbbolpuTN5KIQ+3qAqjw
+AAAECvZH3pk5lDV3nYPNCp4xSTXFmfh7qsQG+YmfvUrbqTp+pn7SYa5HF3oxBe/+SzPpFw
+NhtuiWm5M3kohD7eoCqPAAAAEW1hcnVqQG1jbWFzdGVyLmNhAQIDBA==
+git clone git@github.com:jenilmaru2004/CS1XC3.git
+cd lab2/
+ls
+pbcopy < ~/.ssh/lab2.pub
+pbcopy < ~/lab2/.ssh/lab2.pub
+ssh-add ~/.ssh/ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOpn7SYa5HF3oxBe/+SzPpFwNhtuiWm5M3kohD7eoCqP maruj@mcmaster.ca
+ssh-keygen -lf ~/.ssh/lab2.pub
+ls
+cd ..
+ls
+mkdir L02
+cd L02
+ssh-keygen -t ed25519-sk -C maruj@mcmaster.ca
+ssh-keygen -t ecdsa-sk -C maruj@mcmaster.ca
+ssh-keygen -t ed25519 -C maruj@mcmaster.ca
+ls
+cat L02.pub
+git clone git@github.com:jenilmaru2004/CS1XC3.git
+ls
+cd ..
+ls
+ls -la
+cd .ssh/
+ls
+cd ..
+history 
+ssh-keygen -t ed25519-sk -C maruj@mcmaster.ca
+ssh-keygen -t ed25519 -C "maruj@mcmaster.ca""
+ssh-keygen -t ed25519 -C "maruj@mcmaster.ca"
+cd .ssh/
+ls
+cat id_ed25519.pub 
+git clone git@github.com:jenilmaru2004/CS1XC3.git
+ls
+cd ..
+ls
+rm L02
+del L02
+-r L02
+rmdir L02
+rm -r L02
+ls
+rm -r lab2
+cd .ssh/
+ls
+git add
+cd CS1XC3/
+ls
+mkdir L02
+ls
+cd /
+cd bin/
+ls
+ls -a
+cd topic2/
+ls
+ls -a
+.git
+cd .git
+ls
+cd ..
+ls -a
+cd .
+ls
+ls -a
+cd ..
+ls
+cd 
+cd topic2/
+ls -a
+git clone git@github.com:jenilmaru2004/CS1XC3.git
+git commit
+ls
+cd CS1XC3/
+ls
+mkdir L02
+git commit 
+ls
+cd L02
+ls
+git commit
+tree
+mkdir bin
+mkdir dev
+mkdir etc
+mkdir home
+mkdir L02
+mkdir lib
+mkdir mnt
+mkdir opt
+mkdir proc
+mkdir root
+mkdir sbin
+mkdir usr
+cd usr
+mkdir bin
+mkdir include 
+mkdir lib
+mkdir local
+mkdir share
+cd share
+mkdir man
+cd ..
+mkdir var
+cd var
+mkdir cache
+mkdir lib
+mkdir lock
+mkdir log
+mkdir opt
+mkdir spool
+cd spool
+mkdir cron
+mkdir cups
+mkdir mail
+cd ..
+mkdir tmp
+cd ..
+tree
+cd
+ls
+ls -a
+cd /
+ls
+ls bin
+cd
+ls
+cd CS1XC3/
+ls
+cd L02
+ls
+cd bin 
+ls
+touch maruj@pascal/bin/cd
+cd /
+ls
+which cd
+cd ..
+ls
+cd
+cd CS1XC3/
+cd L02/
+cd bin/
+touch /usr/bin/cd
+cd /
+which unzip
+whcih cd
+which cd
+which ls
+which cd ..
+which cat
+ls
+cd bin
+cp
+cp -r
+man cp
+pwd
+cd
+ls
+cd CS1XC3/
+cd L0
+cd L02
+cd bin/
+touch /bin
+git commit 
+git commit -m 'Tree created'
+touch /bin
+touch cd
+ls
+rm cd
+ls
+cd ..
+ls
+git add
+git add .
+ls
+man git add .
+cd
+ls
+cd CS1XC3/
+cd ..
+cd CS1XC3/
+l
+ls
+cd ..
+ls
+cd CS1XC3/
+ls
+cd L0
+git push origin master
+cd L02
+git push origin master
+ls
+git push
+git push origin master
+tree
+git push origin master
+git commit -m "initial commit"
+git push original main
+git push origin main
+git push origin master
+[maruj@pascal ~]$ head .bash_history
+ls
+mkdir public_html
+ls
+vi text.txt
+ls
+pwd
+cat public_html
+cd public_html
+cat file1.txt
+cat > sales.txt
+[maruj@pascal ~]$ read -r firstline<.bash_history
+[maruj@pascal ~]$ ls
+CS1XC3  public_html  topic2
+[maruj@pascal ~]$ ls -a
+.   .bash_history  .bash_profile  .emacs  .viminfo  public_html
+..  .bash_logout   .bashrc        .ssh    CS1XC3    topic2
+[maruj@pascal ~]$ echo "$firstline"
+ls
+[maruj@pascal ~]$ cd
+[maruj@pascal ~]$ ls
+CS1XC3  public_html  topic2
+[maruj@pascal ~]$ cd CS1XC3/
+[maruj@pascal CS1XC3]$ cd L02/home/
+[maruj@pascal home]$ ls
+maruj
+[maruj@pascal home]$ cd maruj/
+[maruj@pascal maruj]$ ls
+[maruj@pascal maruj]$ cd ..
+[maruj@pascal home]$ ls
+maruj
+[maruj@pascal home]$ touch .bash_history
+[maruj@pascal home]$ ls
+maruj
+[maruj@pascal home]$ ls -a
+.  ..  .bash_history  maruj
+[maruj@pascal home]$ less .bash_history 
+[maruj@pascal home]$ cp "$firstline" .bash_history
+cp: cannot stat 'ls': No such file or directory
+[maruj@pascal home]$ cp echo "$firstline" .bash_history
+cp: target '.bash_history' is not a directory
+[maruj@pascal home]$ echo "ls" .bash_history
+ls .bash_history
+[maruj@pascal home]$ ls
+maruj
+[maruj@pascal home]$ ls -a
+.  ..  .bash_history  maruj
+[maruj@pascal home]$ less .bash_history 
+[maruj@pascal home]$ cat  .bash_history
+[maruj@pascal home]$ cp "ls" .bash_history
+cp: cannot stat 'ls': No such file or directory
+[maruj@pascal home]$ ls -a
+.  ..  .bash_history  maruj
+[maruj@pascal home]$ cat .bash_history 
+[maruj@pascal home]$ nano .bash_history 
+[maruj@pascal home]$ cat .bash_history 
+ls
+[maruj@pascal home]$ cd 
+[maruj@pascal ~]$ cd CS1XC3/L02/
+[maruj@pascal L02]$ ls
+L02  bin  dev  etc  home  lib  mnt  opt  proc  root  sbin  usr  var
+[maruj@pascal L02]$ mkdir boot
+[maruj@pascal L02]$ cd /
+[maruj@pascal /]$ ls
+bin   dev  home  lib64  mnt  proc  run   srv  tmp  var
+boot  etc  lib   media  opt  root  sbin  sys  usr
+[maruj@pascal /]$ cd boot
+[maruj@pascal boot]$ ls
+System.map-4.18.0-372.26.1.el8_6.x86_64
+System.map-4.18.0-372.9.1.el8.x86_64
+System.map-4.18.0-425.3.1.el8.x86_64
+config-4.18.0-372.26.1.el8_6.x86_64
+config-4.18.0-372.9.1.el8.x86_64
+config-4.18.0-425.3.1.el8.x86_64
+efi
+grub2
+initramfs-0-rescue-706ac7d879004015be97ceeee6efa186.img
+initramfs-4.18.0-372.26.1.el8_6.x86_64.img
+initramfs-4.18.0-372.26.1.el8_6.x86_64kdump.img
+initramfs-4.18.0-372.9.1.el8.x86_64.img
+initramfs-4.18.0-372.9.1.el8.x86_64kdump.img
+initramfs-4.18.0-425.3.1.el8.x86_64.img
+initramfs-4.18.0-425.3.1.el8.x86_64kdump.img
+loader
+symvers-4.18.0-372.26.1.el8_6.x86_64.gz
+symvers-4.18.0-372.9.1.el8.x86_64.gz
+symvers-4.18.0-425.3.1.el8.x86_64.gz
+vmlinuz-0-rescue-706ac7d879004015be97ceeee6efa186
+vmlinuz-4.18.0-372.26.1.el8_6.x86_64
+vmlinuz-4.18.0-372.9.1.el8.x86_64
+vmlinuz-4.18.0-425.3.1.el8.x86_64
+[maruj@pascal boot]$ cd ..
+[maruj@pascal /]$ cd 
+[maruj@pascal ~]$ ls
+CS1XC3  public_html  topic2
+[maruj@pascal ~]$ cd/CS1XC3/L02
+-bash: cd/CS1XC3/L02: No such file or directory
+[maruj@pascal ~]$ cd CS1XC3/
+[maruj@pascal CS1XC3]$ cd L02
+[maruj@pascal L02]$ cd boot
+[maruj@pascal boot]$ touch linux-1
+[maruj@pascal boot]$ ls
+linux-1
+[maruj@pascal boot]$ touch config-1
+[maruj@pascal boot]$ nano config-1
+[maruj@pascal boot]$ ls
+config-1  linux-1
+[maruj@pascal boot]$ cat config-1
+CONFIG_DUMBOS=y
+CONFIG_x86=n
+# this is a comment
+
+
+[maruj@pascal boot]$ cd ..
+[maruj@pascal L02]$ ls
+L02  bin  boot  dev  etc  home  lib  mnt  opt  proc  root  sbin  usr  var
+[maruj@pascal L02]$ cp /etc/default etc
+cp: -r not specified; omitting directory '/etc/default'
+[maruj@pascal L02]$ cd /
+[maruj@pascal /]$ cd etc/defualt
+-bash: cd: etc/defualt: No such file or directory
+[maruj@pascal /]$ cd etc/default
+[maruj@pascal default]$ ls
+grub  useradd
+[maruj@pascal default]$ cd
+[maruj@pascal ~]$ cd CS1XC3/L02/etc
+[maruj@pascal etc]$ pwd
+/home/maruj/CS1XC3/L02/etc
+[maruj@pascal etc]$ cp etc/default /home/maruj/CS1XC3/L02/etc
+cp: cannot stat 'etc/default': No such file or directory
+[maruj@pascal etc]$ cp /etc/default /home/maruj/CS1XC3/L02/etc
+cp: -r not specified; omitting directory '/etc/default'
+[maruj@pascal etc]$ cp /etc/default/grub /home/maruj/CS1XC3/L02/etc/default
+[maruj@pascal etc]$ cp /etc/default/grub /home/maruj/CS1XC3/L02/etc/default
+
+[maruj@pascal etc]$ 
+[maruj@pascal etc]$ 
+[maruj@pascal etc]$ cp /etc/default/useradd /home/maruj/CS1XC3/L02/etc/default
+[maruj@pascal etc]$ ls
+default
+[maruj@pascal etc]$ cd default
+-bash: cd: default: Not a directory
+[maruj@pascal etc]$ rm default
+[maruj@pascal etc]$ ls
+[maruj@pascal etc]$ mkdir default
+[maruj@pascal etc]$ ls
+default
+[maruj@pascal etc]$ cp /etc/default/grub /home/maruj/CS1XC3/L02/etc/default
+[maruj@pascal etc]$ cp /etc/default/useradd /home/maruj/CS1XC3/L02/etc/default
+[maruj@pascal etc]$ ls
+default
+[maruj@pascal etc]$ cd default/
+[maruj@pascal default]$ ls
+grub  useradd
+[maruj@pascal default]$ git add .
+[maruj@pascal default]$ git commit -m
+error: switch `m' requires a value
+[maruj@pascal default]$ git commit
+Aborting commit due to empty commit message.
+[maruj@pascal default]$ git commit "2nd commit"
+error: pathspec '2nd commit' did not match any file(s) known to git
+[maruj@pascal default]$ git commit -m "2nd"
+[main 7f6be93] 2nd
+ Committer: maruj <maruj@pascal.cas.mcmaster.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 17 insertions(+)
+ create mode 100644 L02/etc/default/grub
+ create mode 100644 L02/etc/default/useradd
+[maruj@pascal default]$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'github.com:jenilmaru2004/CS1XC3.git'
+[maruj@pascal default]$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 822 bytes | 411.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:jenilmaru2004/CS1XC3.git
+   c5dc8ba..7f6be93  main -> main
+[maruj@pascal default]$ cd
+[maruj@pascal ~]$ cd /usr/lib/gcc/x86_64-linux-gnu/7.5.0/include
+-bash: cd: /usr/lib/gcc/x86_64-linux-gnu/7.5.0/include: No such file or directory
+[maruj@pascal ~]$ cd /
+[maruj@pascal /]$ ls
+bin   dev  home  lib64  mnt  proc  run   srv  tmp  var
+boot  etc  lib   media  opt  root  sbin  sys  usr
+[maruj@pascal /]$ cd /usr/lib/gcc/x86_64-linux-gnu/7.5.0/include
+-bash: cd: /usr/lib/gcc/x86_64-linux-gnu/7.5.0/include: No such file or directory
+[maruj@pascal /]$ cd usr
+[maruj@pascal usr]$ cd lib
+[maruj@pascal lib]$ cd gcc
+[maruj@pascal gcc]$ cd x86_64-linux-gnu/7.5.0/include
+-bash: cd: x86_64-linux-gnu/7.5.0/include: No such file or directory
+[maruj@pascal gcc]$ cd x86_64-linux-gnu/7.5.0/include.
+-bash: cd: x86_64-linux-gnu/7.5.0/include.: No such file or directory
+[maruj@pascal gcc]$ cd x86_64-linux-gnu
+-bash: cd: x86_64-linux-gnu: No such file or directory
+[maruj@pascal gcc]$ ls
+x86_64-redhat-linux
+[maruj@pascal gcc]$ cd x86_64-redhat-linux/
+[maruj@pascal x86_64-redhat-linux]$ ls
+8
+[maruj@pascal x86_64-redhat-linux]$ cd 8
+[maruj@pascal 8]$ ls
+32                 crtoffloadtable.o  libgcc_eh.a        libsanitizer.spec
+crtbegin.o         crtprec32.o        libgcc_s.so        libstdc++.so
+crtbeginS.o        crtprec64.o        libgcov.a          libstdc++fs.a
+crtbeginT.o        crtprec80.o        libgomp.a          libtsan.so
+crtend.o           include            libgomp.so         libtsan_preinit.o
+crtendS.o          libasan.so         libgomp.spec       libubsan.so
+crtfastmath.o      libasan_preinit.o  libitm.spec        plugin
+crtoffloadbegin.o  libatomic.so       liblsan.so         rpmver
+crtoffloadend.o    libgcc.a           liblsan_preinit.o
+[maruj@pascal 8]$ cd include/
+[maruj@pascal include]$ ls
+adxintrin.h                clwbintrin.h     rtmintrin.h
+ammintrin.h                clzerointrin.h   sanitizer
+avx2intrin.h               cpuid.h          sgxintrin.h
+avx5124fmapsintrin.h       cross-stdarg.h   shaintrin.h
+avx5124vnniwintrin.h       emmintrin.h      smmintrin.h
+avx512bitalgintrin.h       f16cintrin.h     stdalign.h
+avx512bwintrin.h           float.h          stdarg.h
+avx512cdintrin.h           fma4intrin.h     stdatomic.h
+avx512dqintrin.h           fmaintrin.h      stdbool.h
+avx512erintrin.h           fxsrintrin.h     stddef.h
+avx512fintrin.h            gcov.h           stdfix.h
+avx512ifmaintrin.h         gfniintrin.h     stdint-gcc.h
+avx512ifmavlintrin.h       ia32intrin.h     stdint.h
+avx512pfintrin.h           immintrin.h      stdnoreturn.h
+avx512vbmi2intrin.h        iso646.h         syslimits.h
+avx512vbmi2vlintrin.h      limits.h         tbmintrin.h
+avx512vbmiintrin.h         lwpintrin.h      tmmintrin.h
+avx512vbmivlintrin.h       lzcntintrin.h    unwind.h
+avx512vlbwintrin.h         mm3dnow.h        vaesintrin.h
+avx512vldqintrin.h         mm_malloc.h      varargs.h
+avx512vlintrin.h           mmintrin.h       vpclmulqdqintrin.h
+avx512vnniintrin.h         movdirintrin.h   wbnoinvdintrin.h
+avx512vnnivlintrin.h       mwaitxintrin.h   wmmintrin.h
+avx512vpopcntdqintrin.h    nmmintrin.h      x86intrin.h
+avx512vpopcntdqvlintrin.h  omp.h            xmmintrin.h
+avxintrin.h                openacc.h        xopintrin.h
+bmi2intrin.h               pconfigintrin.h  xsavecintrin.h
+bmiintrin.h                pkuintrin.h      xsaveintrin.h
+bmmintrin.h                pmmintrin.h      xsaveoptintrin.h
+cet.h                      popcntintrin.h   xsavesintrin.h
+cetintrin.h                prfchwintrin.h   xtestintrin.h
+clflushoptintrin.h         rdseedintrin.h
+[maruj@pascal include]$ cd ..
+[maruj@pascal 8]$ cd
+[maruj@pascal ~]$ cd CS1XC3/L02/usr
+[maruj@pascal usr]$ ls
+bin  include  lib  local  share
+[maruj@pascal usr]$ cd lib
+[maruj@pascal lib]$ touch systemlib.so
+[maruj@pascal lib]$ touch userlib.so
+[maruj@pascal lib]$ ls
+systemlib.so  userlib.so
+[maruj@pascal lib]$ rm systemlib.so 
+[maruj@pascal lib]$ ls
+userlib.so
+[maruj@pascal lib]$ cd ..
+[maruj@pascal usr]$ cd ..
+[maruj@pascal L02]$ ls
+L02  bin  boot  dev  etc  home  lib  mnt  opt  proc  root  sbin  usr  var
+[maruj@pascal L02]$ cd lib
+[maruj@pascal lib]$ touch systemlib.so
+[maruj@pascal lib]$ ls
+systemlib.so
+[maruj@pascal lib]$ cd ..
+[maruj@pascal L02]$ cd usr
+[maruj@pascal usr]$ ls
+bin  include  lib  local  share
+[maruj@pascal usr]$ cd include
+[maruj@pascal include]$ ls
+[maruj@pascal include]$ touch stdfake.h
+[maruj@pascal include]$ nano stdfake.h 
+[maruj@pascal include]$ ls
+stdfake.h
+[maruj@pascal include]$ cat stdfake.h 
+extern int fake_print (void) ;
+[maruj@pascal include]$ cd ..
+[maruj@pascal usr]$ cd ..
+[maruj@pascal L02]$ ls
+L02  bin  boot  dev  etc  home  lib  mnt  opt  proc  root  sbin  usr  var
+[maruj@pascal L02]$ cd b
+-bash: cd: b: No such file or directory
+[maruj@pascal L02]$ cd boot
+[maruj@pascal boot]$ ls
+config-1  linux-1
+[maruj@pascal boot]$ nano config-1 
+[maruj@pascal boot]$ cat config-1 
+CONFIG_DUMBOS=y
+CONFIG_x86=n
+# this is a comment
+
+
+[maruj@pascal boot]$ cd ..
+[maruj@pascal L02]$ cd var
+[maruj@pascal var]$ cd log
+[maruj@pascal log]$ touch syslog
+[maruj@pascal log]$ nano syslog
+[maruj@pascal log]$ ls
+syslog
+[maruj@pascal log]$ cat syslog 
+DONE!
+[maruj@pascal log]$ cd ..
+[maruj@pascal var]$ cd ..
+[maruj@pascal L02]$ ls
+L02  bin  boot  dev  etc  home  lib  mnt  opt  proc  root  sbin  usr  var
+[maruj@pascal L02]$ cd L02
+[maruj@pascal L02]$ touch blank.txt
+[maruj@pascal L02]$ cd ..
+[maruj@pascal L02]$ cd bin
+[maruj@pascal bin]$ ls
+pwd  touch
+[maruj@pascal bin]$ cd ..
+[maruj@pascal L02]$ cd b
+-bash: cd: b: No such file or directory
+[maruj@pascal L02]$ cd boot
+[maruj@pascal boot]$ ls
+config-1  linux-1
+[maruj@pascal boot]$ cd ..
+[maruj@pascal L02]$ cd dev
+[maruj@pascal dev]$ ls
+[maruj@pascal dev]$ touch blank.txt
+[maruj@pascal dev]$ ls
+blank.txt
+[maruj@pascal dev]$ cd ..
+[maruj@pascal L02]$ ls
+L02  bin  boot  dev  etc  home  lib  mnt  opt  proc  root  sbin  usr  var
+[maruj@pascal L02]$ cd etc
+[maruj@pascal etc]$ ls
+default
+[maruj@pascal etc]$ cd default/
+[maruj@pascal default]$ ls
+grub  useradd
+[maruj@pascal default]$ cd ..
+[maruj@pascal etc]$ cd ..
+[maruj@pascal L02]$ cd home
+[maruj@pascal home]$ ls
+maruj
+[maruj@pascal home]$ cd maruj/
+[maruj@pascal maruj]$ ls
+[maruj@pascal maruj]$ touch blank.txt
+[maruj@pascal maruj]$ cd ..
+[maruj@pascal home]$ cd ..
+[maruj@pascal L02]$ ls
+L02  bin  boot  dev  etc  home  lib  mnt  opt  proc  root  sbin  usr  var
+[maruj@pascal L02]$ cd lib/
+[maruj@pascal lib]$ ls
+systemlib.so
+[maruj@pascal lib]$ cd ..
+[maruj@pascal L02]$ cd mnt
+[maruj@pascal mnt]$ ls
+[maruj@pascal mnt]$ touch blank.txt
+[maruj@pascal mnt]$ ls
+blank.txt
+[maruj@pascal mnt]$ cd ..
+[maruj@pascal L02]$ cd opt
+[maruj@pascal opt]$ ls
+[maruj@pascal opt]$ touch blank.txt
+[maruj@pascal opt]$ ls
+blank.txt
+[maruj@pascal opt]$ cd ..
+[maruj@pascal L02]$ cd proc
+[maruj@pascal proc]$ ls
+[maruj@pascal proc]$ touch blank.txt
+[maruj@pascal proc]$ cd ..
+[maruj@pascal L02]$ cd root
+[maruj@pascal root]$ ls
+[maruj@pascal root]$ touch blank.txt
+[maruj@pascal root]$ cd ..
+[maruj@pascal L02]$ cd sbin/
+[maruj@pascal sbin]$ ls
+[maruj@pascal sbin]$ touch blank.txt
+[maruj@pascal sbin]$ cd ..
+[maruj@pascal L02]$ ls
+L02  bin  boot  dev  etc  home  lib  mnt  opt  proc  root  sbin  usr  var
+[maruj@pascal L02]$ cd usr
+[maruj@pascal usr]$ ls
+bin  include  lib  local  share
+[maruj@pascal usr]$ cd bin
+[maruj@pascal bin]$ ls
+unzip
+[maruj@pascal bin]$ cd ..
+[maruj@pascal usr]$ cd include/
+[maruj@pascal include]$ ls
+stdfake.h
+[maruj@pascal include]$ cd ..
+[maruj@pascal usr]$ cd lib
+[maruj@pascal lib]$ ls
+userlib.so
+[maruj@pascal lib]$ cd ..
+[maruj@pascal usr]$ ls
+bin  include  lib  local  share
+[maruj@pascal usr]$ cd local
+[maruj@pascal local]$ ls
+[maruj@pascal local]$ touch blank.txt
+[maruj@pascal local]$ cd ..
+[maruj@pascal usr]$ cd share
+[maruj@pascal share]$ ls
+man
+[maruj@pascal share]$ cd man
+[maruj@pascal man]$ ls
+[maruj@pascal man]$ touch blank.txt
+[maruj@pascal man]$ cd ..
+[maruj@pascal share]$ cd ..
+[maruj@pascal usr]$ cd ..
+[maruj@pascal L02]$ cd var
+[maruj@pascal var]$ ls
+cache  lib  lock  log  opt  spool  tmp
+[maruj@pascal var]$ cd cache
+[maruj@pascal cache]$ ls
+[maruj@pascal cache]$ touch blank.txt
+[maruj@pascal cache]$ cd ..
+[maruj@pascal var]$ cd lib
+[maruj@pascal lib]$ ls
+[maruj@pascal lib]$ touch blank.txt
+[maruj@pascal lib]$ cd ..
+[maruj@pascal var]$ cd lock/
+[maruj@pascal lock]$ ls
+[maruj@pascal lock]$ touch blank.txt
+[maruj@pascal lock]$ cd ..
+[maruj@pascal var]$ cd log
+[maruj@pascal log]$ ls
+syslog
+[maruj@pascal log]$ cd ..
+[maruj@pascal var]$ cd opt/
+[maruj@pascal opt]$ ls
+[maruj@pascal opt]$ touch blank.txt
+[maruj@pascal opt]$ cd ..
+[maruj@pascal var]$ cd spool
+[maruj@pascal spool]$ cd cron
+[maruj@pascal cron]$ ls
+[maruj@pascal cron]$ touch blank.txt
+[maruj@pascal cron]$ cd ..
+[maruj@pascal spool]$ cd cups
+[maruj@pascal cups]$ ls
+[maruj@pascal cups]$ touch blank.txt
+[maruj@pascal cups]$ cd ..
+[maruj@pascal spool]$ cd mail
+[maruj@pascal mail]$ ls
+[maruj@pascal mail]$ touch blank.txt
+[maruj@pascal mail]$ cd ..
+[maruj@pascal spool]$ ls
+cron  cups  mail
+[maruj@pascal spool]$ cd tmp
+-bash: cd: tmp: No such file or directory
+[maruj@pascal spool]$ cd ..
+[maruj@pascal var]$ cd tmp
+[maruj@pascal tmp]$ ls
+[maruj@pascal tmp]$ touch blank.txt
+[maruj@pascal tmp]$ ls
+blank.txt
+[maruj@pascal tmp]$ cd ..
+[maruj@pascal var]$ cd..
+-bash: cd..: command not found
+[maruj@pascal var]$ cd ..
+[maruj@pascal L02]$ tree
+.
+|-- bin
+|   |-- pwd
+|   `-- touch
+|-- boot
+|   |-- config-1
+|   `-- linux-1
+|-- dev
+|   `-- blank.txt
+|-- etc
+|   `-- default
+|       |-- grub
+|       `-- useradd
+|-- home
+|   `-- maruj
+|       `-- blank.txt
+|-- L02
+|   `-- blank.txt
+|-- lib
+|   `-- systemlib.so
+|-- mnt
+|   `-- blank.txt
+|-- opt
+|   `-- blank.txt
+|-- proc
+|   `-- blank.txt
+|-- root
+|   `-- blank.txt
+|-- sbin
+|   `-- blank.txt
+|-- usr
+|   |-- bin
+|   |   `-- unzip
+|   |-- include
+|   |   `-- stdfake.h
+|   |-- lib
+|   |   `-- userlib.so
+|   |-- local
+|   |   `-- blank.txt
+|   `-- share
+|       `-- man
+|           `-- blank.txt
+`-- var
+    |-- cache
+    |   `-- blank.txt
+    |-- lib
+    |   `-- blank.txt
+    |-- lock
+    |   `-- blank.txt
+    |-- log
+    |   `-- syslog
+    |-- opt
+    |   `-- blank.txt
+    |-- spool
+    |   |-- cron
+    |   |   `-- blank.txt
+    |   |-- cups
+    |   |   `-- blank.txt
+    |   `-- mail
+    |       `-- blank.txt
+    `-- tmp
+        `-- blank.txt
+
+32 directories, 29 files
+[maruj@pascal L02]$ git add .
+[maruj@pascal L02]$ git push
+Everything up-to-date
+[maruj@pascal L02]$ git commit 
+[main bb309a2] 	#	new file:   var/tmp/blank.txt
+ Committer: maruj <maruj@pascal.cas.mcmaster.ca>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 28 files changed, 8 insertions(+)
+ create mode 100644 L02/L02/blank.txt
+ create mode 100755 L02/bin/pwd
+ create mode 100755 L02/bin/touch
+ create mode 100644 L02/boot/config-1
+ create mode 100644 L02/boot/linux-1
+ create mode 100644 L02/dev/blank.txt
+ create mode 100644 L02/home/.bash_history
+ create mode 100644 L02/home/maruj/blank.txt
+ create mode 100644 L02/lib/systemlib.so
+ create mode 100644 L02/mnt/blank.txt
+ create mode 100644 L02/opt/blank.txt
+ create mode 100644 L02/proc/blank.txt
+ create mode 100644 L02/root/blank.txt
+ create mode 100644 L02/sbin/blank.txt
+ create mode 100755 L02/usr/bin/unzip
+ create mode 100644 L02/usr/include/stdfake.h
+ create mode 100644 L02/usr/lib/userlib.so
+ create mode 100644 L02/usr/local/blank.txt
+ create mode 100644 L02/usr/share/man/blank.txt
+ create mode 100644 L02/var/cache/blank.txt
+ create mode 100644 L02/var/lib/blank.txt
+ create mode 100644 L02/var/lock/blank.txt
+ create mode 100644 L02/var/log/syslog
+ create mode 100644 L02/var/opt/blank.txt
+ create mode 100644 L02/var/spool/cron/blank.txt
+ create mode 100644 L02/var/spool/cups/blank.txt
+ create mode 100644 L02/var/spool/mail/blank.txt
+ create mode 100644 L02/var/tmp/blank.txt
+[maruj@pascal L02]$ git commit -m "final"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[maruj@pascal L02]$ git push
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (24/24), 154.88 KiB | 4.69 MiB/s, done.
+Total 24 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To github.com:jenilmaru2004/CS1XC3.git
+   7f6be93..bb309a2  main -> main
+[maruj@pascal L02]$ tree
+.
+|-- bin
+|   |-- pwd
+|   `-- touch
+|-- boot
+|   |-- config-1
+|   `-- linux-1
+|-- dev
+|   `-- blank.txt
+|-- etc
+|   `-- default
+|       |-- grub
+|       `-- useradd
+|-- home
+|   `-- maruj
+|       `-- blank.txt
+|-- L02
+|   `-- blank.txt
+|-- lib
+|   `-- systemlib.so
+|-- mnt
+|   `-- blank.txt
+|-- opt
+|   `-- blank.txt
+|-- proc
+|   `-- blank.txt
+|-- root
+|   `-- blank.txt
+|-- sbin
+|   `-- blank.txt
+|-- usr
+|   |-- bin
+|   |   `-- unzip
+|   |-- include
+|   |   `-- stdfake.h
+|   |-- lib
+|   |   `-- userlib.so
+|   |-- local
+|   |   `-- blank.txt
+|   `-- share
+|       `-- man
+|           `-- blank.txt
+`-- var
+    |-- cache
+    |   `-- blank.txt
+    |-- lib
+    |   `-- blank.txt
+    |-- lock
+    |   `-- blank.txt
+    |-- log
+    |   `-- syslog
+    |-- opt
+    |   `-- blank.txt
+    |-- spool
+    |   |-- cron
+    |   |   `-- blank.txt
+    |   |-- cups
+    |   |   `-- blank.txt
+    |   `-- mail
+    |       `-- blank.txt
+    `-- tmp
+        `-- blank.txt
+
+32 directories, 29 files
+[maruj@pascal L02]$ 
