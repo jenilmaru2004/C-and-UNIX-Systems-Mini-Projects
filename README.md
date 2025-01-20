@@ -1,1 +1,1 @@
-# C-and-UNIX-Systems-Mini-Projects
+Completed 10 diverse mini-projects focusing on C programming and UNIX systems, tackling real-world challenges like algorithm benchmarking, library management, and shell scripting. Designed and implemented solutions for tasks such as file system simulation, process automation, environment config., etc.
